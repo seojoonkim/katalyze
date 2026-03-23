@@ -77,6 +77,9 @@ export default function ProgramPage() {
       {/* Zone 카드 그리드 */}
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
+          <p className="mb-10 font-rubik text-[clamp(2.5rem,6vw,5rem)] font-bold leading-none text-white/10 select-none">
+            72 HOURS.<br/><span className="text-white/15">4 ZONES.</span>
+          </p>
           <SectionHeading eyebrow="The Zones" title="4개의 세계" description="KATALYZE의 4개 존은 독립된 경험 레이어. 하나의 공간 안에서 서로 다른 문화가 충돌한다." />
           <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
             {programZones.map((zone) => (

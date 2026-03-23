@@ -213,7 +213,7 @@ export default function Home() {
             className="whitespace-nowrap font-rubik text-[clamp(4rem,12vw,9rem)] leading-none text-white/[0.08] select-none"
             style={{ animation: 'marquee 30s linear infinite' }}
           >
-            CULTURE × COMMERCE × COMMUNITY × SEOUL × DDP × KATALYZE × CULTURE × COMMERCE × COMMUNITY × SEOUL × DDP × KATALYZE ×&nbsp;
+            ARRIVE AS A BRAND × LEAVE AS A LEGEND × NOT A FESTIVAL — A FORCE × DDP SEOUL × APRIL 2027 × KATALYZE EVERYTHING × ARRIVE AS A BRAND × LEAVE AS A LEGEND × NOT A FESTIVAL — A FORCE × DDP SEOUL × APRIL 2027 × KATALYZE EVERYTHING ×&nbsp;
           </div>
         </div>
       </section>
@@ -226,6 +226,9 @@ export default function Home() {
           </p>
           <p className="mt-6 font-noto-kr text-lg font-light text-[#5CBFB0] max-w-xl">
             서울은 트렌드를 따르지 않는다. 촉발한다.
+          </p>
+          <p className="mt-16 font-rubik text-[clamp(3rem,7vw,6rem)] font-bold leading-none text-white/10 select-none">
+            CULTURE.<br/>COMMERCE.<br/>CONVERGENCE.
           </p>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-12">
             <p className="font-outfit text-lg font-light leading-relaxed text-white/80 max-w-xl">
@@ -252,6 +255,9 @@ export default function Home() {
       {/* ═══════ NUMBERS — 임팩트 카운터 ═══════ */}
       <section className="py-20 border-y border-white/10 bg-muk">
         <div className="container-shell">
+          <p className="mb-10 font-rubik text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-white">
+            THE NUMBERS<br/><span className="text-[#FABF13]">DON&apos;T LIE.</span>
+          </p>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div>
               <p className="font-rubik text-6xl text-white md:text-8xl">50K</p>
@@ -365,7 +371,10 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/30" />
               </div>
               {/* 텍스트: 40% */}
-              <div className="w-full md:w-2/5 flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 bg-muk">
+              <div className="relative w-full md:w-2/5 flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 bg-muk overflow-hidden">
+                <p className="font-rubik text-[clamp(4rem,6vw,7rem)] font-black leading-none text-white/5 absolute bottom-4 right-4 select-none">
+                  {zone.title.split(' ')[0]}
+                </p>
                 <span className="font-rubik text-6xl md:text-7xl" style={{ color: zone.color }}>{zone.number}</span>
                 <h3 className="mt-4 font-rubik text-4xl tracking-[0.05em] text-white md:text-5xl">{zone.title}</h3>
                 <p className="mt-3 font-noto-kr text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
@@ -384,6 +393,9 @@ export default function Home() {
             <p className="font-outfit text-sm uppercase tracking-[0.5em] text-[#FABF13]">LINEUP · <span className="font-noto-kr">라인업</span></p>
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <h2 className="font-rubik text-5xl tracking-[0.07em] text-white md:text-8xl">NAMES THAT<br/>MOVE CULTURE</h2>
+              <p className="mt-6 font-rubik text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white/30">
+                APRIL 2027 · DDP SEOUL
+              </p>
               <div className="flex flex-col items-start gap-3 md:items-end">
                 <p className="font-noto-kr text-base text-white/70 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
                 <PillButton href="/program" variant="secondary">VIEW FULL PROGRAM</PillButton>
@@ -522,6 +534,9 @@ export default function Home() {
             <div className="relative z-10">
               <p className="text-sm uppercase tracking-[0.5em] text-white/80">APRIL 2027 · <span className="font-noto-kr">서울 DDP</span></p>
               <h2 className="mt-4 font-rubik text-7xl tracking-[0.08em] text-white md:text-9xl">THE WORLD SHOWS UP IN SEOUL.</h2>
+              <p className="mt-4 font-rubik text-[clamp(1rem,2.5vw,2rem)] font-bold tracking-widest text-white/50 uppercase">
+                Are you ready to katalyze?
+              </p>
               <p className="mx-auto mt-4 max-w-2xl font-noto-kr text-base leading-8 text-white/90 md:text-lg">
                 4만 명의 관객, 200+ 브랜드, 하나의 주말. 당신의 자리를 지금 확보하세요.
               </p>

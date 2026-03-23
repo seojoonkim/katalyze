@@ -41,6 +41,9 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-6 text-sm uppercase tracking-[0.5em] text-[#FABF13]">Manifesto</p>
+            <p className="mb-8 font-rubik text-[clamp(2.5rem,6vw,5rem)] font-bold leading-none text-white/10 select-none">
+              SEOUL IS THE CATALYST.
+            </p>
             <blockquote className="font-rubik text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl">
               문화가<br />
               <span className="text-[#FABF13]">비즈니스가</span><br />
