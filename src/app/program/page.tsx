@@ -75,7 +75,7 @@ export default function ProgramPage() {
       />
 
       {/* Zone 카드 그리드 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <SectionHeading eyebrow="The Zones" title="4개의 세계" description="각 존은 독립된 경험 레이어. 하나의 공간 안에서 서로 다른 문화가 충돌한다." />
           <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
@@ -95,7 +95,7 @@ export default function ProgramPage() {
                     <p className="text-xs uppercase tracking-[0.4em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                   </div>
                   <h3 className="font-display text-4xl uppercase text-white">{zone.title}</h3>
-                  <p className="mt-2 font-outfit text-sm leading-6 text-white/75 max-w-sm">{zone.desc}</p>
+                  <p className="mt-2 font-outfit text-sm leading-6 text-white/70 max-w-sm">{zone.desc}</p>
                   <p className="mt-1 font-outfit text-xs text-white/40 italic">{zone.en}</p>
                   <div className="mt-4 flex items-baseline gap-1">
                     <span className="font-display text-3xl" style={{ color: zone.color }}>{zone.stat}</span>
@@ -160,7 +160,7 @@ export default function ProgramPage() {
       </AnimatedSection>
 
       {/* 라인업 예고 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <SectionHeading eyebrow="Lineup" title="라인업 예고" description="헤드라이너 발표 예정. 곧 공개됩니다." />
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

@@ -1,6 +1,6 @@
 import { AnimatedSection } from "@/components/animated-section";
 import { PageHero } from "@/components/page-hero";
-import { SectionHeading, TierCard } from "@/components/ui";
+import { SectionHeading, TierCard, PillButton } from "@/components/ui";
 
 const impactStats = [
   { value: "50,000+", label: "Expected Attendees", ko: "예상 참석자" },
@@ -76,7 +76,7 @@ export default function PartnersPage() {
       />
 
       {/* 임팩트 수치 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <SectionHeading eyebrow="Impact" title="숫자로 보는 KATALYZE" />
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
@@ -104,7 +104,7 @@ export default function PartnersPage() {
       </AnimatedSection>
 
       {/* 현재 파트너 로고 그리드 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <SectionHeading eyebrow="Current Partners" title="파트너사" description="KATALYZE와 함께하는 브랜드들." />
           <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6">
@@ -128,18 +128,12 @@ export default function PartnersPage() {
               파트너십 덱을 다운로드하거나 미팅을 신청하세요. 브랜드에 맞는 최적의 파트너십을 함께 설계합니다.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="/katalyze-partnership-deck.pdf"
-                className="inline-block border border-[#D4AF37] px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37] transition hover:bg-[#D4AF37] hover:text-black"
-              >
+              <PillButton href="/katalyze-partnership-deck.pdf" variant="secondary">
                 Deck 다운로드
-              </a>
-              <a
-                href="mailto:partners@katalyze.live"
-                className="inline-block bg-[#D4AF37] px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-black transition hover:bg-[#e8c84a]"
-              >
+              </PillButton>
+              <PillButton href="mailto:partners@katalyze.live" variant="primary">
                 미팅 신청
-              </a>
+              </PillButton>
             </div>
           </div>
         </div>

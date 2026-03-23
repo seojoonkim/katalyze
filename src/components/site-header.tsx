@@ -33,7 +33,7 @@ export function SiteHeader() {
           KATALYZE
         </Link>
 
-        <nav className="hidden items-center gap-1 text-sm uppercase tracking-[0.18em] text-white/82 md:flex relative">
+        <nav className="hidden items-center gap-1 text-sm uppercase tracking-[0.18em] text-white/80 md:flex relative">
           {navItemsWithImages.map((item) => (
             <div
               key={item.href}
@@ -54,7 +54,7 @@ export function SiteHeader() {
               {/* Dropdown Menu */}
               {item.href !== "/tickets" && (
                 <div className="absolute left-0 top-full hidden group-hover:block pt-2 z-50">
-                  <div className="bg-[rgba(13,13,13,0.98)] border border-white/10 backdrop-blur-xl rounded-lg overflow-hidden shadow-2xl w-56">
+                  <div className="bg-[rgba(13,13,13,0.98)] border border-white/10 backdrop-blur-xl rounded-none overflow-hidden shadow-2xl w-56">
                     {/* Preview Image */}
                     <div className="relative h-32 overflow-hidden">
                       <img
@@ -107,7 +107,7 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
                 {item.href !== "/tickets" && (
-                  <div className="relative h-20 overflow-hidden rounded mb-3">
+                  <div className="relative h-20 overflow-hidden rounded-none mb-3">
                     <img
                       src={item.image}
                       alt={item.label}

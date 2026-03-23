@@ -237,7 +237,7 @@ export default function Home() {
                     <span className="rounded-none border border-white/20 px-2.5 py-0.5 text-[10px] text-white/60">{card.tag}</span>
                   </div>
                   <h3 className="mt-4 max-w-sm font-display text-4xl leading-[0.96] text-white md:text-5xl">{card.title}</h3>
-                  <p className="mt-4 max-w-sm text-sm leading-7 text-white/82 md:text-base">{card.description}</p>
+                  <p className="mt-4 max-w-sm text-sm leading-7 text-white/80 md:text-base">{card.description}</p>
                   <div className="mt-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-white">
                     <span>{card.cta}</span>
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-none border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
@@ -384,7 +384,7 @@ export default function Home() {
               <div className="h-8 w-8 text-[#D4AF37]"><IconBuilding /></div>
               <p className="mt-5 text-xs uppercase tracking-[0.34em] text-[#F0D980]">For Partners & Brands</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Build the most photographed booth in Seoul.</h3>
-              <p className="mt-4 max-w-lg text-sm leading-7 text-white/82 md:text-base">
+              <p className="mt-4 max-w-lg text-sm leading-7 text-white/80 md:text-base">
                 Own premium real estate, launch limited drops, host founder conversations, and turn audience energy into measurable impact.
               </p>
               <div className="mt-7">
@@ -405,7 +405,7 @@ export default function Home() {
               <div className="h-8 w-8 text-[#00C9A7]"><IconBriefcase /></div>
               <p className="mt-5 text-xs uppercase tracking-[0.34em] text-[#00C9A7]">For Buyers</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Source the next breakout Korean brand before everyone else does.</h3>
-              <p className="mt-4 max-w-lg text-sm leading-7 text-white/82 md:text-base">
+              <p className="mt-4 max-w-lg text-sm leading-7 text-white/80 md:text-base">
                 Curated meetings, premium hospitality, and access to labels spanning beauty, fashion, design, food, and cultural IP.
               </p>
               <div className="mt-7">

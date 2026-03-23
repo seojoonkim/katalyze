@@ -8,8 +8,8 @@ export function SectionHeading({ eyebrow, title, description }: { eyebrow: strin
   return (
     <div className="mb-10 max-w-2xl">
       <p className="mb-3 text-xs uppercase tracking-[0.35em] text-[#d4af37]">{eyebrow}</p>
-      <h2 className="text-4xl font-black uppercase leading-none text-white md:text-6xl">{title}</h2>
-      {description ? <p className="mt-4 text-base leading-7 text-white/65 md:text-lg">{description}</p> : null}
+      <h2 className="text-4xl font-display uppercase leading-none text-white md:text-6xl">{title}</h2>
+      {description ? <p className="mt-4 text-base leading-7 text-white/70 md:text-lg">{description}</p> : null}
     </div>
   );
 }
@@ -40,7 +40,7 @@ export function ImageCard({ image, title, subtitle, description, className = "" 
       <div className="p-6">
         {subtitle ? <p className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">{subtitle}</p> : null}
         <h3 className="mt-2 text-2xl font-bold uppercase text-white">{title}</h3>
-        {description ? <p className="mt-3 text-sm leading-7 text-white/65">{description}</p> : null}
+        {description ? <p className="mt-3 text-sm leading-7 text-white/70">{description}</p> : null}
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ export function AccordionFAQ({ items }: { items: { q: string; a: string }[] }) {
             <span className="ml-4 text-[#D4AF37] text-xl">{open === i ? "−" : "+"}</span>
           </button>
           {open === i && (
-            <p className="mt-3 font-outfit text-sm leading-7 text-white/65">{item.a}</p>
+            <p className="mt-3 font-outfit text-sm leading-7 text-white/70">{item.a}</p>
           )}
         </div>
       ))}

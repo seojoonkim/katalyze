@@ -67,7 +67,7 @@ export default function MarketplacePage() {
       </AnimatedSection>
 
       {/* 브랜드 마르키 */}
-      <AnimatedSection className="overflow-hidden border-y border-white/10 py-6 bg-[#0f0f0f]">
+      <AnimatedSection className="overflow-hidden border-y border-white/10 py-6 bg-muk">
         <div className="flex">
           <div className="flex animate-marquee whitespace-nowrap">
             {[...brandLogos, ...brandLogos].map((logo, i) => (
@@ -115,7 +115,7 @@ export default function MarketplacePage() {
       </AnimatedSection>
 
       {/* 브랜드 신청 CTA */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
             <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#D4AF37]">Brand Application</p>

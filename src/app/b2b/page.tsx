@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { AnimatedSection } from "@/components/animated-section";
 import { PageHero } from "@/components/page-hero";
-import { SectionHeading, AccordionFAQ } from "@/components/ui";
+import { SectionHeading, AccordionFAQ, PillButton } from "@/components/ui";
 
 const b2bServices = [
   {
@@ -93,7 +93,7 @@ export default function B2BPage() {
       </AnimatedSection>
 
       {/* 서비스 카드 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <SectionHeading eyebrow="Services" title="3가지 서비스" />
           <div className="grid gap-6 md:grid-cols-3">
@@ -102,7 +102,7 @@ export default function B2BPage() {
                 <p className="font-display text-5xl" style={{ color: svc.color + "55" }}>{svc.number}</p>
                 <p className="mt-4 font-outfit text-xs uppercase tracking-[0.3em]" style={{ color: svc.color }}>{svc.ko}</p>
                 <h3 className="mt-1 font-display text-xl uppercase text-white">{svc.title}</h3>
-                <p className="mt-4 font-outfit text-sm leading-7 text-white/65">{svc.desc}</p>
+                <p className="mt-4 font-outfit text-sm leading-7 text-white/70">{svc.desc}</p>
                 <div className="mt-6 border-t border-white/10 pt-4">
                   <p className="font-outfit text-xs text-white/40">{svc.stats}</p>
                 </div>
@@ -180,7 +180,7 @@ export default function B2BPage() {
       </AnimatedSection>
 
       {/* FAQ */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-2xl">
             <SectionHeading eyebrow="FAQ" title="자주 묻는 질문" />

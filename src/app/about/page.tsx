@@ -37,7 +37,7 @@ export default function AboutPage() {
       />
 
       {/* 매니페스토 인용 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-6 text-xs uppercase tracking-[0.5em] text-[#D4AF37]">Manifesto</p>
@@ -72,7 +72,7 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* DDP 소개 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell grid gap-12 lg:grid-cols-2 lg:items-center">
           <div
             className="h-[400px] w-full"
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 <p className="font-outfit text-xs uppercase tracking-[0.3em] text-[#D4AF37]">0{i + 1}</p>
                 <h3 className="mt-3 font-display text-xl uppercase text-white leading-tight">{point.title}</h3>
                 <p className="mt-1 font-outfit text-xs text-white/40">{point.ko}</p>
-                <p className="mt-4 font-outfit text-sm leading-7 text-white/65">{point.desc}</p>
+                <p className="mt-4 font-outfit text-sm leading-7 text-white/70">{point.desc}</p>
               </div>
             ))}
           </div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* 비전 스테이트먼트 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-xs uppercase tracking-[0.5em] text-[#D4AF37]">Vision</p>

@@ -2,7 +2,7 @@
 
 import { AnimatedSection } from "@/components/animated-section";
 import { PageHero } from "@/components/page-hero";
-import { SectionHeading, AccordionFAQ } from "@/components/ui";
+import { SectionHeading, AccordionFAQ, PillButton } from "@/components/ui";
 
 const ticketTiers = [
   {
@@ -102,13 +102,11 @@ export default function TicketsPage() {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href="#"
-                    className="mt-6 block border py-3 text-center text-xs font-semibold uppercase tracking-[0.3em] transition hover:bg-white hover:text-black"
-                    style={{ borderColor: ticket.color, color: ticket.color }}
-                  >
-                    {ticket.cta}
-                  </a>
+                  <div className="mt-6">
+                    <PillButton href="#" variant={ticket.highlight ? "primary" : "secondary"}>
+                      {ticket.cta}
+                    </PillButton>
+                  </div>
                 </div>
               </div>
             ))}
@@ -117,7 +115,7 @@ export default function TicketsPage() {
       </AnimatedSection>
 
       {/* 날짜·장소·오시는 길 */}
-      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+      <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <SectionHeading eyebrow="Venue" title="장소 안내" />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -151,18 +149,12 @@ export default function TicketsPage() {
             <p className="font-outfit text-sm text-white/70">April 2027 · DDP Seoul</p>
           </div>
           <div className="flex gap-3">
-            <a
-              href="#"
-              className="border border-[#D4AF37] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.25em] text-[#D4AF37] transition hover:bg-[#D4AF37] hover:text-black"
-            >
+            <PillButton href="#" variant="secondary">
               ₩89,000부터
-            </a>
-            <a
-              href="#"
-              className="bg-[#D4AF37] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.25em] text-black transition hover:bg-[#e8c84a]"
-            >
+            </PillButton>
+            <PillButton href="#" variant="primary">
               지금 구매
-            </a>
+            </PillButton>
           </div>
         </div>
       </div>
