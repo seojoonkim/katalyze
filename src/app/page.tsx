@@ -176,7 +176,7 @@ export default function Home() {
             <p className="text-sm font-outfit tracking-[0.25em] uppercase text-[#FABF13] pl-[0.04em]">
               SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
-            <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{fontFamily: "var(--font-rubik), sans-serif"}}>
+            <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 900}}>
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
