@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div
             className="h-[400px] w-full"
             style={{
-              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.90) 100%), url('/images/about_seoul_bg.jpg')`,
+              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%), url('/images/about_seoul_bg.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -112,7 +112,7 @@ export default function AboutPage() {
       <AnimatedSection 
         className="section-pad"
         style={{
-          backgroundImage: "linear-gradient(rgba(26,26,31,0.90), rgba(26,26,31,0.90)), url('/images/about_seoul_bg.jpg')",
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.72)), url('/images/about_seoul_bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
