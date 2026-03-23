@@ -181,7 +181,7 @@ export default function Home() {
           }}
         />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
-          <div className="max-w-5xl">
+          <div className="w-full text-left">
             <p className="text-sm font-outfit tracking-[0.5em] uppercase text-[#D4AF37]">
               서울 DDP · 2027. 4 · SEOUL&apos;S CULTURE-COMMERCE CONVERGENCE
             </p>
@@ -204,7 +204,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-8 flex flex-nowrap gap-x-4 overflow-x-auto md:mt-14 md:gap-x-10 md:overflow-visible">
+          <div className="mt-8 flex flex-nowrap gap-x-4 overflow-x-auto md:mt-14 md:gap-x-10 md:overflow-visible text-left">
             {stats.map((stat) => (
               <div key={stat.label} className="flex-shrink-0">
                 <p className="font-display text-2xl tracking-[0.04em] text-white md:text-5xl">{stat.value}</p>
