@@ -136,9 +136,9 @@ function backgroundStyle(image: string, fallback: string, overlay?: string) {
   if (image) {
     const layers: string[] = [];
     const sizes: string[] = [];
-    if (overlay) { layers.push(overlay); sizes.push("100% 100%"); }
     layers.push(`url('${image}')`);
     sizes.push("cover");
+    if (overlay) { layers.push(overlay); sizes.push("100% 100%"); }
     layers.push(fallback);
     sizes.push("100% 100%");
     style.backgroundImage = layers.join(", ");
