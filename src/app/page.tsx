@@ -173,7 +173,7 @@ export default function Home() {
         />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-24 md:pb-16 lg:pt-32">
           <div className="w-full">
-            <p className="text-sm font-rubik tracking-[0.3em] uppercase text-[#FABF13] pl-[0.04em] font-bold">
+            <p className="text-sm font-rubik tracking-[0.2em] uppercase text-[#FABF13] font-bold break-words">
               SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
             <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.01em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.65)]" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
@@ -187,9 +187,9 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center">
               <PillButton href="/tickets">CLAIM YOUR SPOT</PillButton>
-              <div className="flex gap-3">
-                <a href="/partners" className="inline-flex items-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all" style={{fontWeight:600}}>Partner with KATALYZE</a>
-                <a href="/b2b" className="inline-flex items-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all" style={{fontWeight:600}}>B2B access</a>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a href="/partners" className="inline-flex items-center justify-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all min-h-[44px]" style={{fontWeight:600}}>Partner with KATALYZE</a>
+                <a href="/b2b" className="inline-flex items-center justify-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all min-h-[44px]" style={{fontWeight:600}}>B2B access</a>
               </div>
             </div>
           </div>
@@ -304,13 +304,13 @@ export default function Home() {
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Audience Selector</p>
-            <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-[2.4rem] whitespace-nowrap" style={{fontWeight:800}}>HOW WILL YOU SHOW UP AT <span className="text-[#FABF13]">KATALYZE</span>?</h2>
+            <h2 className="mt-4 font-rubik text-xl tracking-[-0.01em] text-white md:text-3xl lg:text-[2.4rem] md:whitespace-nowrap" style={{fontWeight:800}}>HOW WILL YOU SHOW UP AT <span className="text-[#FABF13]">KATALYZE</span>?</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
             {/* 첫 번째 카드: 크게 */}
             <a
               href={audiences[0].href}
-              className={`group relative min-h-[560px] overflow-hidden rounded-none ${audiences[0].ring}`}
+              className={`group relative min-h-[380px] md:min-h-[560px] overflow-hidden rounded-none ${audiences[0].ring}`}
               style={backgroundStyle(audiences[0].image, audiences[0].fallback, audiences[0].overlay)}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
@@ -365,7 +365,7 @@ export default function Home() {
         <div className="container-shell py-20 md:py-28">
           <div className="mb-6 max-w-3xl md:mb-10">
             <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">4 Zones</p>
-            <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-4xl whitespace-nowrap" style={{fontWeight:800}}>FOUR WORLDS. ONE WEEKEND.</h2>
+            <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-4xl" style={{fontWeight:800}}>FOUR WORLDS. ONE WEEKEND.</h2>
           </div>
         </div>
         <div className="space-y-0">
@@ -471,7 +471,7 @@ export default function Home() {
       <section className="bg-muk py-20 md:py-28">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
           <div
-            className="group relative min-h-[440px] overflow-hidden rounded-none border border-[#FABF13]/35"
+            className="group relative min-h-[360px] md:min-h-[440px] overflow-hidden rounded-none border border-[#FABF13]/35"
             style={backgroundStyle(
               "/images/business_brands.jpg",
               "linear-gradient(135deg, #1a1000, #2a1800)",
@@ -492,7 +492,7 @@ export default function Home() {
           </div>
 
           <div
-            className="group relative min-h-[440px] overflow-hidden rounded-none border border-[#00C9A7]/35"
+            className="group relative min-h-[360px] md:min-h-[440px] overflow-hidden rounded-none border border-[#00C9A7]/35"
             style={backgroundStyle(
               "/images/audience_buyers.jpg",
               "linear-gradient(135deg, #001a10, #001a1a)",
