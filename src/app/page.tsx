@@ -168,10 +168,10 @@ export default function Home() {
             zIndex: 1
           }}
         />
-        <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
+        <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-24 md:pb-16 lg:pt-32">
           <div className="w-full">
-            <p className="text-base font-outfit tracking-[0.5em] uppercase text-[#F0B429] pl-[0.08em]">
-              서울 DDP · 2027. 4 · SEOUL&apos;S CULTURE-COMMERCE CONVERGENCE
+            <p className="text-sm font-outfit tracking-[0.25em] uppercase text-[#F0B429] pl-[0.04em]">
+              SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
             <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]">
               KATALYZE
