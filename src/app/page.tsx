@@ -317,7 +317,7 @@ export default function Home() {
                   <p className="text-sm uppercase tracking-[0.34em] text-white/90">{audiences[0].eyebrow}</p>
                   <span className="border border-white/20 px-2.5 py-0.5 text-base text-white/88">{audiences[0].tag}</span>
                 </div>
-                <h3 className="mt-4 max-w-lg font-rubik text-5xl leading-[0.96] text-white md:text-6xl" style={{textShadow:"0 2px 20px rgba(0,0,0,0.9)"}} style={{fontWeight:800}}>{audiences[0].title}</h3>
+                <h3 className="mt-4 max-w-lg font-rubik text-5xl leading-[0.96] text-white md:text-6xl" style={{textShadow:"0 2px 20px rgba(0,0,0,0.9)", fontWeight:800}}>{audiences[0].title}</h3>
                 <p className="mt-4 max-w-lg text-base leading-7 text-white/90">{audiences[0].description}</p>
                 <div className="mt-6 flex items-center gap-3 text-base font-semibold uppercase tracking-[0.24em] text-white">
                   <span>{audiences[0].cta}</span>
@@ -390,7 +390,7 @@ export default function Home() {
                   {zone.title.split(' ')[0]}
                 </p>
                 <span className="font-rubik text-7xl md:text-8xl" style={{ color: zone.color, fontWeight: 900 }}>{zone.number}</span>
-                <h3 className="mt-4 font-rubik text-4xl tracking-[0.05em] text-white md:text-5xl" style={{textShadow:"0 2px 16px rgba(0,0,0,0.9)"}} style={{fontWeight:800}}>{zone.title}</h3>
+                <h3 className="mt-4 font-rubik text-4xl tracking-[0.05em] text-white md:text-5xl" style={{textShadow:"0 2px 16px rgba(0,0,0,0.9)", fontWeight:800}}>{zone.title}</h3>
                 <p className="mt-3 font-noto-kr text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                 <p className="mt-6 font-noto-kr text-base font-light leading-relaxed text-white/90">{zone.description}</p>
                 <p className="mt-4 font-outfit text-base italic text-white/92">{zone.en}</p>
