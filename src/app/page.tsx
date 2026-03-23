@@ -173,7 +173,7 @@ export default function Home() {
             <p className="text-base font-outfit tracking-[0.5em] uppercase text-[#D4AF37]">
               서울 DDP · 2027. 4 · SEOUL&apos;S CULTURE-COMMERCE CONVERGENCE
             </p>
-            <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{marginLeft: "-0.03em"}}>
+            <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{paddingLeft: "0.04em"}}>
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
@@ -218,8 +218,8 @@ export default function Home() {
       {/* ═══════ QUOTE / ABOUT — 에디토리얼 풀블리드 ═══════ */}
       <section className="py-32 md:py-44 bg-muk">
         <div className="container-shell">
-          <p className="font-display text-[clamp(2.2rem,6vw,5.5rem)] leading-tight text-white max-w-4xl">
-            &ldquo;Seoul doesn&apos;t follow trends. <span className="text-[#D4AF37]">It catalyzes them.</span>&rdquo;
+          <p className="font-display text-[clamp(1.8rem,4.5vw,4.2rem)] leading-[1.15] text-white max-w-5xl">
+            &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#D4AF37]">It catalyzes them.&rdquo;</span>
           </p>
           <p className="mt-6 font-outfit text-lg font-light text-[#4A7A6B] max-w-xl">
             서울은 트렌드를 따르지 않는다. 촉발한다.
@@ -279,7 +279,7 @@ export default function Home() {
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm uppercase tracking-[0.5em] text-[#D4AF37]">Audience Selector</p>
-            <h2 className="mt-4 font-impact text-6xl tracking-[0.07em] text-white md:text-8xl">CHOOSE YOUR<br/>ENTRY POINT</h2>
+            <h2 className="mt-4 font-impact text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">CHOOSE YOUR ENTRY POINT</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
             {/* 첫 번째 카드: 크게 */}
@@ -340,7 +340,7 @@ export default function Home() {
         <div className="container-shell py-20 md:py-28">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm uppercase tracking-[0.5em] text-[#D4AF37]">4 Zones</p>
-            <h2 className="mt-4 font-impact text-6xl tracking-[0.07em] text-white md:text-8xl">THE WORLD OF<br/>KATALYZE</h2>
+            <h2 className="mt-4 font-impact text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">THE WORLD OF KATALYZE</h2>
           </div>
         </div>
         <div className="space-y-0">
