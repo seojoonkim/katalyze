@@ -187,7 +187,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center">
               <PillButton href="/tickets">CLAIM YOUR SPOT</PillButton>
-              <div className="flex gap-4 text-sm font-outfit text-white/60">
+              <div className="flex gap-4 text-sm font-outfit text-white/75">
                 <a href="/partners" className="hover:text-white transition-colors">Partner with us →</a>
                 <a href="/b2b" className="hover:text-white transition-colors">B2B access →</a>
               </div>
@@ -235,15 +235,15 @@ export default function Home() {
             <div className="space-y-6">
               <div className="flex items-baseline gap-4">
                 <span className="font-rubik text-5xl text-[#FABF13]">72</span>
-                <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/60">Hours of culture velocity</span>
+                <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/75">Hours of culture velocity</span>
               </div>
               <div className="flex items-baseline gap-4">
                 <span className="font-rubik text-5xl text-[#FABF13]">50K+</span>
-                <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/60">Global attendees</span>
+                <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/75">Global attendees</span>
               </div>
               <div className="flex items-baseline gap-4">
                 <span className="font-rubik text-5xl text-[#FABF13]">₩70B+</span>
-                <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/60">Projected economic impact</span>
+                <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/75">Projected economic impact</span>
               </div>
             </div>
           </div>
@@ -284,8 +284,8 @@ export default function Home() {
       {/* ═══════ PARTNER TRUST BADGE ═══════ */}
       <section className="bg-muk border-t border-white/10 py-10 md:py-12">
         <div className="container-shell text-center">
-          <p className="text-xs font-outfit uppercase tracking-[0.4em] text-white/40 mb-6">Backed by</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-xl tracking-[0.14em] text-white/30 md:text-2xl">
+          <p className="text-xs font-outfit uppercase tracking-[0.4em] text-white/75 mb-6">Backed by</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-xl tracking-[0.14em] text-white/70 md:text-2xl">
             <span>SAMSUNG</span>
             <span>CJ</span>
             <span>MUSINSA</span>
@@ -406,7 +406,7 @@ export default function Home() {
             <p className="font-outfit text-sm uppercase tracking-[0.5em] text-[#FABF13]">LINEUP · <span className="font-noto-kr">라인업</span></p>
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <h2 className="font-rubik text-5xl tracking-[0.07em] text-white md:text-8xl">NAMES THAT<br/>MOVE CULTURE</h2>
-              <p className="mt-6 font-rubik text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white/30">
+              <p className="mt-6 font-rubik text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white/70">
                 APRIL 2027 · DDP SEOUL
               </p>
               <div className="flex flex-col items-start gap-3 md:items-end">
@@ -420,10 +420,10 @@ export default function Home() {
             {lineup.map((artist, idx) => (
               <div key={artist.name} className="group flex flex-col gap-4 py-8 transition-colors hover:bg-white/[0.02] sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-6 sm:gap-8">
-                  <span className="font-rubik text-2xl text-white/20 min-w-[2.5rem]">{String(idx + 1).padStart(2, '0')}</span>
+                  <span className="font-rubik text-2xl text-white/75 min-w-[2.5rem]">{String(idx + 1).padStart(2, '0')}</span>
                   <div>
                     <h3 className="font-rubik text-3xl tracking-[0.04em] text-white md:text-5xl">{artist.name}</h3>
-                    <p className="mt-1 font-outfit text-base text-white/60">{artist.genre}</p>
+                    <p className="mt-1 font-outfit text-base text-white/75">{artist.genre}</p>
                   </div>
                 </div>
                 <div className="pl-[calc(2.5rem+1.5rem)] sm:pl-0 sm:text-right">
@@ -557,7 +557,7 @@ export default function Home() {
                 <PillButton href="/tickets">
                   <span className="mr-2 h-4 w-4 inline-flex"><IconTicket /></span> CLAIM YOUR SPOT
                 </PillButton>
-                <div className="flex gap-4 text-sm font-outfit text-white/60">
+                <div className="flex gap-4 text-sm font-outfit text-white/75">
                   <a href="/partners" className="hover:text-white transition-colors">Partner with us →</a>
                   <a href="/b2b" className="hover:text-white transition-colors">B2B access →</a>
                 </div>

@@ -97,11 +97,11 @@ export default function AboutPage() {
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div>
                 <p className="font-rubik text-3xl text-[#FABF13]">86,574㎡</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Total Floor Area</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Total Floor Area</p>
               </div>
               <div>
                 <p className="font-rubik text-3xl text-[#FABF13]">5</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Connected Buildings</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Connected Buildings</p>
               </div>
             </div>
           </div>

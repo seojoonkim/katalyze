@@ -89,7 +89,7 @@ export default function TicketsPage() {
                 )}
                 <div className="border-b p-6" style={{ borderColor: ticket.color + '33' }}>
                   <p style={{ color: ticket.color }} className="text-sm uppercase tracking-[0.35em]">{ticket.name}</p>
-                  <p className="mt-1 font-outfit text-base text-white/65">{ticket.ko}</p>
+                  <p className="mt-1 font-outfit text-base text-white/80">{ticket.ko}</p>
                   <p className="mt-4 font-rubik text-4xl text-white">{ticket.price}</p>
                   <p className="font-outfit text-base text-white/55">{ticket.priceEn}</p>
                 </div>

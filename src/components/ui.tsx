@@ -96,7 +96,7 @@ export function TierCard({ tier, ko, price, benefits, highlight, badge, color, c
       )}
       <div className="border-b p-6" style={{ borderColor: color + '33' }}>
         <p style={{ color }} className="text-sm uppercase tracking-[0.4em]">{tier}</p>
-        <p className="mt-1 font-outfit text-base text-white/65">{ko}</p>
+        <p className="mt-1 font-outfit text-base text-white/80">{ko}</p>
         <p className="mt-4 font-rubik text-4xl text-white">{price}</p>
       </div>
       <div className="flex flex-1 flex-col p-6">

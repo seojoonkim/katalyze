@@ -70,11 +70,11 @@ export default function B2BPage() {
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div className="border-l-2 border-[#FABF13] pl-4">
                 <p className="font-rubik text-3xl text-white">200+</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Participating Brands</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Participating Brands</p>
               </div>
               <div className="border-l-2 border-[#FABF13] pl-4">
                 <p className="font-rubik text-3xl text-white">50+</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Global Buyers</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Global Buyers</p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function B2BPage() {
               <div className="space-y-4">
                 <div className="grid gap-4 md:grid-cols-2">
                   <div>
-                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/65">이름 *</label>
+                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">이름 *</label>
                     <input
                       type="text"
                       value={form.name}
@@ -131,7 +131,7 @@ export default function B2BPage() {
                     />
                   </div>
                   <div>
-                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/65">회사 *</label>
+                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">회사 *</label>
                     <input
                       type="text"
                       value={form.company}
@@ -142,7 +142,7 @@ export default function B2BPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/65">이메일 *</label>
+                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">이메일 *</label>
                   <input
                     type="email"
                     value={form.email}
@@ -152,7 +152,7 @@ export default function B2BPage() {
                   />
                 </div>
                 <div>
-                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/65">관심 카테고리</label>
+                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">관심 카테고리</label>
                   <select
                     value={form.category}
                     onChange={(e) => setForm({ ...form, category: e.target.value })}

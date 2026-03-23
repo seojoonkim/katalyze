@@ -151,7 +151,7 @@ export default function ProgramPage() {
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white">{item.title}</p>
-                  <p className="font-outfit text-base text-white/65">{item.desc}</p>
+                  <p className="font-outfit text-base text-white/80">{item.desc}</p>
                 </div>
                 <div>
                   <span
@@ -179,7 +179,7 @@ export default function ProgramPage() {
               <div key={i} className="flex flex-col items-center justify-center border border-white/10 bg-white/[0.02] py-16 px-8">
                 <div className="mb-4 h-20 w-20 rounded-full bg-white/10 blur-sm" />
                 <p className="font-outfit text-sm uppercase tracking-[0.4em] text-white/70">Coming Soon</p>
-                <p className="mt-2 font-rubik text-2xl uppercase text-white/20">TBA</p>
+                <p className="mt-2 font-rubik text-2xl uppercase text-white/75">TBA</p>
               </div>
             ))}
           </div>
