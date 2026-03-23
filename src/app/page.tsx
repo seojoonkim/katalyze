@@ -217,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* ═══════ QUOTE / ABOUT — 에디토리얼 풀블리드 ═══════ */}
-      <section className="py-32 md:py-44 bg-muk">
+      <section className="py-32 md:py-44 relative overflow-hidden" style={{background: "linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.85) 100%), url('/images/seoul_night_quote.jpg') center/cover no-repeat"}}>
         <div className="container-shell">
           <p className="font-rubik text-[clamp(1.8rem,3.8vw,3.8rem)] leading-[1.15] text-white max-w-5xl" style={{fontWeight:800}}>
             &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#FABF13]">It ignites them.&rdquo;</span>
