@@ -41,6 +41,12 @@ const playfair = Playfair_Display({
   weight: ["400", "700", "900"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   title: "KATALYZE — Seoul's Culture-Commerce Festival | April 2027",
   description: "Where global brands meet Seoul's energy. K-fashion, K-beauty, music, street culture and global trade at DDP Seoul. 50,000+ attendees. April 2027.",

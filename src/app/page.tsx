@@ -518,14 +518,14 @@ export default function Home() {
       <section className="bg-muk py-20 md:py-28">
         <div className="container-shell">
           <div
-            className="group relative min-h-[520px] overflow-hidden rounded-none"
+            className="group relative min-h-[400px] md:min-h-[520px] overflow-hidden rounded-none"
             style={backgroundStyle(
               "/images/ddp_night.jpg",
               "linear-gradient(135deg, #1B2A4A, #0D0D10)",
               "linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.92) 70%), radial-gradient(circle at top right, rgba(250,191,19,0.15), transparent 35%)"
             )}
           >
-            <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
+            <div className="relative z-10 flex min-h-[400px] md:min-h-[520px] flex-col justify-end p-8 md:p-12">
               <div className="inline-flex w-fit items-center gap-2 rounded-none border border-white/20 bg-black/35 px-4 py-2 text-sm uppercase tracking-[0.26em] text-white/92 backdrop-blur-sm">
                 <span className="h-3.5 w-3.5 text-[#FABF13] inline-flex"><IconMapPin /></span> SEOUL · DDP · APRIL 2027
               </div>
