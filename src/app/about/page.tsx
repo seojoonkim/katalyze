@@ -31,8 +31,8 @@ export default function AboutPage() {
     <div>
       <PageHero
         title="WHERE CULTURE BECOMES COMMERCE"
-        eyebrow="About · 소개"
-        description="서울이 세계에게 자신을 보여주는 방식."
+        eyebrow="About KATALYZE · 소개"
+        description="서울이 세계에게 자신을 보여주는 방식. 그 이름이 KATALYZE다."
         image="/images/seoul_night.jpg"
       />
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Manifesto</p>
+            <p className="mb-6 text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Why <span className="text-white">KATALYZE</span>? — Manifesto</p>
             <p className="mb-8 font-rubik text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-none text-white/[0.05] select-none pointer-events-none">
               SEOUL IS THE CATALYST.
             </p>
@@ -50,7 +50,7 @@ export default function AboutPage() {
               되는 곳.
             </blockquote>
             <p className="mt-8 font-outfit text-lg leading-8 text-white/88 max-w-2xl mx-auto">
-              KATALYZE는 서울 DDP에서 열리는 대한민국 최초의 컬처-커머스 융합 페스티벌입니다.
+              <span className="text-[#FABF13] font-semibold">KATALYZE</span>는 서울 DDP에서 열리는 대한민국 최초의 컬처-커머스 융합 페스티벌입니다.
               K-패션, K-뷰티, 스트릿컬처, 음악, 그리고 글로벌 비즈니스가 72시간 안에 충돌하고 융합하는 공간.
             </p>
           </div>
@@ -140,7 +140,7 @@ export default function AboutPage() {
             <p className="mb-4 text-sm uppercase tracking-[0.5em] text-[#FABF13]">Vision</p>
             <p className="font-outfit text-xl leading-10 text-white/90">
               ComplexCon이 미국 스트릿컬처를 세계에 알린 것처럼,<br />
-              KATALYZE는 K-컬처의 상업적 파워를 세계에 증명합니다.<br />
+              <span className="text-[#FABF13] font-semibold">KATALYZE</span>는 K-컬처의 상업적 파워를 세계에 증명합니다.<br />
               <span className="text-[#FABF13]">서울에서 시작되는 다음 10년의 문화 지형도.</span>
             </p>
           </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <div className="flex flex-col items-center gap-6 text-center">
-            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 <span className="text-[#FABF13]">KATALYZE</span>를 만들어가요</h2>
             <p className="max-w-xl font-outfit text-base text-white/88">
               관람객으로, 브랜드로, 파트너로 — KATALYZE와 함께할 방법을 선택하세요.
             </p>

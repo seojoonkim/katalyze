@@ -69,9 +69,9 @@ export default function PartnersPage() {
   return (
     <div>
       <PageHero
-        title="PARTNER WITH CULTURE"
+        title="PARTNER WITH KATALYZE"
         eyebrow="Partners · 파트너"
-        description="KATALYZE와 함께하면 브랜드가 문화가 됩니다. 50,000명의 관객, 글로벌 미디어, 한국 최초의 플랫폼."
+        description="KATALYZE와 함께하면 브랜드가 문화가 됩니다. 50,000명의 관객, 글로벌 미디어, 한국 최초의 컬처-커머스 플랫폼."
         image="/images/festival_entry.jpg"
       />
 
@@ -133,9 +133,9 @@ export default function PartnersPage() {
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Get in Touch</p>
-            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 <span className="text-[#FABF13]">KATALYZE</span>를 만들어가요</h2>
             <p className="mt-4 max-w-xl font-outfit text-base text-white/88">
-              파트너십 덱을 다운로드하거나 미팅을 신청하세요. 브랜드에 맞는 최적의 파트너십을 함께 설계합니다.
+              파트너십 덱을 다운로드하거나 미팅을 신청하세요. 브랜드에 맞는 최적의 KATALYZE 파트너십을 함께 설계합니다.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <PillButton href="/katalyze-partnership-deck.pdf" variant="secondary">

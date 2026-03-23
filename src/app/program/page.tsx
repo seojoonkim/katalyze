@@ -69,8 +69,8 @@ export default function ProgramPage() {
     <div>
       <PageHero
         title="72 HOURS OF CULTURE VELOCITY"
-        eyebrow="Program · 프로그램"
-        description="4개의 존, 72시간. 모든 순간이 발견이고 전환이다."
+        eyebrow="KATALYZE 2027 PROGRAM · 프로그램"
+        description="4개의 존, 72시간. KATALYZE의 모든 순간이 발견이고 전환이다."
         image="/images/concert_stage.jpg"
       />
 
@@ -80,7 +80,7 @@ export default function ProgramPage() {
           <p className="mb-10 font-rubik text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-none text-white/[0.05] select-none pointer-events-none">
             72 HOURS.<br/><span className="text-white/[0.07]">4 ZONES.</span>
           </p>
-          <SectionHeading eyebrow="The Zones" title="4개의 세계" description="KATALYZE의 4개 존은 독립된 경험 레이어. 하나의 공간 안에서 서로 다른 문화가 충돌한다." />
+          <SectionHeading eyebrow="The Zones" title="KATALYZE 4개의 세계" description="KATALYZE의 4개 존은 독립된 경험 레이어. 하나의 공간 안에서 서로 다른 문화가 충돌한다." />
           <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
             {programZones.map((zone) => (
               <div
@@ -191,7 +191,7 @@ export default function ProgramPage() {
         <div className="container-shell flex flex-col items-center text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Get Your Ticket</p>
           <h2 className="font-rubik text-4xl uppercase text-white md:text-6xl">지금 티켓 구매</h2>
-          <p className="mt-4 max-w-xl font-outfit text-base text-white/88">April 2027, DDP Seoul. 72시간의 문화 속도를 직접 경험하세요.</p>
+          <p className="mt-4 max-w-xl font-outfit text-base text-white/88">April 2027, DDP Seoul. <span className="text-[#FABF13]">KATALYZE</span> — 72시간의 문화 속도를 직접 경험하세요.</p>
           <div className="mt-8">
             <PillButton href="/tickets">티켓 구매하기</PillButton>
           </div>

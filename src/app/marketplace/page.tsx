@@ -31,8 +31,8 @@ export default function MarketplacePage() {
     <div>
       <PageHero
         title="120+ BRANDS. ONE WEEKEND."
-        eyebrow="Marketplace · 마켓플레이스"
-        description="K-컬처를 이끄는 브랜드들이 한 공간에 모인다. 한정판, 첫 공개, 독점 협업."
+        eyebrow="KATALYZE MARKETPLACE · 마켓플레이스"
+        description="K-컬처를 이끄는 브랜드들이 KATALYZE 한 공간에 모인다. 한정판, 첫 공개, 독점 협업."
         image="/images/zone_drop.jpg"
       />
 
@@ -122,9 +122,9 @@ export default function MarketplacePage() {
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Brand Application</p>
-            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">브랜드로 참가하기</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">브랜드로 <span className="text-[#FABF13]">KATALYZE</span> 참가하기</h2>
             <p className="mt-4 max-w-xl font-outfit text-base text-white/88">
-              KATALYZE 마켓플레이스에 참가할 브랜드를 모집합니다. 이메일을 등록하고 신청서를 받아보세요.
+              <span className="text-[#FABF13] font-semibold">KATALYZE</span> 마켓플레이스에 참가할 브랜드를 모집합니다. 이메일을 등록하고 신청서를 받아보세요.
             </p>
             {!submitted ? (
               <div className="mt-8 flex w-full max-w-md gap-0">

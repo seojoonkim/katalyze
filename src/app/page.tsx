@@ -285,7 +285,8 @@ export default function Home() {
       {/* ═══════ PARTNER TRUST BADGE ═══════ */}
       <section className="bg-muk border-t border-white/10 py-10 md:py-12">
         <div className="container-shell text-center">
-          <p className="text-sm font-rubik uppercase tracking-[0.35em] text-white/90 mb-6 font-bold">Backed by</p>
+          <p className="text-sm font-rubik uppercase tracking-[0.35em] text-white/90 mb-2 font-bold">Backed by</p>
+          <p className="text-xs font-rubik tracking-[0.2em] text-[#FABF13]/70 mb-5">Partners who believe in <span className="text-[#FABF13]">KATALYZE</span></p>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-2xl tracking-[0.14em] text-white/90 md:text-3xl font-bold">
             <span>HASHED</span>
             <span>SAMSUNG</span>
@@ -303,7 +304,7 @@ export default function Home() {
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Audience Selector</p>
-            <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-[2.4rem] whitespace-nowrap" style={{fontWeight:800}}>HOW WILL YOU SHOW UP?</h2>
+            <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-[2.4rem] whitespace-nowrap" style={{fontWeight:800}}>HOW WILL YOU SHOW UP AT <span className="text-[#FABF13]">KATALYZE</span>?</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
             {/* 첫 번째 카드: 크게 */}

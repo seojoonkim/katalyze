@@ -49,8 +49,8 @@ export default function B2BPage() {
     <div>
       <PageHero
         title="KATALYZE CONNECT"
-        eyebrow="B2B · 비즈니스"
-        description="한국 최고의 브랜드와 글로벌 바이어를 연결하는 큐레이티드 B2B 플랫폼."
+        eyebrow="KATALYZE B2B · 비즈니스"
+        description="한국 최고의 브랜드와 글로벌 바이어를 KATALYZE가 연결하는 큐레이티드 B2B 플랫폼."
         image="/images/business_meet.jpg"
       />
 
@@ -58,8 +58,8 @@ export default function B2BPage() {
       <AnimatedSection className="section-pad">
         <div className="container-shell grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">KATALYZE CONNECT</p>
-            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl leading-tight">비즈니스가<br />일어나는 공간</h2>
+            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">KATALYZE CONNECT — 비즈니스 허브</p>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl leading-tight"><span className="text-[#FABF13]">KATALYZE</span>에서<br />비즈니스가 일어난다</h2>
             <p className="mt-6 font-outfit text-base leading-8 text-white/92">
               KATALYZE CONNECT는 K-컬처 브랜드와 글로벌 바이어를 연결하는 B2B 플랫폼입니다.
               페스티벌의 열기 속에서, 진짜 비즈니스가 만들어지는 곳.
