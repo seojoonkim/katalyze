@@ -11,8 +11,8 @@ const impactStats = [
 
 const partnerTiers = [
   {
-    tier: "FOUNDING PARTNER",
-    ko: "파운딩 파트너",
+    tier: "PRESENTING PARTNER",
+    ko: "프레젠팅 파트너",
     price: "10억원+",
     color: "#FABF13",
     highlight: false,
@@ -20,7 +20,7 @@ const partnerTiers = [
     benefits: [
       "전용 존 소유권 (최대 500㎡)",
       "메인 스테이지 브랜딩",
-      "파운딩 파트너 전용 VIP 라운지",
+      "프레젠팅 파트너 전용 VIP 라운지",
       "출연진 미트앤그리트 우선 접근",
       "공식 미디어 전면 노출",
       "KATALYZE CONNECT 프리미엄 액세스",
