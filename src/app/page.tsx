@@ -138,15 +138,14 @@ function backgroundStyle(image: string, fallback: string, overlay?: string) {
 export default function Home() {
   return (
     <div className="bg-[#050505] text-[var(--foreground)]">
-      <section className="relative flex min-h-screen items-end overflow-hidden">
+      <section className="relative flex min-h-screen items-end overflow-hidden" style={{ backgroundColor: '#0a0020' }}>
         <video
           autoPlay
           muted
           loop
           playsInline
-          poster="/images/hero_main.jpg"
           className="absolute inset-0 h-full w-full object-cover"
-          style={{ zIndex: 0 }}
+          style={{ zIndex: 0, opacity: 1 }}
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
