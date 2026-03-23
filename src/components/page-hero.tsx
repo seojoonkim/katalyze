@@ -12,7 +12,7 @@ export function PageHero({ title, eyebrow, description, image }: { title: string
       <div className="container-shell relative pb-20 md:pb-24 pt-8">
         <p className="mb-4 text-sm uppercase tracking-[0.5em] text-[#FABF13]">{eyebrow}</p>
         <h1 className="max-w-5xl font-rubik text-5xl uppercase leading-[0.9] text-white md:text-7xl lg:text-8xl">{title}</h1>
-        <p className="mt-6 max-w-2xl font-outfit text-lg font-light leading-8 text-white/80">{description}</p>
+        <p className="mt-6 max-w-2xl font-outfit text-lg font-light leading-8 text-white/90">{description}</p>
       </div>
     </section>
   );

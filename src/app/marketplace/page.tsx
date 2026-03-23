@@ -74,7 +74,7 @@ export default function MarketplacePage() {
         <div className="flex">
           <div className="flex animate-marquee whitespace-nowrap">
             {[...brandLogos, ...brandLogos].map((logo, i) => (
-              <span key={i} className="mx-8 font-rubik text-sm uppercase tracking-[0.4em] text-white/70">
+              <span key={i} className="mx-8 font-rubik text-sm uppercase tracking-[0.4em] text-white/92">
                 {logo} <span className="text-[#FABF13]">·</span>
               </span>
             ))}
@@ -102,7 +102,7 @@ export default function MarketplacePage() {
                   <p className="font-outfit text-sm uppercase tracking-[0.2em] text-[#FABF13]">{drop.date}</p>
                 </div>
                 <div className="flex-1">
-                  <p className="font-outfit text-base font-semibold text-white/70 italic">{drop.brand}</p>
+                  <p className="font-outfit text-base font-semibold text-white/92 italic">{drop.brand}</p>
                   <p className="font-outfit text-base text-white/55">{drop.category}</p>
                 </div>
                 <div>
@@ -113,7 +113,7 @@ export default function MarketplacePage() {
               </div>
             ))}
           </div>
-          <p className="mt-6 font-outfit text-base text-white/70">* 브랜드 및 드롭 정보는 추후 발표 예정. 사전 알림을 신청하세요.</p>
+          <p className="mt-6 font-outfit text-base text-white/92">* 브랜드 및 드롭 정보는 추후 발표 예정. 사전 알림을 신청하세요.</p>
         </div>
       </AnimatedSection>
 
@@ -123,7 +123,7 @@ export default function MarketplacePage() {
           <div className="flex flex-col items-center text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Brand Application</p>
             <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">브랜드로 참가하기</h2>
-            <p className="mt-4 max-w-xl font-outfit text-base text-white/75">
+            <p className="mt-4 max-w-xl font-outfit text-base text-white/88">
               KATALYZE 마켓플레이스에 참가할 브랜드를 모집합니다. 이메일을 등록하고 신청서를 받아보세요.
             </p>
             {!submitted ? (

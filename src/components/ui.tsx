@@ -9,7 +9,7 @@ export function SectionHeading({ eyebrow, title, description }: { eyebrow: strin
     <div className="mb-10 max-w-2xl">
       <p className="mb-3 text-sm uppercase tracking-[0.35em] text-[#FABF13]">{eyebrow}</p>
       <h2 className="text-4xl font-rubik uppercase leading-none text-white md:text-6xl">{title}</h2>
-      {description ? <p className="mt-4 text-base leading-7 text-white/85 md:text-lg">{description}</p> : null}
+      {description ? <p className="mt-4 text-base leading-7 text-white/92 md:text-lg">{description}</p> : null}
     </div>
   );
 }
@@ -22,7 +22,7 @@ export function PillButton({ href, children, variant = "primary" }: { href: stri
         "inline-flex items-center justify-center rounded-none px-5 py-3 text-base font-semibold uppercase tracking-[0.16em] transition",
         variant === "primary" && "bg-[#FF0A73] text-white hover:bg-[#FF0A73]/90",
         variant === "secondary" && "border border-white/15 bg-white/5 text-white hover:border-[#FF0A73] hover:text-[#FF0A73]",
-        variant === "ghost" && "text-white/85 hover:text-white",
+        variant === "ghost" && "text-white/92 hover:text-white",
       )}
     >
       {children}
@@ -40,7 +40,7 @@ export function ImageCard({ image, title, subtitle, description, className = "" 
       <div className="p-6">
         {subtitle ? <p className="text-sm uppercase tracking-[0.24em] text-[#FABF13]">{subtitle}</p> : null}
         <h3 className="mt-2 text-2xl font-bold uppercase text-white">{title}</h3>
-        {description ? <p className="mt-3 text-base leading-7 text-white/85">{description}</p> : null}
+        {description ? <p className="mt-3 text-base leading-7 text-white/92">{description}</p> : null}
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ export function AccordionFAQ({ items }: { items: { q: string; a: string }[] }) {
             <span className="ml-4 text-[#FABF13] text-xl">{open === i ? "−" : "+"}</span>
           </button>
           {open === i && (
-            <p className="mt-3 font-outfit text-base leading-7 text-white/85">{item.a}</p>
+            <p className="mt-3 font-outfit text-base leading-7 text-white/92">{item.a}</p>
           )}
         </div>
       ))}
@@ -76,7 +76,7 @@ export function StatCard({ value, suffix, label, ko }: { value: string; suffix?:
       <p className="font-rubik text-5xl text-white md:text-7xl">
         {value}<span className="text-3xl text-[#FABF13] md:text-5xl">{suffix}</span>
       </p>
-      <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{label}</p>
+      <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/88">{label}</p>
       {ko && <p className="mt-1 font-outfit text-base text-[#5CBFB0]">{ko}</p>}
     </div>
   )
@@ -96,13 +96,13 @@ export function TierCard({ tier, ko, price, benefits, highlight, badge, color, c
       )}
       <div className="border-b p-6" style={{ borderColor: color + '33' }}>
         <p style={{ color }} className="text-sm uppercase tracking-[0.4em]">{tier}</p>
-        <p className="mt-1 font-outfit text-base text-white/80">{ko}</p>
+        <p className="mt-1 font-outfit text-base text-white/90">{ko}</p>
         <p className="mt-4 font-rubik text-4xl text-white">{price}</p>
       </div>
       <div className="flex flex-1 flex-col p-6">
         <ul className="flex-1 space-y-3">
           {benefits.map((b: string) => (
-            <li key={b} className="flex items-start gap-2 font-outfit text-base text-white/85">
+            <li key={b} className="flex items-start gap-2 font-outfit text-base text-white/92">
               <span style={{ color }} className="mt-0.5 text-base">✓</span>
               {b}
             </li>

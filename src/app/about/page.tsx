@@ -49,7 +49,7 @@ export default function AboutPage() {
               <span className="text-[#FABF13]">비즈니스가</span><br />
               되는 곳.
             </blockquote>
-            <p className="mt-8 font-outfit text-lg leading-8 text-white/75 max-w-2xl mx-auto">
+            <p className="mt-8 font-outfit text-lg leading-8 text-white/88 max-w-2xl mx-auto">
               KATALYZE는 서울 DDP에서 열리는 대한민국 최초의 컬처-커머스 융합 페스티벌입니다.
               K-패션, K-뷰티, 스트릿컬처, 음악, 그리고 글로벌 비즈니스가 72시간 안에 충돌하고 융합하는 공간.
             </p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
                 <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>
                   {stat.value}<span className="text-4xl text-[#FABF13] md:text-5xl">{stat.suffix}</span>
                 </p>
-                <p className="mt-3 font-rubik text-sm uppercase tracking-[0.3em] text-white/80 font-semibold">{stat.label}</p>
+                <p className="mt-3 font-rubik text-sm uppercase tracking-[0.3em] text-white/90 font-semibold">{stat.label}</p>
                 <p className="mt-1 font-outfit text-base text-[#5CBFB0]">{stat.ko}</p>
               </div>
             ))}
@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div
             className="h-[400px] w-full"
             style={{
-              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%), url('/images/seoul_night.jpg')`,
+              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%), url('/images/seoul_night.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -90,18 +90,18 @@ export default function AboutPage() {
             <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl leading-tight">
               DDP<br />동대문디자인플라자
             </h2>
-            <p className="mt-6 font-outfit text-base leading-8 text-white/85">
+            <p className="mt-6 font-outfit text-base leading-8 text-white/92">
               자하 하디드가 설계한 86,574㎡의 건축적 아이콘. 서울의 창의적 야망을 형상화한 공간.
               메시지 자체가 브랜드가 되는 곳 — KATALYZE의 무대.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div>
                 <p className="font-rubik text-3xl text-[#FABF13]">86,574㎡</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Total Floor Area</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/90">Total Floor Area</p>
               </div>
               <div>
                 <p className="font-rubik text-3xl text-[#FABF13]">5</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Connected Buildings</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/90">Connected Buildings</p>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
                 <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#FABF13]">0{i + 1}</p>
                 <h3 className="mt-3 font-rubik text-xl uppercase text-white leading-tight">{point.title}</h3>
                 <p className="mt-1 font-outfit text-base text-white/55">{point.ko}</p>
-                <p className="mt-4 font-outfit text-base leading-7 text-white/85">{point.desc}</p>
+                <p className="mt-4 font-outfit text-base leading-7 text-white/92">{point.desc}</p>
               </div>
             ))}
           </div>
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm uppercase tracking-[0.5em] text-[#FABF13]">Vision</p>
-            <p className="font-outfit text-xl leading-10 text-white/80">
+            <p className="font-outfit text-xl leading-10 text-white/90">
               ComplexCon이 미국 스트릿컬처를 세계에 알린 것처럼,<br />
               KATALYZE는 K-컬처의 상업적 파워를 세계에 증명합니다.<br />
               <span className="text-[#FABF13]">서울에서 시작되는 다음 10년의 문화 지형도.</span>
@@ -152,7 +152,7 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="flex flex-col items-center gap-6 text-center">
             <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
-            <p className="max-w-xl font-outfit text-base text-white/75">
+            <p className="max-w-xl font-outfit text-base text-white/88">
               관람객으로, 브랜드로, 파트너로 — KATALYZE와 함께할 방법을 선택하세요.
             </p>
             <div className="mt-4 flex flex-col gap-4 sm:flex-row">

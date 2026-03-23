@@ -86,7 +86,7 @@ export default function PartnersPage() {
             {impactStats.map((stat) => (
               <div key={stat.value} className="border-l-2 border-[#FABF13] pl-6">
                 <p className="font-rubik text-4xl text-white md:text-5xl">{stat.value}</p>
-                <p className="mt-2 font-outfit text-sm uppercase tracking-[0.25em] text-white/75">{stat.label}</p>
+                <p className="mt-2 font-outfit text-sm uppercase tracking-[0.25em] text-white/88">{stat.label}</p>
                 <p className="mt-1 font-outfit text-base text-[#2DD4BF]">{stat.ko}</p>
               </div>
             ))}
@@ -124,7 +124,7 @@ export default function PartnersPage() {
               </div>
             ))}
           </div>
-          <p className="mt-4 font-outfit text-base text-white/70">* 파트너사 로고는 추후 업데이트 예정.</p>
+          <p className="mt-4 font-outfit text-base text-white/92">* 파트너사 로고는 추후 업데이트 예정.</p>
         </div>
       </AnimatedSection>
 
@@ -134,7 +134,7 @@ export default function PartnersPage() {
           <div className="flex flex-col items-center text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Get in Touch</p>
             <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
-            <p className="mt-4 max-w-xl font-outfit text-base text-white/75">
+            <p className="mt-4 max-w-xl font-outfit text-base text-white/88">
               파트너십 덱을 다운로드하거나 미팅을 신청하세요. 브랜드에 맞는 최적의 파트너십을 함께 설계합니다.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">

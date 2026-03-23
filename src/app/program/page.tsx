@@ -98,7 +98,7 @@ export default function ProgramPage() {
                     <p className="text-sm uppercase tracking-[0.4em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                   </div>
                   <h3 className="font-rubik text-4xl uppercase text-white">{zone.title}</h3>
-                  <p className="mt-2 font-outfit text-base leading-6 text-white/85 max-w-sm">{zone.desc}</p>
+                  <p className="mt-2 font-outfit text-base leading-6 text-white/92 max-w-sm">{zone.desc}</p>
                   <p className="mt-1 font-outfit text-base text-white/55 italic">{zone.en}</p>
                   <div className="mt-4 flex items-baseline gap-1">
                     <span className="font-rubik text-3xl" style={{ color: zone.color }}>{zone.stat}</span>
@@ -136,7 +136,7 @@ export default function ProgramPage() {
                 className={`px-8 py-3 text-sm uppercase tracking-[0.3em] font-semibold transition border-b-2 -mb-px ${
                   activeDay === d
                     ? "border-[#FABF13] text-[#FABF13]"
-                    : "border-transparent text-white/55 hover:text-white/85"
+                    : "border-transparent text-white/55 hover:text-white/92"
                 }`}
               >
                 {d === "day1" ? "DAY 1" : "DAY 2"}
@@ -151,7 +151,7 @@ export default function ProgramPage() {
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white">{item.title}</p>
-                  <p className="font-outfit text-base text-white/80">{item.desc}</p>
+                  <p className="font-outfit text-base text-white/90">{item.desc}</p>
                 </div>
                 <div>
                   <span
@@ -178,8 +178,8 @@ export default function ProgramPage() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center justify-center border border-white/10 bg-white/[0.02] py-16 px-8">
                 <div className="mb-4 h-20 w-20 rounded-full bg-white/10 blur-sm" />
-                <p className="font-outfit text-sm uppercase tracking-[0.4em] text-white/70">Coming Soon</p>
-                <p className="mt-2 font-rubik text-2xl uppercase text-white/75">TBA</p>
+                <p className="font-outfit text-sm uppercase tracking-[0.4em] text-white/92">Coming Soon</p>
+                <p className="mt-2 font-rubik text-2xl uppercase text-white/88">TBA</p>
               </div>
             ))}
           </div>
@@ -191,7 +191,7 @@ export default function ProgramPage() {
         <div className="container-shell flex flex-col items-center text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Get Your Ticket</p>
           <h2 className="font-rubik text-4xl uppercase text-white md:text-6xl">지금 티켓 구매</h2>
-          <p className="mt-4 max-w-xl font-outfit text-base text-white/75">April 2027, DDP Seoul. 72시간의 문화 속도를 직접 경험하세요.</p>
+          <p className="mt-4 max-w-xl font-outfit text-base text-white/88">April 2027, DDP Seoul. 72시간의 문화 속도를 직접 경험하세요.</p>
           <div className="mt-8">
             <PillButton href="/tickets">티켓 구매하기</PillButton>
           </div>

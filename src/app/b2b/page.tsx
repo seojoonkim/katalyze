@@ -60,21 +60,21 @@ export default function B2BPage() {
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">KATALYZE CONNECT</p>
             <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl leading-tight">비즈니스가<br />일어나는 공간</h2>
-            <p className="mt-6 font-outfit text-base leading-8 text-white/85">
+            <p className="mt-6 font-outfit text-base leading-8 text-white/92">
               KATALYZE CONNECT는 K-컬처 브랜드와 글로벌 바이어를 연결하는 B2B 플랫폼입니다.
               페스티벌의 열기 속에서, 진짜 비즈니스가 만들어지는 곳.
             </p>
-            <p className="mt-4 font-outfit text-base leading-8 text-white/85">
+            <p className="mt-4 font-outfit text-base leading-8 text-white/92">
               AI 기반 매칭부터 프라이빗 라운지까지 — 한국 문화산업의 게이트웨이를 열어드립니다.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div className="border-l-2 border-[#FABF13] pl-4">
                 <p className="font-rubik text-3xl text-white">200+</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Participating Brands</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/90">Participating Brands</p>
               </div>
               <div className="border-l-2 border-[#FABF13] pl-4">
                 <p className="font-rubik text-3xl text-white">50+</p>
-                <p className="font-outfit text-sm uppercase tracking-widest text-white/80">Global Buyers</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/90">Global Buyers</p>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function B2BPage() {
             <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#FABF13] mb-6">Why CONNECT?</p>
             <ul className="space-y-5">
               {["단 2일 안에 한국 최고 브랜드와 직접 미팅", "검증된 바이어만 참가 — 퀄리티 보장", "AI 큐레이션으로 적합한 브랜드만 매칭", "팔로우업 지원 및 계약 협상 공간 제공"].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 font-outfit text-base leading-6 text-white/85">
+                <li key={i} className="flex items-start gap-3 font-outfit text-base leading-6 text-white/92">
                   <span className="mt-0.5 text-[#FABF13] text-base">→</span>
                   {item}
                 </li>
@@ -102,7 +102,7 @@ export default function B2BPage() {
                 <p className="font-rubik text-5xl" style={{ color: svc.color + "55" }}>{svc.number}</p>
                 <p className="mt-4 font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: svc.color }}>{svc.ko}</p>
                 <h3 className="mt-1 font-rubik text-xl uppercase text-white">{svc.title}</h3>
-                <p className="mt-4 font-outfit text-base leading-7 text-white/85">{svc.desc}</p>
+                <p className="mt-4 font-outfit text-base leading-7 text-white/92">{svc.desc}</p>
                 <div className="mt-6 border-t border-white/10 pt-4">
                   <p className="font-outfit text-base text-white/55">{svc.stats}</p>
                 </div>
@@ -121,7 +121,7 @@ export default function B2BPage() {
               <div className="space-y-4">
                 <div className="grid gap-4 md:grid-cols-2">
                   <div>
-                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">이름 *</label>
+                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/90">이름 *</label>
                     <input
                       type="text"
                       value={form.name}
@@ -131,7 +131,7 @@ export default function B2BPage() {
                     />
                   </div>
                   <div>
-                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">회사 *</label>
+                    <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/90">회사 *</label>
                     <input
                       type="text"
                       value={form.company}
@@ -142,7 +142,7 @@ export default function B2BPage() {
                   </div>
                 </div>
                 <div>
-                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">이메일 *</label>
+                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/90">이메일 *</label>
                   <input
                     type="email"
                     value={form.email}
@@ -152,7 +152,7 @@ export default function B2BPage() {
                   />
                 </div>
                 <div>
-                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/80">관심 카테고리</label>
+                  <label className="mb-2 block font-outfit text-sm uppercase tracking-[0.25em] text-white/90">관심 카테고리</label>
                   <select
                     value={form.category}
                     onChange={(e) => setForm({ ...form, category: e.target.value })}
@@ -172,7 +172,7 @@ export default function B2BPage() {
             ) : (
               <div className="border border-[#FABF13]/30 bg-[#FABF13]/5 p-8 text-center">
                 <p className="font-rubik text-2xl text-white">신청이 접수되었습니다</p>
-                <p className="mt-2 font-outfit text-base text-white/75">검토 후 3영업일 내 이메일로 연락드립니다.</p>
+                <p className="mt-2 font-outfit text-base text-white/88">검토 후 3영업일 내 이메일로 연락드립니다.</p>
               </div>
             )}
           </div>

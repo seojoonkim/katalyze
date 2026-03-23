@@ -28,11 +28,11 @@ export function SiteHeader() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "border-b border-white/10 bg-[rgba(13,13,13,0.95)] backdrop-blur-xl" : "bg-transparent"}`} style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       <div className="container-shell flex h-16 items-center justify-between gap-4 py-2 md:h-20 md:py-4">
-        <Link href="/" className="font-rubik text-sm tracking-[0.06em] text-[#FABF13] md:text-base md:tracking-[0.08em] uppercase transition-all duration-300 hover:text-white/80" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
+        <Link href="/" className="font-rubik text-sm tracking-[0.06em] text-[#FABF13] md:text-base md:tracking-[0.08em] uppercase transition-all duration-300 hover:text-white/90" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
           KATALYZE
         </Link>
 
-        <nav className="hidden items-center gap-1 text-sm uppercase tracking-[0.18em] text-white/80 md:flex relative">
+        <nav className="hidden items-center gap-1 text-sm uppercase tracking-[0.18em] text-white/90 md:flex relative">
           {navItemsWithImages.map((item) => (
             <div
               key={item.href}
@@ -95,7 +95,7 @@ export function SiteHeader() {
 
       {open && (
         <div className="border-t border-white/10 bg-[rgba(13,13,13,0.97)] py-4 backdrop-blur-xl md:hidden">
-          <div className="flex flex-col gap-4 text-sm uppercase tracking-[0.18em] text-white/80">
+          <div className="flex flex-col gap-4 text-sm uppercase tracking-[0.18em] text-white/90">
             {navItemsWithImages.map((item) => (
               <div key={item.href}>
                 <Link 

@@ -7,13 +7,13 @@ export function SiteFooter() {
       <div className="container-shell grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <p className="text-4xl tracking-[0.04em] text-[#FABF13]" style={{fontFamily:"var(--font-rubik),sans-serif", fontWeight:700}}>KATALYZE</p>
-          <p className="mt-4 max-w-md text-base leading-7 text-white/85">
+          <p className="mt-4 max-w-md text-base leading-7 text-white/92">
             Where culture drops, deals close, and the world shows up. A Seoul-born festival platform for fans, brands, buyers, and builders.
           </p>
         </div>
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.24em] text-[#FABF13]">Navigate</p>
-          <div className="grid gap-3 text-base text-white/85">
+          <div className="grid gap-3 text-base text-white/92">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 {item.label}
