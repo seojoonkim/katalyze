@@ -3,7 +3,7 @@ export function PageHero({ title, eyebrow, description, image }: { title: string
     <section
       className="relative overflow-hidden min-h-[65vh] md:min-h-[70vh] flex items-end pt-28"
       style={{
-        backgroundImage: `linear-gradient(180deg, rgba(26,26,31,0.25) 0%, rgba(26,26,31,0.55) 50%, rgba(26,26,31,0.92) 100%), url('${image}')`,
+        backgroundImage: `linear-gradient(180deg, rgba(26,26,31,0.55) 0%, rgba(26,26,31,0.70) 50%, rgba(26,26,31,0.95) 100%), url('${image}')`,
         backgroundSize: "100% 100%, cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
