@@ -28,7 +28,7 @@ const audiences = [
     eyebrow: "FOR BRANDS",
     tag: "브랜드",
     tagClass: "font-noto-kr",
-    title: "50,000 people. 72 hours. Your brand's Seoul chapter.",
+    title: "50K people. 72h. Your Seoul chapter.",
     description:
       "한정판 드롭, 몰입형 부스, 파운더 토크, 실시간 전환 — 대한민국 최대 컬처 커머스 무대에서 브랜드의 다음 챕터를 여세요.",
     href: "/partners",
@@ -302,7 +302,7 @@ export default function Home() {
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Audience Selector</p>
-            <h2 className="mt-4 font-rubik text-4xl tracking-[0.02em] text-white md:text-5xl lg:text-[3.6rem]" style={{fontWeight:800}}>HOW WILL YOU SHOW UP?</h2>
+            <h2 className="mt-4 font-rubik text-3xl tracking-[0.01em] text-white md:text-4xl lg:text-[2.8rem]" style={{fontWeight:800}}>HOW WILL YOU SHOW UP?</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
             {/* 첫 번째 카드: 크게 */}
