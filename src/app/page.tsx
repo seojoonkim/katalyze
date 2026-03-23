@@ -253,8 +253,8 @@ export default function Home() {
       {/* ═══════ NUMBERS — 임팩트 카운터 ═══════ */}
       <section className="py-20 border-y border-white/10 bg-muk">
         <div className="container-shell">
-          <p className="mb-10 font-rubik text-[clamp(2.5rem,5.5vw,4.5rem)] tracking-tight text-white" style={{fontWeight:900}}>
-            THE NUMBERS<br/><span className="text-[#FABF13]">DON&apos;T LIE.</span>
+          <p className="mb-6 font-rubik text-[clamp(1.5rem,3vw,2.8rem)] tracking-tight text-white" style={{fontWeight:900}}>
+            THE NUMBERS <span className="text-[#FABF13]">DON&apos;T LIE.</span>
           </p>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div>
