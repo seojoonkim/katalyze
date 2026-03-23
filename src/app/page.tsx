@@ -180,7 +180,7 @@ export default function Home() {
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/92 md:text-2xl">
-              Global brands. Seoul&apos;s energy.<br/>72 hours that <em>change</em> everything.
+              Global brands. Seoul&apos;s energy.<br/>72 hours that <em>katalyze</em> everything.
             </p>
             <p className="mt-2 text-base font-noto-kr tracking-[0.1em] text-[#00D4B8]">
               세계의 브랜드, 서울의 에너지. 하나의 주말.

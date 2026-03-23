@@ -7,7 +7,7 @@ import { navItems } from "@/lib/site-data";
 
 const navItemsWithImages = [
   { label: "Program", href: "/program", image: "/images/concert_stage.jpg" },
-  { label: "Marketplace", href: "/marketplace", image: "/images/zone_drop.jpg" },
+  { label: "Market", href: "/marketplace", image: "/images/zone_drop.jpg" },
   { label: "Partners", href: "/partners", image: "/images/business_meet.jpg" },
   { label: "B2B", href: "/b2b", image: "/images/b2b_connect.jpg" },
   { label: "About", href: "/about", image: "/images/seoul_night.jpg" },
@@ -27,7 +27,7 @@ export function SiteHeader() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "border-b border-white/10 bg-[rgba(13,13,13,0.95)] backdrop-blur-xl" : "bg-transparent"}`} style={{ paddingTop: 'env(safe-area-inset-top)' }}>
-      <div className="container-shell flex h-16 items-center justify-between gap-4 py-2 md:h-20 md:py-4">
+      <div className="container-shell flex h-14 items-center justify-between gap-4 py-1 md:h-[72px] md:py-3">
         <Link href="/" className="font-rubik text-sm tracking-[0.06em] text-[#FABF13] md:text-base md:tracking-[0.08em] uppercase transition-all duration-300 hover:text-white/90" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
           KATALYZE
         </Link>
