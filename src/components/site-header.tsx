@@ -2,12 +2,23 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, Ticket } from "lucide-react";
+import { Menu, Ticket, ChevronDown } from "lucide-react";
 import { navItems } from "@/lib/site-data";
+
+const navItemsWithImages = [
+  { label: "About", href: "/about", image: "/images/crowd.jpg" },
+  { label: "Explore", href: "/explore", image: "/images/zone_drop.jpg" },
+  { label: "Program", href: "/program", image: "/images/zone_stage.jpg" },
+  { label: "Marketplace", href: "/marketplace", image: "/images/zone_lab.jpg" },
+  { label: "Partners", href: "/partners", image: "/images/business_brands.jpg" },
+  { label: "B2B", href: "/b2b", image: "/images/business_brands.jpg" },
+  { label: "Tickets", href: "/tickets", image: "/images/hero_main.jpg" },
+];
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -23,11 +34,49 @@ export function SiteHeader() {
           KATALYZE
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm uppercase tracking-[0.18em] text-white/82 md:flex">
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="transition hover:text-[#D4AF37]">
-              {item.label}
-            </Link>
+        <nav className="hidden items-center gap-1 text-sm uppercase tracking-[0.18em] text-white/82 md:flex relative">
+          {navItemsWithImages.map((item) => (
+            <div
+              key={item.href}
+              className="relative group"
+              onMouseEnter={() => setHoveredItem(item.href)}
+              onMouseLeave={() => setHoveredItem(null)}
+            >
+              <Link
+                href={item.href}
+                className="px-3 py-2 transition hover:text-[#D4AF37] flex items-center gap-1"
+              >
+                {item.label}
+                {item.href !== "/tickets" && (
+                  <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
+                )}
+              </Link>
+
+              {/* Dropdown Menu */}
+              {item.href !== "/tickets" && (
+                <div className="absolute left-0 top-full hidden group-hover:block pt-2 z-50">
+                  <div className="bg-[rgba(13,13,13,0.98)] border border-white/10 backdrop-blur-xl rounded-lg overflow-hidden shadow-2xl w-56">
+                    {/* Preview Image */}
+                    <div className="relative h-32 overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.label}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Link */}
+                    <div className="p-4">
+                      <Link
+                        href={item.href}
+                        className="block text-center font-semibold text-[#D4AF37] hover:text-white transition text-xs uppercase tracking-wider"
+                      >
+                        Explore {item.label}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </nav>
 
@@ -49,10 +98,25 @@ export function SiteHeader() {
       {open && (
         <div className="border-t border-white/10 bg-[rgba(13,13,13,0.97)] px-4 py-4 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-4 text-sm uppercase tracking-[0.18em] text-white/80">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>
-                {item.label}
-              </Link>
+            {navItemsWithImages.map((item) => (
+              <div key={item.href}>
+                <Link 
+                  href={item.href} 
+                  onClick={() => setOpen(false)}
+                  className="block pb-3"
+                >
+                  {item.label}
+                </Link>
+                {item.href !== "/tickets" && (
+                  <div className="relative h-20 overflow-hidden rounded mb-3">
+                    <img
+                      src={item.image}
+                      alt={item.label}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+              </div>
             ))}
             <Link
               href="/tickets"
