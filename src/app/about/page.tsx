@@ -63,8 +63,8 @@ export default function AboutPage() {
           <div className="grid gap-10 md:grid-cols-3">
             {aboutStats.map((stat) => (
               <div key={stat.value} className="border-l-2 border-[#FABF13] pl-6">
-                <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>
-                  {stat.value}<span className="text-4xl text-[#FABF13] md:text-5xl">{stat.suffix}</span>
+                <p className="font-rubik text-5xl text-white md:text-6xl" style={{fontWeight:900}}>
+                  {stat.value}<span className="text-2xl text-[#FABF13] md:text-3xl">{stat.suffix}</span>
                 </p>
                 <p className="mt-3 font-rubik text-sm uppercase tracking-[0.3em] text-white/90 font-semibold">{stat.label}</p>
                 <p className="mt-1 font-outfit text-base text-[#00D4B8]">{stat.ko}</p>
