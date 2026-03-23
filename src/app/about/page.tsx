@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div
             className="h-[400px] w-full"
             style={{
-              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%), url('/images/seoul_night.jpg')`,
+              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.80) 100%), url('/images/seoul_night.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

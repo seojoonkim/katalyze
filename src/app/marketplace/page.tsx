@@ -49,7 +49,7 @@ export default function MarketplacePage() {
                 key={cat.title}
                 className="group relative h-[240px] overflow-hidden cursor-pointer"
                 style={{
-                  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 100%), url('${cat.image}')`,
+                  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.85) 100%), url('${cat.image}')`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

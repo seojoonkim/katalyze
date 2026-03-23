@@ -87,7 +87,7 @@ export default function ProgramPage() {
                 key={zone.id}
                 className="group relative h-[400px] overflow-hidden"
                 style={{
-                  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.75) 100%), url('${zone.image}')`,
+                  backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.85) 100%), url('${zone.image}')`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

@@ -3,7 +3,7 @@ import { navItems } from "@/lib/site-data";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 bg-black/60 py-12">
+    <footer className="border-t border-white/10 bg-black/75 py-12">
       <div className="container-shell grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <p className="text-4xl tracking-[0.04em] text-[#FABF13]" style={{fontFamily:"var(--font-rubik),sans-serif", fontWeight:700}}>KATALYZE</p>

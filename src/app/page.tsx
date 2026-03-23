@@ -21,7 +21,7 @@ const audiences = [
     cta: "Explore visitor passes",
     image: "/images/audience_visitors.jpg",
     fallback: "linear-gradient(135deg, #DC1E5A, #8220DC)",
-    overlay: "linear-gradient(180deg, rgba(220,30,90,0.24) 0%, rgba(130,32,220,0.18) 42%, rgba(0,0,0,0.72) 100%)",
+    overlay: "linear-gradient(180deg, rgba(220,30,90,0.24) 0%, rgba(130,32,220,0.18) 42%, rgba(0,0,0,0.85) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(220,30,90,0.45)]",
   },
   {
@@ -35,7 +35,7 @@ const audiences = [
     cta: "Partner with us",
     image: "/images/audience_brands.jpg",
     fallback: "linear-gradient(135deg, #FABF13, #A67C00)",
-    overlay: "linear-gradient(180deg, rgba(212,175,55,0.22) 0%, rgba(200,160,30,0.14) 40%, rgba(0,0,0,0.72) 100%)",
+    overlay: "linear-gradient(180deg, rgba(212,175,55,0.22) 0%, rgba(200,160,30,0.14) 40%, rgba(0,0,0,0.85) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(212,175,55,0.45)]",
   },
   {
@@ -49,7 +49,7 @@ const audiences = [
     cta: "Request B2B access",
     image: "/images/audience_buyers.jpg",
     fallback: "linear-gradient(135deg, #00C9A7, #1B2A4A)",
-    overlay: "linear-gradient(180deg, rgba(0,201,167,0.2) 0%, rgba(27,42,74,0.18) 42%, rgba(0,0,0,0.74) 100%)",
+    overlay: "linear-gradient(180deg, rgba(0,201,167,0.2) 0%, rgba(27,42,74,0.18) 42%, rgba(0,0,0,0.85) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(0,201,167,0.45)]",
   },
 ];
@@ -176,7 +176,7 @@ export default function Home() {
             <p className="text-sm font-rubik tracking-[0.3em] uppercase text-[#FABF13] pl-[0.04em] font-bold">
               SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
-            <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.01em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
+            <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.01em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.65)]" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/92 md:text-2xl">
@@ -382,7 +382,7 @@ export default function Home() {
                     backgroundPosition: 'center',
                   }}
                 />
-                <div className="absolute inset-0 bg-black/30" />
+                <div className="absolute inset-0 bg-black/45" />
               </div>
               {/* 텍스트: 40% */}
               <div className="relative w-full md:w-2/5 flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 bg-muk overflow-hidden">
@@ -470,7 +470,7 @@ export default function Home() {
             style={backgroundStyle(
               "/images/business_brands.jpg",
               "linear-gradient(135deg, #1a1000, #2a1800)",
-              "linear-gradient(180deg, rgba(212,175,55,0.18) 0%, rgba(0,0,0,0.78) 100%), linear-gradient(135deg, rgba(212,175,55,0.40), transparent 55%)"
+              "linear-gradient(180deg, rgba(212,175,55,0.18) 0%, rgba(0,0,0,0.85) 100%), linear-gradient(135deg, rgba(212,175,55,0.40), transparent 55%)"
             )}
           >
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
@@ -491,7 +491,7 @@ export default function Home() {
             style={backgroundStyle(
               "/images/audience_buyers.jpg",
               "linear-gradient(135deg, #001a10, #001a1a)",
-              "linear-gradient(180deg, rgba(0,201,167,0.18) 0%, rgba(0,0,0,0.78) 100%), linear-gradient(135deg, rgba(0,201,167,0.32), transparent 58%)"
+              "linear-gradient(180deg, rgba(0,201,167,0.18) 0%, rgba(0,0,0,0.85) 100%), linear-gradient(135deg, rgba(0,201,167,0.32), transparent 58%)"
             )}
           >
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
@@ -517,11 +517,11 @@ export default function Home() {
             style={backgroundStyle(
               "/images/venue_ddp.jpg",
               "linear-gradient(135deg, #1B2A4A, #0D0D10)",
-              "linear-gradient(180deg, rgba(27,42,74,0.12) 0%, rgba(0,0,0,0.76) 100%), radial-gradient(circle at top right, rgba(212,175,55,0.22), transparent 28%)"
+              "linear-gradient(180deg, rgba(27,42,74,0.12) 0%, rgba(0,0,0,0.85) 100%), radial-gradient(circle at top right, rgba(212,175,55,0.22), transparent 28%)"
             )}
           >
             <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
-              <div className="inline-flex w-fit items-center gap-2 rounded-none border border-white/20 bg-black/20 px-4 py-2 text-sm uppercase tracking-[0.26em] text-white/92 backdrop-blur-sm">
+              <div className="inline-flex w-fit items-center gap-2 rounded-none border border-white/20 bg-black/35 px-4 py-2 text-sm uppercase tracking-[0.26em] text-white/92 backdrop-blur-sm">
                 <span className="h-3.5 w-3.5 text-[#FABF13] inline-flex"><IconMapPin /></span> SEOUL · DDP · APRIL 2027
               </div>
               <h2 className="mt-6 max-w-4xl font-rubik text-5xl leading-[0.9] text-white md:text-7xl" style={{fontWeight:900}}>THE CITY. THE ICON.<br className="hidden md:block"/> THE MOMENT.</h2>
@@ -542,10 +542,10 @@ export default function Home() {
             style={backgroundStyle(
               "/images/final_cta.jpg",
               "linear-gradient(135deg,#FF0A73_0%,#B80050_100%)",
-              "linear-gradient(180deg, rgba(212,175,55,0.18) 0%, rgba(0,0,0,0.28) 100%)"
+              "linear-gradient(180deg, rgba(212,175,55,0.18) 0%, rgba(0,0,0,0.48) 100%)"
             )}
           >
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-black/35" />
             <div className="relative z-10">
               <p className="text-sm font-rubik uppercase tracking-[0.35em] text-white/90 font-bold">APRIL 2027 · <span className="font-noto-kr">서울 DDP</span></p>
               <h2 className="mt-4 font-rubik text-7xl tracking-tight text-white md:text-[10rem] leading-[0.85]" style={{fontFamily:"var(--font-rubik),sans-serif", fontWeight:900}}>THE WORLD IS COMING TO SEOUL.<br/><span className="text-[#FABF13]">ARE YOU?</span></h2>
