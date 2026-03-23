@@ -134,19 +134,19 @@ function backgroundStyle(image: string, fallback: string, overlay?: string) {
     position: "relative",
   };
   if (image) {
-    const layers: string[] = [];
-    const sizes: string[] = [];
-    layers.push(`url('${image}')`);
-    sizes.push("cover");
-    if (overlay) { layers.push(overlay); sizes.push("100% 100%"); }
-    layers.push(fallback);
-    sizes.push("100% 100%");
-    style.backgroundImage = layers.join(", ");
-    style.backgroundSize = sizes.join(", ");
+    // overlay (gradient) on top, image below — CSS layers: first = topmost
+    if (overlay) {
+      style.backgroundImage = `${overlay}, url('${image}')`;
+      style.backgroundSize = "100% 100%, cover";
+    } else {
+      style.backgroundImage = `url('${image}')`;
+      style.backgroundSize = "cover";
+    }
     style.backgroundPosition = "center";
     style.backgroundRepeat = "no-repeat";
   } else {
     style.backgroundImage = overlay ? `${overlay}, ${fallback}` : fallback;
+    style.backgroundSize = "100% 100%";
   }
   return style;
 }
