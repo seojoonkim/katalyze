@@ -28,7 +28,7 @@ export function SiteHeader() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "border-b border-white/10 bg-[rgba(13,13,13,0.95)] backdrop-blur-xl" : "bg-transparent"}`} style={{ paddingTop: 'env(safe-area-inset-top)' }}>
-      <div className="container-shell flex h-16 items-center justify-between gap-4 px-4 py-2 md:h-20 md:py-4">
+      <div className="container-shell flex h-16 items-center justify-between gap-4 py-2 md:h-20 md:py-4">
         <Link href="/" className="font-bebas text-sm tracking-[0.5em] text-[#F0B429] font-light md:text-lg md:tracking-[0.6em] uppercase transition-all duration-300 hover:text-white/80">
           KATALYZE
         </Link>
@@ -95,7 +95,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-[rgba(13,13,13,0.97)] px-4 py-4 backdrop-blur-xl md:hidden">
+        <div className="border-t border-white/10 bg-[rgba(13,13,13,0.97)] py-4 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-4 text-sm uppercase tracking-[0.18em] text-white/80">
             {navItemsWithImages.map((item) => (
               <div key={item.href}>
