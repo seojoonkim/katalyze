@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Inter } from "next/font/google";
+import { Bebas_Neue, Inter, Anton } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -15,6 +15,12 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const anton = Anton({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-anton",
+});
+
 export const metadata: Metadata = {
   title: "Katalyze Festival",
   description: "Where Culture Drops, Deals Close, and the World Shows Up.",
@@ -23,7 +29,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.variable} ${inter.variable} font-body`}>
+      <body className={`${bebasNeue.variable} ${inter.variable} ${anton.variable} font-body`}>
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

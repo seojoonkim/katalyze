@@ -15,6 +15,7 @@ export default {
       },
       fontFamily: {
         display: ["var(--font-bebas)", "Impact", "sans-serif"],
+        impact: ["var(--font-anton)", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
       },
     },

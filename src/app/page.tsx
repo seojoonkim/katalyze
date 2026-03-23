@@ -159,7 +159,7 @@ export default function Home() {
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
           <div className="max-w-5xl">
             <p className="text-xs font-medium uppercase tracking-[0.45em] text-[#D4AF37] md:text-sm">SEOUL DDP · APRIL 2027</p>
-            <h1 className="mt-5 font-display text-[clamp(5.25rem,20vw,10rem)] leading-[0.88] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)] md:text-[clamp(7rem,18vw,12rem)]">
+            <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]">
               KATALYZE
             </h1>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-white/88 md:text-2xl md:leading-10">
@@ -185,8 +185,8 @@ export default function Home() {
       <section className="bg-[#0D0D0D] py-20 md:py-28">
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
-            <p className="text-xs uppercase tracking-[0.38em] text-[#D4AF37]">Audience Selector</p>
-            <h2 className="mt-4 font-display text-5xl tracking-[0.06em] text-white md:text-7xl">CHOOSE YOUR ENTRY POINT</h2>
+            <p className="text-xs uppercase tracking-[0.5em] text-[#D4AF37]">Audience Selector</p>
+            <h2 className="mt-4 font-impact text-6xl tracking-[0.07em] text-white md:text-8xl">CHOOSE YOUR ENTRY POINT</h2>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
             {audiences.map((card) => (
@@ -239,8 +239,8 @@ export default function Home() {
       <section className="bg-[#0A0A0A] py-20 md:py-28">
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
-            <p className="text-xs uppercase tracking-[0.38em] text-[#D4AF37]">4 Zones</p>
-            <h2 className="mt-4 font-display text-5xl tracking-[0.06em] text-white md:text-7xl">THE WORLD OF KATALYZE</h2>
+            <p className="text-xs uppercase tracking-[0.5em] text-[#D4AF37]">4 Zones</p>
+            <h2 className="mt-4 font-impact text-6xl tracking-[0.07em] text-white md:text-8xl">THE WORLD OF KATALYZE</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {zones.map((zone) => (
@@ -265,8 +265,8 @@ export default function Home() {
         <div className="container-shell">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-xs uppercase tracking-[0.38em] text-[#D4AF37]">Program Preview</p>
-              <h2 className="mt-4 font-display text-5xl tracking-[0.06em] text-[#D4AF37] md:text-7xl">THE LINEUP</h2>
+              <p className="text-xs uppercase tracking-[0.5em] text-[#D4AF37]">Program Preview</p>
+              <h2 className="mt-4 font-impact text-6xl tracking-[0.07em] text-[#D4AF37] md:text-8xl">THE LINEUP</h2>
             </div>
             <PillButton href="/program" variant="secondary">VIEW FULL PROGRAM</PillButton>
           </div>
@@ -397,8 +397,8 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10">
-              <p className="text-xs uppercase tracking-[0.38em] text-white/80">Final Call</p>
-              <h2 className="mt-4 font-display text-6xl tracking-[0.05em] text-white md:text-8xl">DON&apos;T MISS IT.</h2>
+              <p className="text-xs uppercase tracking-[0.5em] text-white/80">Final Call</p>
+              <h2 className="mt-4 font-impact text-7xl tracking-[0.08em] text-white md:text-9xl">DON&apos;T MISS IT.</h2>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/90 md:text-lg">
                 Lock in your ticket, partnership, or buyer application now and be part of the culture-commerce event everyone will talk about after Seoul Fashion Week.
               </p>
