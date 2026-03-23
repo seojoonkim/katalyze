@@ -363,7 +363,7 @@ export default function Home() {
       {/* ═══════ THE 4 ZONES — Alternating Full-Width ═══════ */}
       <section className="bg-muk">
         <div className="container-shell py-20 md:py-28">
-          <div className="mb-10 max-w-3xl md:mb-14">
+          <div className="mb-6 max-w-3xl md:mb-10">
             <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">4 Zones</p>
             <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-4xl whitespace-nowrap" style={{fontWeight:800}}>FOUR WORLDS. ONE WEEKEND.</h2>
           </div>
