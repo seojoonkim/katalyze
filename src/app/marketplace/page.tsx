@@ -33,7 +33,7 @@ export default function MarketplacePage() {
         title="120+ BRANDS. ONE WEEKEND."
         eyebrow="KATALYZE MARKETPLACE · 마켓플레이스"
         description="K-컬처를 이끄는 브랜드들이 KATALYZE 한 공간에 모인다. 한정판, 첫 공개, 독점 협업."
-        image="/images/zone_drop.jpg"
+        image="/images/marketplace_hero.jpg"
       />
 
       {/* 카테고리 그리드 */}
