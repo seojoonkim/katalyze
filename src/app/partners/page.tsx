@@ -13,7 +13,7 @@ const partnerTiers = [
   {
     tier: "FOUNDING PARTNER",
     ko: "파운딩 파트너",
-    price: "₩1B+",
+    price: "10억원+",
     color: "#FABF13",
     highlight: false,
     cta: "미팅 신청",
@@ -30,7 +30,7 @@ const partnerTiers = [
   {
     tier: "CULTURAL PARTNER",
     ko: "컬처럴 파트너",
-    price: "₩300M–1B",
+    price: "3억–10억원",
     color: "#C0C0C0",
     highlight: false,
     cta: "미팅 신청",
@@ -46,7 +46,7 @@ const partnerTiers = [
   {
     tier: "SUPPORTING PARTNER",
     ko: "서포팅 파트너",
-    price: "₩50M–300M",
+    price: "5천만–3억원",
     color: "#2DD4BF",
     highlight: false,
     cta: "문의하기",
