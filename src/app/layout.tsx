@@ -42,8 +42,22 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "KATALYZE — Seoul's Culture-Commerce Convergence",
-  description: "The world's brands. Seoul's energy. One weekend that changes everything. April 2027, DDP Seoul.",
+  title: "KATALYZE — Seoul's Culture-Commerce Festival | April 2027",
+  description: "Where global brands meet Seoul's energy. K-fashion, K-beauty, music, street culture and global trade at DDP Seoul. 50,000+ attendees. April 2027.",
+  openGraph: {
+    title: "KATALYZE — Seoul's Culture-Commerce Festival",
+    description: "Where global brands meet Seoul's energy. April 2027, DDP Seoul.",
+    url: "https://katalyze.live",
+    siteName: "KATALYZE",
+    type: "website",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KATALYZE — Seoul's Culture-Commerce Festival",
+    description: "Where global brands meet Seoul's energy. April 2027, DDP Seoul.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

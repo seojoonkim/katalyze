@@ -180,18 +180,16 @@ export default function Home() {
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
-              The world&apos;s brands meet Seoul&apos;s energy —<br/>and <em>katalyze</em> everything.
+              Global brands. Seoul&apos;s energy.<br/>72 hours that <em>change</em> everything.
             </p>
             <p className="mt-2 text-base font-noto-kr tracking-[0.1em] text-[#5CBFB0]">
               세계의 브랜드, 서울의 에너지. 하나의 주말.
             </p>
-            <div className="mt-8 flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
-              <div className="flex">
-                <PillButton href="/tickets">GET TICKETS</PillButton>
-              </div>
-              <div className="flex gap-3">
-                <PillButton href="/partners" variant="secondary">PARTNER WITH US</PillButton>
-                <PillButton href="/b2b" variant="secondary">B2B ACCESS</PillButton>
+            <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center">
+              <PillButton href="/tickets">CLAIM YOUR SPOT</PillButton>
+              <div className="flex gap-4 text-sm font-outfit text-white/60">
+                <a href="/partners" className="hover:text-white transition-colors">Partner with us →</a>
+                <a href="/b2b" className="hover:text-white transition-colors">B2B access →</a>
               </div>
             </div>
           </div>
@@ -222,10 +220,10 @@ export default function Home() {
       <section className="py-32 md:py-44 bg-muk">
         <div className="container-shell">
           <p className="font-rubik text-[clamp(1.8rem,4.5vw,4.2rem)] leading-[1.15] text-white max-w-5xl">
-            &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#FABF13]">It catalyzes them.&rdquo;</span>
+            &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#FABF13]">It ignites them.&rdquo;</span>
           </p>
           <p className="mt-6 font-noto-kr text-lg font-light text-[#5CBFB0] max-w-xl">
-            서울은 트렌드를 따르지 않는다. 촉발한다.
+            서울은 트렌드를 따르지 않는다. 점화한다.
           </p>
           <p className="mt-16 font-rubik text-[clamp(3rem,7vw,6rem)] font-bold leading-none text-white/10 select-none">
             CULTURE.<br/>COMMERCE.<br/>CONVERGENCE.
@@ -275,10 +273,25 @@ export default function Home() {
               <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">참가 브랜드</p>
             </div>
             <div>
-              <p className="font-rubik text-6xl text-[#FABF13] md:text-8xl">₩1</p>
+              <p className="font-rubik text-6xl text-[#FABF13] md:text-8xl">₩1조</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Est. Value</p>
-              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">조 원 경제 효과</p>
+              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">경제 효과</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════ PARTNER TRUST BADGE ═══════ */}
+      <section className="bg-muk border-t border-white/10 py-10 md:py-12">
+        <div className="container-shell text-center">
+          <p className="text-xs font-outfit uppercase tracking-[0.4em] text-white/40 mb-6">Backed by</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-xl tracking-[0.14em] text-white/30 md:text-2xl">
+            <span>SAMSUNG</span>
+            <span>CJ</span>
+            <span>MUSINSA</span>
+            <span>HYBE</span>
+            <span>KOREAN AIR</span>
+            <span>KLOOK</span>
           </div>
         </div>
       </section>
@@ -288,7 +301,7 @@ export default function Home() {
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm uppercase tracking-[0.5em] text-[#FABF13]">Audience Selector</p>
-            <h2 className="mt-4 font-rubik text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">CHOOSE YOUR ENTRY POINT</h2>
+            <h2 className="mt-4 font-rubik text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">HOW WILL YOU SHOW UP?</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
             {/* 첫 번째 카드: 크게 */}
@@ -349,7 +362,7 @@ export default function Home() {
         <div className="container-shell py-20 md:py-28">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm uppercase tracking-[0.5em] text-[#FABF13]">4 Zones</p>
-            <h2 className="mt-4 font-rubik text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">THE WORLD OF KATALYZE</h2>
+            <h2 className="mt-4 font-rubik text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">FOUR WORLDS. ONE WEEKEND.</h2>
           </div>
         </div>
         <div className="space-y-0">
@@ -533,22 +546,21 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10">
               <p className="text-sm uppercase tracking-[0.5em] text-white/80">APRIL 2027 · <span className="font-noto-kr">서울 DDP</span></p>
-              <h2 className="mt-4 font-rubik text-7xl tracking-[0.08em] text-white md:text-9xl">THE WORLD SHOWS UP IN SEOUL.</h2>
-              <p className="mt-4 font-rubik text-[clamp(1rem,2.5vw,2rem)] font-bold tracking-widest text-white/50 uppercase">
-                Are you ready to katalyze?
-              </p>
+              <h2 className="mt-4 font-rubik text-7xl tracking-[0.08em] text-white md:text-9xl">THE WORLD IS COMING TO SEOUL. ARE YOU?</h2>
               <p className="mx-auto mt-4 max-w-2xl font-noto-kr text-base leading-8 text-white/90 md:text-lg">
                 4만 명의 관객, 200+ 브랜드, 하나의 주말. 당신의 자리를 지금 확보하세요.
               </p>
               <p className="mx-auto mt-2 max-w-2xl font-outfit text-base leading-7 text-white/85">
                 40,000 attendees. 200+ brands. One weekend. Secure your place now.
               </p>
-              <div className="mt-8 flex flex-wrap justify-center gap-3 md:gap-4">
+              <div className="mt-8 flex flex-col items-center gap-4">
                 <PillButton href="/tickets">
-                  <span className="mr-2 h-4 w-4 inline-flex"><IconTicket /></span> GET TICKETS
+                  <span className="mr-2 h-4 w-4 inline-flex"><IconTicket /></span> CLAIM YOUR SPOT
                 </PillButton>
-                <PillButton href="/partners" variant="secondary">PARTNER WITH US</PillButton>
-                <PillButton href="/b2b" variant="secondary">B2B ACCESS</PillButton>
+                <div className="flex gap-4 text-sm font-outfit text-white/60">
+                  <a href="/partners" className="hover:text-white transition-colors">Partner with us →</a>
+                  <a href="/b2b" className="hover:text-white transition-colors">B2B access →</a>
+                </div>
               </div>
             </div>
           </div>
