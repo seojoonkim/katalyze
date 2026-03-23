@@ -187,9 +187,9 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center">
               <PillButton href="/tickets">CLAIM YOUR SPOT</PillButton>
-              <div className="flex gap-4 text-sm font-outfit text-white/88">
-                <a href="/partners" className="hover:text-white transition-colors">Partner with us →</a>
-                <a href="/b2b" className="hover:text-white transition-colors">B2B access →</a>
+              <div className="flex gap-3">
+                <a href="/partners" className="inline-flex items-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all" style={{fontWeight:600}}>Partner with us</a>
+                <a href="/b2b" className="inline-flex items-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all" style={{fontWeight:600}}>B2B access</a>
               </div>
             </div>
           </div>
@@ -206,9 +206,9 @@ export default function Home() {
 
       {/* ═══════ CULTURE MARQUEE — 풀블리드 선언문 ═══════ */}
       <section className="py-16 md:py-24 overflow-hidden bg-muk">
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden pointer-events-none">
           <div
-            className="whitespace-nowrap font-rubik text-[clamp(4rem,12vw,9rem)] leading-none text-white/[0.08] select-none"
+            className="whitespace-nowrap font-rubik text-[clamp(4rem,12vw,8rem)] leading-none text-white/[0.08] select-none"
             style={{ animation: 'marquee 30s linear infinite' }}
           >
             ARRIVE AS A BRAND × LEAVE AS A LEGEND × NOT A FESTIVAL — A FORCE × DDP SEOUL × APRIL 2027 × KATALYZE EVERYTHING × ARRIVE AS A BRAND × LEAVE AS A LEGEND × NOT A FESTIVAL — A FORCE × DDP SEOUL × APRIL 2027 × KATALYZE EVERYTHING ×&nbsp;
@@ -386,10 +386,10 @@ export default function Home() {
               </div>
               {/* 텍스트: 40% */}
               <div className="relative w-full md:w-2/5 flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 bg-muk overflow-hidden">
-                <p className="font-rubik text-[clamp(4rem,6vw,7rem)] font-black leading-none text-white/5 absolute bottom-4 right-4 select-none">
+                <p className="font-rubik text-[clamp(3rem,5vw,5.5rem)] font-black leading-none text-white/[0.03] pointer-events-none absolute bottom-0 right-2 select-none" style={{transform: 'translate(15%, 15%)'}}>
                   {zone.title.split(' ')[0]}
                 </p>
-                <span className="font-rubik text-7xl md:text-8xl" style={{ color: zone.color, fontWeight: 900 }}>{zone.number}</span>
+                <span className="font-rubik text-7xl md:text-8xl relative z-10" style={{ color: zone.color, fontWeight: 900 }}>{zone.number}</span>
                 <h3 className="mt-4 font-rubik text-4xl tracking-[0.05em] text-white md:text-5xl" style={{textShadow:"0 2px 16px rgba(0,0,0,0.9)", fontWeight:800}}>{zone.title}</h3>
                 <p className="mt-3 font-noto-kr text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                 <p className="mt-6 font-noto-kr text-base font-light leading-relaxed text-white/90">{zone.description}</p>
@@ -406,7 +406,7 @@ export default function Home() {
           <div className="mb-16">
             <p className="font-rubik text-sm uppercase tracking-[0.35em] text-[#FABF13] font-bold">LINEUP · <span className="font-noto-kr">라인업</span></p>
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-              <h2 className="font-rubik text-5xl tracking-[0.05em] text-white md:text-8xl" style={{fontWeight:900}}>NAMES THAT<br/>MOVE CULTURE</h2>
+              <h2 className="font-rubik text-5xl tracking-[0.05em] text-white md:text-6xl lg:text-7xl whitespace-nowrap overflow-hidden" style={{fontWeight:900}}>NAMES THAT MOVE<br className="lg:hidden"/> CULTURE</h2>
               <p className="mt-6 font-rubik text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white/92">
                 APRIL 2027 · DDP SEOUL
               </p>
