@@ -40,13 +40,13 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-xs uppercase tracking-[0.5em] text-[#D4AF37]">Manifesto</p>
+            <p className="mb-6 text-sm uppercase tracking-[0.5em] text-[#D4AF37]">Manifesto</p>
             <blockquote className="font-display text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl">
               문화가<br />
               <span className="text-[#D4AF37]">비즈니스가</span><br />
               되는 곳.
             </blockquote>
-            <p className="mt-8 font-outfit text-lg leading-8 text-white/60 max-w-2xl mx-auto">
+            <p className="mt-8 font-outfit text-lg leading-8 text-white/75 max-w-2xl mx-auto">
               KATALYZE는 서울 DDP에서 열리는 대한민국 최초의 컬처-커머스 융합 페스티벌입니다.
               K-패션, K-뷰티, 스트릿컬처, 음악, 그리고 글로벌 비즈니스가 72시간 안에 충돌하고 융합하는 공간.
             </p>
@@ -63,8 +63,8 @@ export default function AboutPage() {
                 <p className="font-display text-6xl text-white md:text-8xl">
                   {stat.value}<span className="text-4xl text-[#D4AF37] md:text-5xl">{stat.suffix}</span>
                 </p>
-                <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em] text-white/60">{stat.label}</p>
-                <p className="mt-1 font-outfit text-xs text-[#4A7A6B]">{stat.ko}</p>
+                <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{stat.label}</p>
+                <p className="mt-1 font-outfit text-sm text-[#4A7A6B]">{stat.ko}</p>
               </div>
             ))}
           </div>
@@ -83,22 +83,22 @@ export default function AboutPage() {
             }}
           />
           <div>
-            <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#D4AF37]">The Venue</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">The Venue</p>
             <h2 className="font-display text-4xl uppercase text-white md:text-5xl leading-tight">
               DDP<br />동대문디자인플라자
             </h2>
-            <p className="mt-6 font-outfit text-base leading-8 text-white/70">
+            <p className="mt-6 font-outfit text-base leading-8 text-white/85">
               자하 하디드가 설계한 86,574㎡의 건축적 아이콘. 서울의 창의적 야망을 형상화한 공간.
               메시지 자체가 브랜드가 되는 곳 — KATALYZE의 무대.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div>
                 <p className="font-display text-3xl text-[#D4AF37]">86,574㎡</p>
-                <p className="font-outfit text-xs uppercase tracking-widest text-white/50">Total Floor Area</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Total Floor Area</p>
               </div>
               <div>
                 <p className="font-display text-3xl text-[#D4AF37]">5</p>
-                <p className="font-outfit text-xs uppercase tracking-widest text-white/50">Connected Buildings</p>
+                <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Connected Buildings</p>
               </div>
             </div>
           </div>
@@ -106,17 +106,24 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* Why Seoul */}
-      <AnimatedSection className="section-pad">
+      <AnimatedSection 
+        className="section-pad"
+        style={{
+          backgroundImage: "linear-gradient(rgba(26,26,31,0.90), rgba(26,26,31,0.90)), url('/images/seoul_night.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
         <div className="container-shell">
-          <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#D4AF37]">Why Seoul</p>
+          <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Why Seoul</p>
           <h2 className="mb-12 font-display text-4xl uppercase text-white md:text-5xl">서울이어야 하는 이유</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {whySeoulPoints.map((point, i) => (
               <div key={i} className="border border-white/10 bg-white/[0.02] p-8">
-                <p className="font-outfit text-xs uppercase tracking-[0.3em] text-[#D4AF37]">0{i + 1}</p>
+                <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#D4AF37]">0{i + 1}</p>
                 <h3 className="mt-3 font-display text-xl uppercase text-white leading-tight">{point.title}</h3>
-                <p className="mt-1 font-outfit text-xs text-white/40">{point.ko}</p>
-                <p className="mt-4 font-outfit text-sm leading-7 text-white/70">{point.desc}</p>
+                <p className="mt-1 font-outfit text-sm text-white/55">{point.ko}</p>
+                <p className="mt-4 font-outfit text-sm leading-7 text-white/85">{point.desc}</p>
               </div>
             ))}
           </div>
@@ -127,7 +134,7 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="mb-4 text-xs uppercase tracking-[0.5em] text-[#D4AF37]">Vision</p>
+            <p className="mb-4 text-sm uppercase tracking-[0.5em] text-[#D4AF37]">Vision</p>
             <p className="font-outfit text-xl leading-10 text-white/80">
               ComplexCon이 미국 스트릿컬처를 세계에 알린 것처럼,<br />
               KATALYZE는 K-컬처의 상업적 파워를 세계에 증명합니다.<br />
@@ -142,7 +149,7 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="flex flex-col items-center gap-6 text-center">
             <h2 className="font-display text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
-            <p className="max-w-xl font-outfit text-base text-white/60">
+            <p className="max-w-xl font-outfit text-base text-white/75">
               관람객으로, 브랜드로, 파트너로 — KATALYZE와 함께할 방법을 선택하세요.
             </p>
             <div className="mt-4 flex flex-col gap-4 sm:flex-row">

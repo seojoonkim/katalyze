@@ -56,7 +56,7 @@ export default function MarketplacePage() {
                   style={{ backgroundColor: cat.color + "33" }}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-5">
-                  <p className="font-outfit text-xs uppercase tracking-[0.3em]" style={{ color: cat.color }}>{cat.ko}</p>
+                  <p className="font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: cat.color }}>{cat.ko}</p>
                   <h3 className="font-display text-xl uppercase text-white leading-tight">{cat.title}</h3>
                   <p className="mt-1 font-display text-3xl" style={{ color: cat.color }}>{cat.count}</p>
                 </div>
@@ -71,7 +71,7 @@ export default function MarketplacePage() {
         <div className="flex">
           <div className="flex animate-marquee whitespace-nowrap">
             {[...brandLogos, ...brandLogos].map((logo, i) => (
-              <span key={i} className="mx-8 font-display text-sm uppercase tracking-[0.4em] text-white/30">
+              <span key={i} className="mx-8 font-display text-sm uppercase tracking-[0.4em] text-white/50">
                 {logo} <span className="text-[#D4AF37]">·</span>
               </span>
             ))}
@@ -96,21 +96,21 @@ export default function MarketplacePage() {
             {dropCalendar.map((drop, i) => (
               <div key={i} className="flex flex-col gap-2 py-5 md:flex-row md:items-center md:gap-8">
                 <div className="w-36 shrink-0">
-                  <p className="font-outfit text-xs uppercase tracking-[0.2em] text-[#D4AF37]">{drop.date}</p>
+                  <p className="font-outfit text-sm uppercase tracking-[0.2em] text-[#D4AF37]">{drop.date}</p>
                 </div>
                 <div className="flex-1">
-                  <p className="font-outfit text-base font-semibold text-white/30 italic">{drop.brand}</p>
-                  <p className="font-outfit text-xs text-white/40">{drop.category}</p>
+                  <p className="font-outfit text-base font-semibold text-white/50 italic">{drop.brand}</p>
+                  <p className="font-outfit text-sm text-white/55">{drop.category}</p>
                 </div>
                 <div>
-                  <span className="inline-block border border-[#D4AF37]/40 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#D4AF37]">
+                  <span className="inline-block border border-[#D4AF37]/40 px-3 py-1 text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
                     {drop.type}
                   </span>
                 </div>
               </div>
             ))}
           </div>
-          <p className="mt-6 font-outfit text-xs text-white/30">* 브랜드 및 드롭 정보는 추후 발표 예정. 사전 알림을 신청하세요.</p>
+          <p className="mt-6 font-outfit text-sm text-white/50">* 브랜드 및 드롭 정보는 추후 발표 예정. 사전 알림을 신청하세요.</p>
         </div>
       </AnimatedSection>
 
@@ -118,9 +118,9 @@ export default function MarketplacePage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
-            <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#D4AF37]">Brand Application</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Brand Application</p>
             <h2 className="font-display text-4xl uppercase text-white md:text-5xl">브랜드로 참가하기</h2>
-            <p className="mt-4 max-w-xl font-outfit text-base text-white/60">
+            <p className="mt-4 max-w-xl font-outfit text-base text-white/75">
               KATALYZE 마켓플레이스에 참가할 브랜드를 모집합니다. 이메일을 등록하고 신청서를 받아보세요.
             </p>
             {!submitted ? (
@@ -134,7 +134,7 @@ export default function MarketplacePage() {
                 />
                 <button
                   onClick={() => setSubmitted(true)}
-                  className="border border-[#D4AF37] bg-[#D4AF37] px-6 py-3 text-xs font-bold uppercase tracking-[0.3em] text-black transition hover:bg-[#e8c84a]"
+                  className="border border-[#D4AF37] bg-[#D4AF37] px-6 py-3 text-sm font-bold uppercase tracking-[0.3em] text-black transition hover:bg-[#e8c84a]"
                 >
                   신청
                 </button>

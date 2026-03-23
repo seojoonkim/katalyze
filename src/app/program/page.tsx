@@ -92,14 +92,14 @@ export default function ProgramPage() {
                 <div className="absolute inset-0 flex flex-col justify-end p-8">
                   <div className="mb-2 flex items-center gap-3">
                     <span className="h-px w-8" style={{ backgroundColor: zone.color }} />
-                    <p className="text-xs uppercase tracking-[0.4em]" style={{ color: zone.color }}>{zone.subtitle}</p>
+                    <p className="text-sm uppercase tracking-[0.4em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                   </div>
                   <h3 className="font-display text-4xl uppercase text-white">{zone.title}</h3>
-                  <p className="mt-2 font-outfit text-sm leading-6 text-white/70 max-w-sm">{zone.desc}</p>
-                  <p className="mt-1 font-outfit text-xs text-white/40 italic">{zone.en}</p>
+                  <p className="mt-2 font-outfit text-sm leading-6 text-white/85 max-w-sm">{zone.desc}</p>
+                  <p className="mt-1 font-outfit text-sm text-white/55 italic">{zone.en}</p>
                   <div className="mt-4 flex items-baseline gap-1">
                     <span className="font-display text-3xl" style={{ color: zone.color }}>{zone.stat}</span>
-                    <span className="font-outfit text-xs uppercase tracking-widest text-white/40">{zone.statLabel}</span>
+                    <span className="font-outfit text-sm uppercase tracking-widest text-white/55">{zone.statLabel}</span>
                   </div>
                 </div>
                 <div
@@ -113,7 +113,15 @@ export default function ProgramPage() {
       </AnimatedSection>
 
       {/* 타임테이블 */}
-      <AnimatedSection className="section-pad">
+      <AnimatedSection 
+        className="section-pad"
+        style={{
+          backgroundImage: "linear-gradient(rgba(26,26,31,0.95), rgba(26,26,31,0.95)), url('/images/concert_stage.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container-shell">
           <SectionHeading eyebrow="Schedule" title="타임테이블" />
           {/* Day 탭 */}
@@ -122,10 +130,10 @@ export default function ProgramPage() {
               <button
                 key={d}
                 onClick={() => setActiveDay(d)}
-                className={`px-8 py-3 text-xs uppercase tracking-[0.3em] font-semibold transition border-b-2 -mb-px ${
+                className={`px-8 py-3 text-sm uppercase tracking-[0.3em] font-semibold transition border-b-2 -mb-px ${
                   activeDay === d
                     ? "border-[#D4AF37] text-[#D4AF37]"
-                    : "border-transparent text-white/40 hover:text-white/70"
+                    : "border-transparent text-white/55 hover:text-white/85"
                 }`}
               >
                 {d === "day1" ? "DAY 1" : "DAY 2"}
@@ -140,11 +148,11 @@ export default function ProgramPage() {
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white">{item.title}</p>
-                  <p className="font-outfit text-sm text-white/50">{item.desc}</p>
+                  <p className="font-outfit text-sm text-white/65">{item.desc}</p>
                 </div>
                 <div>
                   <span
-                    className="inline-block px-3 py-1 text-xs uppercase tracking-[0.25em] font-semibold"
+                    className="inline-block px-3 py-1 text-sm uppercase tracking-[0.25em] font-semibold"
                     style={{
                       color: zoneColorMap[item.zone] ?? "#D4AF37",
                       backgroundColor: (zoneColorMap[item.zone] ?? "#D4AF37") + "22",
@@ -167,7 +175,7 @@ export default function ProgramPage() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center justify-center border border-white/10 bg-white/[0.02] py-16 px-8">
                 <div className="mb-4 h-20 w-20 rounded-full bg-white/10 blur-sm" />
-                <p className="font-outfit text-xs uppercase tracking-[0.4em] text-white/30">Coming Soon</p>
+                <p className="font-outfit text-sm uppercase tracking-[0.4em] text-white/50">Coming Soon</p>
                 <p className="mt-2 font-display text-2xl uppercase text-white/20">TBA</p>
               </div>
             ))}
@@ -178,9 +186,9 @@ export default function ProgramPage() {
       {/* CTA */}
       <AnimatedSection className="section-pad">
         <div className="container-shell flex flex-col items-center text-center">
-          <p className="mb-4 text-xs uppercase tracking-[0.4em] text-[#D4AF37]">Get Your Ticket</p>
+          <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Get Your Ticket</p>
           <h2 className="font-display text-4xl uppercase text-white md:text-6xl">지금 티켓 구매</h2>
-          <p className="mt-4 max-w-xl font-outfit text-base text-white/60">April 2027, DDP Seoul. 72시간의 문화 속도를 직접 경험하세요.</p>
+          <p className="mt-4 max-w-xl font-outfit text-base text-white/75">April 2027, DDP Seoul. 72시간의 문화 속도를 직접 경험하세요.</p>
           <div className="mt-8">
             <PillButton href="/tickets">티켓 구매하기</PillButton>
           </div>

@@ -67,7 +67,7 @@ export function SiteHeader() {
                     <div className="p-4">
                       <Link
                         href={item.href}
-                        className="block text-center font-semibold text-[#D4AF37] hover:text-white transition text-xs uppercase tracking-wider"
+                        className="block text-center font-semibold text-[#D4AF37] hover:text-white transition text-sm uppercase tracking-wider"
                       >
                         Explore {item.label}
                       </Link>
