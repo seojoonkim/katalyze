@@ -6,12 +6,11 @@ import { Menu, Ticket, ChevronDown } from "lucide-react";
 import { navItems } from "@/lib/site-data";
 
 const navItemsWithImages = [
-  { label: "About", href: "/about", image: "/images/crowd.jpg" },
-  { label: "Explore", href: "/explore", image: "/images/zone_drop.jpg" },
   { label: "Program", href: "/program", image: "/images/zone_stage.jpg" },
-  { label: "Marketplace", href: "/marketplace", image: "/images/zone_lab.jpg" },
-  { label: "Partners", href: "/partners", image: "/images/business_brands.jpg" },
-  { label: "B2B", href: "/b2b", image: "/images/business_brands.jpg" },
+  { label: "Marketplace", href: "/marketplace", image: "/images/zone_drop.jpg" },
+  { label: "Partners", href: "/partners", image: "/images/b2b_lounge.jpg" },
+  { label: "B2B", href: "/b2b", image: "/images/b2b_lounge.jpg" },
+  { label: "About", href: "/about", image: "/images/about_hero.jpg" },
   { label: "Tickets", href: "/tickets", image: "/images/hero_main.jpg" },
 ];
 
