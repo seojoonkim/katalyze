@@ -218,9 +218,8 @@ export default function Home() {
       {/* ═══════ QUOTE / ABOUT — 에디토리얼 풀블리드 ═══════ */}
       <section className="py-32 md:py-44 bg-muk">
         <div className="container-shell">
-          <p className="font-display text-[clamp(2.5rem,7vw,6.5rem)] leading-[0.9] text-white max-w-5xl">
-            &ldquo;Seoul doesn&apos;t follow trends.<br/>
-            <span className="text-[#D4AF37]">It catalyzes them.</span>&rdquo;
+          <p className="font-display text-[clamp(2.2rem,6vw,5.5rem)] leading-tight text-white max-w-4xl">
+            &ldquo;Seoul doesn&apos;t follow trends. <span className="text-[#D4AF37]">It catalyzes them.</span>&rdquo;
           </p>
           <p className="mt-6 font-outfit text-lg font-light text-[#4A7A6B] max-w-xl">
             서울은 트렌드를 따르지 않는다. 촉발한다.
