@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight, Building2, BriefcaseBusiness, MapPin, Ticket } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { PillButton } from "@/components/ui";
@@ -19,7 +18,8 @@ const audiences = [
     href: "/tickets",
     cta: "Explore visitor passes",
     image: "/images/imagen_hero_festival.jpg",
-    accent: "from-[#DC1E5A]/80 via-[#DC1E5A]/45 to-black/70",
+    fallback: "linear-gradient(135deg, #DC1E5A, #8220DC)",
+    overlay: "linear-gradient(180deg, rgba(220,30,90,0.24) 0%, rgba(130,32,220,0.18) 42%, rgba(0,0,0,0.72) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(220,30,90,0.45)]",
   },
   {
@@ -30,7 +30,8 @@ const audiences = [
     href: "/partners",
     cta: "Partner with us",
     image: "/images/imagen_market_drop.jpg",
-    accent: "from-[#D4AF37]/80 via-[#D4AF37]/35 to-black/70",
+    fallback: "linear-gradient(135deg, #D4AF37, #C8A01E)",
+    overlay: "linear-gradient(180deg, rgba(212,175,55,0.22) 0%, rgba(200,160,30,0.14) 40%, rgba(0,0,0,0.72) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(212,175,55,0.45)]",
   },
   {
@@ -41,8 +42,9 @@ const audiences = [
     href: "/b2b",
     cta: "Request B2B access",
     image: "/images/imagen_buyer_networking.jpg",
-    accent: "from-cyan-500/80 via-cyan-500/35 to-black/70",
-    ring: "shadow-[0_0_0_1px_rgba(34,211,238,0.45)]",
+    fallback: "linear-gradient(135deg, #00B482, #1B2A4A)",
+    overlay: "linear-gradient(180deg, rgba(0,180,130,0.2) 0%, rgba(27,42,74,0.18) 42%, rgba(0,0,0,0.74) 100%)",
+    ring: "shadow-[0_0_0_1px_rgba(0,180,130,0.45)]",
   },
 ];
 
@@ -53,7 +55,8 @@ const zones = [
     description:
       "Fashion, beauty, collectibles, and limited-edition brand moments built to spark queues, cameras, and conversion.",
     image: "/images/imagen_market_drop.jpg",
-    overlay: "bg-[rgba(220,30,90,0.62)]",
+    fallback: "linear-gradient(135deg, #DC1E5A 0%, #1a0008 100%)",
+    overlay: "linear-gradient(180deg, rgba(220,30,90,0.20) 0%, rgba(0,0,0,0.70) 100%)",
   },
   {
     icon: "🎵",
@@ -61,7 +64,8 @@ const zones = [
     description:
       "A high-voltage performance platform for music, dance, showcases, and headline moments that travel far beyond DDP.",
     image: "/images/imagen_stage_show.jpg",
-    overlay: "bg-[rgba(130,30,220,0.62)]",
+    fallback: "linear-gradient(135deg, #8220DC 0%, #1a0030 100%)",
+    overlay: "linear-gradient(180deg, rgba(130,32,220,0.20) 0%, rgba(0,0,0,0.70) 100%)",
   },
   {
     icon: "🔬",
@@ -69,7 +73,8 @@ const zones = [
     description:
       "Talks, workshops, creator sessions, and hands-on experiments where culture builders share what is coming next.",
     image: "/images/imagen_lab_workshop.jpg",
-    overlay: "bg-[rgba(0,180,130,0.62)]",
+    fallback: "linear-gradient(135deg, #00B482 0%, #001a10 100%)",
+    overlay: "linear-gradient(180deg, rgba(0,180,130,0.22) 0%, rgba(0,0,0,0.70) 100%)",
   },
   {
     icon: "🎨",
@@ -77,7 +82,8 @@ const zones = [
     description:
       "Installations, art-forward activations, and premium hospitality for guests who want a more curated point of view.",
     image: "/images/imagen_gallery_installation.jpg",
-    overlay: "bg-[rgba(200,160,30,0.62)]",
+    fallback: "linear-gradient(135deg, #D4AF37 0%, #1a1000 100%)",
+    overlay: "linear-gradient(180deg, rgba(212,175,55,0.20) 0%, rgba(0,0,0,0.72) 100%)",
   },
 ];
 
@@ -86,28 +92,43 @@ const lineup = [
     name: "Artist TBA",
     genre: "Global Headliner · Coming Soon",
     image: "/images/imagen_creator_portrait.jpg",
+    fallback: "linear-gradient(135deg, #8220DC 0%, #1a0a2e 100%)",
   },
   {
     name: "Special Guest",
     genre: "Fashion x Sound Crossover",
     image: "/images/crowd.jpg",
+    fallback: "linear-gradient(135deg, #DC1E5A 0%, #1a0008 100%)",
   },
   {
     name: "More To Drop",
     genre: "Creators, Founders & Performers",
     image: "/images/imagen_brand_lounge.jpg",
+    fallback: "linear-gradient(135deg, #D4AF37 0%, #1a1000 100%)",
   },
 ];
+
+function backgroundStyle(image: string, fallback: string, overlay?: string) {
+  const layers = [overlay, `url(${image})`, fallback].filter(Boolean).join(", ");
+  return {
+    backgroundImage: layers,
+    backgroundSize: overlay ? "cover, cover, cover" : "cover, cover",
+    backgroundPosition: overlay ? "center, center, center" : "center, center",
+    backgroundRepeat: overlay ? "no-repeat, no-repeat, no-repeat" : "no-repeat, no-repeat",
+  } as const;
+}
 
 export default function Home() {
   return (
     <div className="bg-[#050505] text-[var(--foreground)]">
-      <section className="relative flex min-h-screen items-end overflow-hidden bg-[#111]">
-        <div className="absolute inset-0">
-          <Image src="/images/imagen_hero_festival.jpg" alt="Katalyze festival hero" fill priority className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/35 to-black/75" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.20),transparent_32%)]" />
-        </div>
+      <section
+        className="relative flex min-h-screen items-end overflow-hidden"
+        style={backgroundStyle(
+          "/images/imagen_hero_festival.jpg",
+          "#1a0a2e",
+          "linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0.78) 100%), radial-gradient(circle at top, rgba(212,175,55,0.20), transparent 32%)"
+        )}
+      >
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
           <div className="max-w-5xl">
             <p className="text-xs font-medium uppercase tracking-[0.45em] text-[#D4AF37] md:text-sm">SEOUL DDP · SEPTEMBER 2026</p>
@@ -146,10 +167,9 @@ export default function Home() {
               <a
                 key={card.title}
                 href={card.href}
-                className={`group relative min-h-[460px] overflow-hidden rounded-[32px] bg-[#141414] ${card.ring}`}
+                className={`group relative min-h-[460px] overflow-hidden rounded-[32px] ${card.ring}`}
+                style={backgroundStyle(card.image, card.fallback, card.overlay)}
               >
-                <Image src={card.image} alt={card.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div className={`absolute inset-0 bg-gradient-to-b ${card.accent}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="relative z-10 flex h-full flex-col justify-end p-7 md:p-8">
                   <p className="text-xs uppercase tracking-[0.34em] text-white/80">{card.eyebrow}</p>
@@ -179,10 +199,14 @@ export default function Home() {
               Not just a conference. Not just a festival. A live, deal-making, culture-shaping convergence of brands, buyers, creators, and audiences ready to move.
             </p>
           </div>
-          <div className="relative min-h-[420px] overflow-hidden rounded-[34px] border border-white/10 bg-[#181818]">
-            <Image src="/images/imagen_ddp_night.jpg" alt="Seoul night skyline" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-          </div>
+          <div
+            className="relative min-h-[420px] overflow-hidden rounded-[34px] border border-white/10"
+            style={backgroundStyle(
+              "/images/imagen_ddp_night.jpg",
+              "linear-gradient(135deg, #1B2A4A, #0D0D0D)",
+              "linear-gradient(180deg, rgba(27,42,74,0.14) 0%, rgba(0,0,0,0.60) 100%)"
+            )}
+          />
         </div>
       </AnimatedSection>
 
@@ -194,9 +218,11 @@ export default function Home() {
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {zones.map((zone) => (
-              <div key={zone.title} className="group relative h-[400px] overflow-hidden rounded-[30px] bg-[#161616]">
-                <Image src={zone.image} alt={zone.title} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div className={`absolute inset-0 transition-opacity duration-500 group-hover:opacity-70 ${zone.overlay}`} />
+              <div
+                key={zone.title}
+                className="group relative h-[400px] overflow-hidden rounded-[30px]"
+                style={backgroundStyle(zone.image, zone.fallback, zone.overlay)}
+              >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/82 via-black/24 to-transparent" />
                 <div className="relative z-10 flex h-full flex-col justify-end p-7 md:p-8">
                   <div className="mb-4 text-5xl">{zone.icon}</div>
@@ -209,7 +235,7 @@ export default function Home() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection className="bg-[linear-gradient(180deg,#0B0710_0%,#17091F_55%,#09070F_100%)] py-20 md:py-28">
+      <AnimatedSection className="bg-[linear-gradient(135deg,#1a0a2e_0%,#0D0D0D_100%)] py-20 md:py-28">
         <div className="container-shell">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
@@ -221,10 +247,14 @@ export default function Home() {
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {lineup.map((artist) => (
               <div key={artist.name} className="overflow-hidden rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-sm">
-                <div className="relative h-[360px] bg-[#141414]">
-                  <Image src={artist.image} alt={artist.name} fill className="object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
-                </div>
+                <div
+                  className="relative h-[360px]"
+                  style={backgroundStyle(
+                    artist.image,
+                    artist.fallback,
+                    "linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.72) 100%)"
+                  )}
+                />
                 <div className="p-6">
                   <h3 className="font-display text-4xl text-white">{artist.name}</h3>
                   <p className="mt-2 text-sm uppercase tracking-[0.22em] text-white/70">{artist.genre}</p>
@@ -262,10 +292,14 @@ export default function Home() {
 
       <AnimatedSection className="bg-[#090909] py-20 md:py-28">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
-          <div className="group relative min-h-[440px] overflow-hidden rounded-[34px] bg-[#171717]">
-            <Image src="/images/imagen_brand_lounge.jpg" alt="Partner lounge" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/85" />
-            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(212,175,55,0.40),transparent_55%)]" />
+          <div
+            className="group relative min-h-[440px] overflow-hidden rounded-[34px] border border-[#D4AF37]/35"
+            style={backgroundStyle(
+              "/images/imagen_brand_lounge.jpg",
+              "linear-gradient(135deg, #1a1000, #2a1800)",
+              "linear-gradient(180deg, rgba(212,175,55,0.18) 0%, rgba(0,0,0,0.78) 100%), linear-gradient(135deg, rgba(212,175,55,0.40), transparent 55%)"
+            )}
+          >
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
               <Building2 className="h-8 w-8 text-[#D4AF37]" />
               <p className="mt-5 text-xs uppercase tracking-[0.34em] text-[#F0D980]">For Partners & Brands</p>
@@ -279,13 +313,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="group relative min-h-[440px] overflow-hidden rounded-[34px] bg-[#171717]">
-            <Image src="/images/imagen_buyer_networking.jpg" alt="Buyer networking" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/85" />
-            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(34,211,238,0.42),transparent_58%)]" />
+          <div
+            className="group relative min-h-[440px] overflow-hidden rounded-[34px] border border-[#00B482]/35"
+            style={backgroundStyle(
+              "/images/imagen_buyer_networking.jpg",
+              "linear-gradient(135deg, #001a10, #001a1a)",
+              "linear-gradient(180deg, rgba(0,180,130,0.18) 0%, rgba(0,0,0,0.78) 100%), linear-gradient(135deg, rgba(0,180,130,0.32), transparent 58%)"
+            )}
+          >
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
-              <BriefcaseBusiness className="h-8 w-8 text-cyan-300" />
-              <p className="mt-5 text-xs uppercase tracking-[0.34em] text-cyan-300">For Buyers</p>
+              <BriefcaseBusiness className="h-8 w-8 text-[#00D49A]" />
+              <p className="mt-5 text-xs uppercase tracking-[0.34em] text-[#00D49A]">For Buyers</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Source the next breakout Korean brand before everyone else does.</h3>
               <p className="mt-4 max-w-lg text-sm leading-7 text-white/82 md:text-base">
                 Curated meetings, premium hospitality, and access to labels spanning beauty, fashion, design, food, and cultural IP.
@@ -300,10 +338,14 @@ export default function Home() {
 
       <AnimatedSection className="bg-[#050505] py-20 md:py-28">
         <div className="container-shell">
-          <div className="group relative min-h-[520px] overflow-hidden rounded-[36px] bg-[#161616]">
-            <Image src="/images/imagen_ddp_night.jpg" alt="Seoul DDP venue" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/35 to-black/78" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.22),transparent_28%)]" />
+          <div
+            className="group relative min-h-[520px] overflow-hidden rounded-[36px]"
+            style={backgroundStyle(
+              "/images/imagen_ddp_night.jpg",
+              "linear-gradient(135deg, #1B2A4A, #0D0D0D)",
+              "linear-gradient(180deg, rgba(27,42,74,0.12) 0%, rgba(0,0,0,0.76) 100%), radial-gradient(circle at top right, rgba(212,175,55,0.22), transparent 28%)"
+            )}
+          >
             <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-black/20 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/85 backdrop-blur-sm">
                 <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" /> SEOUL · DDP · SEPTEMBER 2026
@@ -317,7 +359,7 @@ export default function Home() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection className="bg-[linear-gradient(135deg,#D4AF37_0%,#F39A3D_48%,#F56A2A_100%)] py-20 md:py-24">
+      <AnimatedSection className="bg-[linear-gradient(135deg,#D4AF37_0%,#C8751E_100%)] py-20 md:py-24">
         <div className="container-shell text-center text-black">
           <p className="text-xs uppercase tracking-[0.38em] text-black/70">Final Call</p>
           <h2 className="mt-4 font-display text-6xl tracking-[0.05em] md:text-8xl">DON&apos;T MISS IT.</h2>
