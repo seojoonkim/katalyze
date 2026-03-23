@@ -110,17 +110,30 @@ const lineup = [
 ];
 
 function backgroundStyle(image: string, fallback: string, overlay?: string) {
+  // 이미지를 div 안에 absolute로 배치하는 대신, 
+  // CSS custom property로 이미지 경로를 전달
+  // 실제 렌더링은 컴포넌트 내부에서 처리
+  const style: React.CSSProperties = {
+    position: "relative",
+  };
   if (image) {
-    return {
-      backgroundImage: overlay ? `${overlay}, url('${image}'), ${fallback}` : `url('${image}'), ${fallback}`,
-      backgroundSize: overlay ? "auto, cover, auto" : "cover, auto",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-    } as React.CSSProperties;
+    // 이미지 + 오버레이 레이어링
+    // backgroundSize에서 그라데이션은 '100% 100%', 이미지는 'cover'
+    const layers: string[] = [];
+    const sizes: string[] = [];
+    if (overlay) { layers.push(overlay); sizes.push("100% 100%"); }
+    layers.push(`url('${image}')`);
+    sizes.push("cover");
+    layers.push(fallback);
+    sizes.push("100% 100%");
+    style.backgroundImage = layers.join(", ");
+    style.backgroundSize = sizes.join(", ");
+    style.backgroundPosition = "center";
+    style.backgroundRepeat = "no-repeat";
+  } else {
+    style.backgroundImage = overlay ? `${overlay}, ${fallback}` : fallback;
   }
-  return {
-    backgroundImage: overlay ? `${overlay}, ${fallback}` : fallback,
-  } as React.CSSProperties;
+  return style;
 }
 
 export default function Home() {
