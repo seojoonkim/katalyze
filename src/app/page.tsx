@@ -177,7 +177,7 @@ export default function Home() {
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
-              The world&apos;s brands. Seoul&apos;s energy.<br/>One weekend that changes everything.
+              KATALYZE — The world&apos;s brands. Seoul&apos;s energy.<br/>One weekend that changes everything.
             </p>
             <p className="mt-2 text-base font-outfit tracking-[0.1em] text-[#4A7A6B]">
               세계의 브랜드, 서울의 에너지. 모든 것이 바뀌는 하나의 주말.

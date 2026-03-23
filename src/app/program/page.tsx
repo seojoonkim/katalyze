@@ -77,7 +77,7 @@ export default function ProgramPage() {
       {/* Zone 카드 그리드 */}
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
-          <SectionHeading eyebrow="The Zones" title="4개의 세계" description="각 존은 독립된 경험 레이어. 하나의 공간 안에서 서로 다른 문화가 충돌한다." />
+          <SectionHeading eyebrow="The Zones" title="4개의 세계" description="KATALYZE의 4개 존은 독립된 경험 레이어. 하나의 공간 안에서 서로 다른 문화가 충돌한다." />
           <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
             {programZones.map((zone) => (
               <div
