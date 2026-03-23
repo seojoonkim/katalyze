@@ -258,22 +258,22 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div>
-              <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>50K</p>
+              <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>50K</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Attendees</p>
               <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">참석자</p>
             </div>
             <div>
-              <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>72h</p>
+              <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>72h</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Duration</p>
               <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">페스티벌 시간</p>
             </div>
             <div>
-              <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>200+</p>
+              <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>200+</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Brands</p>
               <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">참가 브랜드</p>
             </div>
             <div>
-              <p className="font-rubik text-7xl text-[#FABF13] md:text-9xl" style={{fontWeight:900}}>₩1조</p>
+              <p className="font-rubik text-5xl text-[#FABF13] md:text-7xl" style={{fontWeight:900}}>₩1조</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Est. Value</p>
               <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">경제 효과</p>
             </div>
