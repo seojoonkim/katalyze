@@ -59,7 +59,7 @@ export default function B2BPage() {
         <div className="container-shell grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">KATALYZE CONNECT</p>
-            <h2 className="font-display text-4xl uppercase text-white md:text-5xl leading-tight">비즈니스가<br />일어나는 공간</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl leading-tight">비즈니스가<br />일어나는 공간</h2>
             <p className="mt-6 font-outfit text-base leading-8 text-white/85">
               KATALYZE CONNECT는 K-컬처 브랜드와 글로벌 바이어를 연결하는 B2B 플랫폼입니다.
               페스티벌의 열기 속에서, 진짜 비즈니스가 만들어지는 곳.
@@ -69,11 +69,11 @@ export default function B2BPage() {
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div className="border-l-2 border-[#FABF13] pl-4">
-                <p className="font-display text-3xl text-white">200+</p>
+                <p className="font-rubik text-3xl text-white">200+</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Participating Brands</p>
               </div>
               <div className="border-l-2 border-[#FABF13] pl-4">
-                <p className="font-display text-3xl text-white">50+</p>
+                <p className="font-rubik text-3xl text-white">50+</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Global Buyers</p>
               </div>
             </div>
@@ -99,9 +99,9 @@ export default function B2BPage() {
           <div className="grid gap-6 md:grid-cols-3">
             {b2bServices.map((svc) => (
               <div key={svc.number} className="border border-white/10 bg-white/[0.02] p-8">
-                <p className="font-display text-5xl" style={{ color: svc.color + "55" }}>{svc.number}</p>
+                <p className="font-rubik text-5xl" style={{ color: svc.color + "55" }}>{svc.number}</p>
                 <p className="mt-4 font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: svc.color }}>{svc.ko}</p>
-                <h3 className="mt-1 font-display text-xl uppercase text-white">{svc.title}</h3>
+                <h3 className="mt-1 font-rubik text-xl uppercase text-white">{svc.title}</h3>
                 <p className="mt-4 font-outfit text-base leading-7 text-white/85">{svc.desc}</p>
                 <div className="mt-6 border-t border-white/10 pt-4">
                   <p className="font-outfit text-base text-white/55">{svc.stats}</p>
@@ -171,7 +171,7 @@ export default function B2BPage() {
               </div>
             ) : (
               <div className="border border-[#FABF13]/30 bg-[#FABF13]/5 p-8 text-center">
-                <p className="font-display text-2xl text-white">신청이 접수되었습니다</p>
+                <p className="font-rubik text-2xl text-white">신청이 접수되었습니다</p>
                 <p className="mt-2 font-outfit text-base text-white/75">검토 후 3영업일 내 이메일로 연락드립니다.</p>
               </div>
             )}

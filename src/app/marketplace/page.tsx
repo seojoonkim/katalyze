@@ -57,8 +57,8 @@ export default function MarketplacePage() {
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-5">
                   <p className="font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: cat.color }}>{cat.ko}</p>
-                  <h3 className="font-display text-xl uppercase text-white leading-tight">{cat.title}</h3>
-                  <p className="mt-1 font-display text-3xl" style={{ color: cat.color }}>{cat.count}</p>
+                  <h3 className="font-rubik text-xl uppercase text-white leading-tight">{cat.title}</h3>
+                  <p className="mt-1 font-rubik text-3xl" style={{ color: cat.color }}>{cat.count}</p>
                 </div>
               </div>
             ))}
@@ -71,7 +71,7 @@ export default function MarketplacePage() {
         <div className="flex">
           <div className="flex animate-marquee whitespace-nowrap">
             {[...brandLogos, ...brandLogos].map((logo, i) => (
-              <span key={i} className="mx-8 font-display text-sm uppercase tracking-[0.4em] text-white/70">
+              <span key={i} className="mx-8 font-rubik text-sm uppercase tracking-[0.4em] text-white/70">
                 {logo} <span className="text-[#FABF13]">·</span>
               </span>
             ))}
@@ -119,7 +119,7 @@ export default function MarketplacePage() {
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Brand Application</p>
-            <h2 className="font-display text-4xl uppercase text-white md:text-5xl">브랜드로 참가하기</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">브랜드로 참가하기</h2>
             <p className="mt-4 max-w-xl font-outfit text-base text-white/75">
               KATALYZE 마켓플레이스에 참가할 브랜드를 모집합니다. 이메일을 등록하고 신청서를 받아보세요.
             </p>

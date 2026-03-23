@@ -8,7 +8,7 @@ export function SectionHeading({ eyebrow, title, description }: { eyebrow: strin
   return (
     <div className="mb-10 max-w-2xl">
       <p className="mb-3 text-sm uppercase tracking-[0.35em] text-[#FABF13]">{eyebrow}</p>
-      <h2 className="text-4xl font-display uppercase leading-none text-white md:text-6xl">{title}</h2>
+      <h2 className="text-4xl font-rubik uppercase leading-none text-white md:text-6xl">{title}</h2>
       {description ? <p className="mt-4 text-base leading-7 text-white/85 md:text-lg">{description}</p> : null}
     </div>
   );
@@ -73,7 +73,7 @@ export function AccordionFAQ({ items }: { items: { q: string; a: string }[] }) {
 export function StatCard({ value, suffix, label, ko }: { value: string; suffix?: string; label: string; ko?: string }) {
   return (
     <div className="border-l-2 border-[#FABF13] pl-6">
-      <p className="font-display text-5xl text-white md:text-7xl">
+      <p className="font-rubik text-5xl text-white md:text-7xl">
         {value}<span className="text-3xl text-[#FABF13] md:text-5xl">{suffix}</span>
       </p>
       <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{label}</p>
@@ -97,7 +97,7 @@ export function TierCard({ tier, ko, price, benefits, highlight, badge, color, c
       <div className="border-b p-6" style={{ borderColor: color + '33' }}>
         <p style={{ color }} className="text-sm uppercase tracking-[0.4em]">{tier}</p>
         <p className="mt-1 font-outfit text-base text-white/65">{ko}</p>
-        <p className="mt-4 font-display text-4xl text-white">{price}</p>
+        <p className="mt-4 font-rubik text-4xl text-white">{price}</p>
       </div>
       <div className="flex flex-1 flex-col p-6">
         <ul className="flex-1 space-y-3">

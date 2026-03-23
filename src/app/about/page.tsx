@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-6 text-sm uppercase tracking-[0.5em] text-[#FABF13]">Manifesto</p>
-            <blockquote className="font-display text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl">
+            <blockquote className="font-rubik text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl">
               문화가<br />
               <span className="text-[#FABF13]">비즈니스가</span><br />
               되는 곳.
@@ -60,7 +60,7 @@ export default function AboutPage() {
           <div className="grid gap-10 md:grid-cols-3">
             {aboutStats.map((stat) => (
               <div key={stat.value} className="border-l-2 border-[#FABF13] pl-6">
-                <p className="font-display text-6xl text-white md:text-8xl">
+                <p className="font-rubik text-6xl text-white md:text-8xl">
                   {stat.value}<span className="text-4xl text-[#FABF13] md:text-5xl">{stat.suffix}</span>
                 </p>
                 <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{stat.label}</p>
@@ -84,7 +84,7 @@ export default function AboutPage() {
           />
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">The Venue</p>
-            <h2 className="font-display text-4xl uppercase text-white md:text-5xl leading-tight">
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl leading-tight">
               DDP<br />동대문디자인플라자
             </h2>
             <p className="mt-6 font-outfit text-base leading-8 text-white/85">
@@ -93,11 +93,11 @@ export default function AboutPage() {
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div>
-                <p className="font-display text-3xl text-[#FABF13]">86,574㎡</p>
+                <p className="font-rubik text-3xl text-[#FABF13]">86,574㎡</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Total Floor Area</p>
               </div>
               <div>
-                <p className="font-display text-3xl text-[#FABF13]">5</p>
+                <p className="font-rubik text-3xl text-[#FABF13]">5</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Connected Buildings</p>
               </div>
             </div>
@@ -116,12 +116,12 @@ export default function AboutPage() {
       >
         <div className="container-shell">
           <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Why Seoul</p>
-          <h2 className="mb-12 font-display text-4xl uppercase text-white md:text-5xl">서울이어야 하는 이유</h2>
+          <h2 className="mb-12 font-rubik text-4xl uppercase text-white md:text-5xl">서울이어야 하는 이유</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {whySeoulPoints.map((point, i) => (
               <div key={i} className="border border-white/10 bg-white/[0.02] p-8">
                 <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#FABF13]">0{i + 1}</p>
-                <h3 className="mt-3 font-display text-xl uppercase text-white leading-tight">{point.title}</h3>
+                <h3 className="mt-3 font-rubik text-xl uppercase text-white leading-tight">{point.title}</h3>
                 <p className="mt-1 font-outfit text-base text-white/55">{point.ko}</p>
                 <p className="mt-4 font-outfit text-base leading-7 text-white/85">{point.desc}</p>
               </div>
@@ -148,7 +148,7 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <div className="flex flex-col items-center gap-6 text-center">
-            <h2 className="font-display text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
             <p className="max-w-xl font-outfit text-base text-white/75">
               관람객으로, 브랜드로, 파트너로 — KATALYZE와 함께할 방법을 선택하세요.
             </p>

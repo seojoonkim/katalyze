@@ -82,7 +82,7 @@ export default function PartnersPage() {
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {impactStats.map((stat) => (
               <div key={stat.value} className="border-l-2 border-[#FABF13] pl-6">
-                <p className="font-display text-4xl text-white md:text-5xl">{stat.value}</p>
+                <p className="font-rubik text-4xl text-white md:text-5xl">{stat.value}</p>
                 <p className="mt-2 font-outfit text-sm uppercase tracking-[0.25em] text-white/75">{stat.label}</p>
                 <p className="mt-1 font-outfit text-base text-[#2DD4BF]">{stat.ko}</p>
               </div>
@@ -117,7 +117,7 @@ export default function PartnersPage() {
           <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6">
             {currentPartners.map((name) => (
               <div key={name} className="flex items-center justify-center border border-white/10 bg-white/[0.02] px-4 py-6">
-                <p className="text-center font-display text-sm uppercase tracking-[0.2em] text-white/55">{name}</p>
+                <p className="text-center font-rubik text-sm uppercase tracking-[0.2em] text-white/55">{name}</p>
               </div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function PartnersPage() {
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Get in Touch</p>
-            <h2 className="font-display text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
             <p className="mt-4 max-w-xl font-outfit text-base text-white/75">
               파트너십 덱을 다운로드하거나 미팅을 신청하세요. 브랜드에 맞는 최적의 파트너십을 함께 설계합니다.
             </p>
