@@ -6,12 +6,12 @@ import { IconMenu, IconTicket, IconChevronDown } from "@/components/icons";
 import { navItems } from "@/lib/site-data";
 
 const navItemsWithImages = [
-  { label: "Program", href: "/program", image: "/images/zone_stage.jpg" },
+  { label: "Program", href: "/program", image: "/images/concert_stage.jpg" },
   { label: "Marketplace", href: "/marketplace", image: "/images/zone_drop.jpg" },
-  { label: "Partners", href: "/partners", image: "/images/b2b_lounge.jpg" },
-  { label: "B2B", href: "/b2b", image: "/images/b2b_lounge.jpg" },
-  { label: "About", href: "/about", image: "/images/about_hero.jpg" },
-  { label: "Tickets", href: "/tickets", image: "/images/hero_main.jpg" },
+  { label: "Partners", href: "/partners", image: "/images/business_meet.jpg" },
+  { label: "B2B", href: "/b2b", image: "/images/b2b_connect.jpg" },
+  { label: "About", href: "/about", image: "/images/seoul_night.jpg" },
+  { label: "Tickets", href: "/tickets", image: "/images/festival_entry.jpg" },
 ];
 
 export function SiteHeader() {
