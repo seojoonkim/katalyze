@@ -34,7 +34,7 @@ export function SiteHeader() {
         <div className="hidden md:block">
           <Link
             href="/tickets"
-            className="inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-black transition hover:bg-[#E8C84A]"
+            className="inline-flex items-center gap-2 rounded-none bg-[#D4AF37] px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-black transition hover:bg-[#E8C84A]"
           >
             <Ticket className="h-4 w-4" />
             GET TICKETS
@@ -57,7 +57,7 @@ export function SiteHeader() {
             <Link
               href="/tickets"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center rounded-full bg-[#D4AF37] px-5 py-3 text-sm font-semibold text-black"
+              className="inline-flex items-center justify-center rounded-none bg-[#D4AF37] px-5 py-3 text-sm font-semibold text-black"
             >
               GET TICKETS
             </Link>

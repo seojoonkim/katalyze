@@ -230,20 +230,20 @@ export default function Home() {
               <a
                 key={card.title}
                 href={card.href}
-                className={`group relative min-h-[460px] overflow-hidden rounded-[32px] ${card.ring}`}
+                className={`group relative min-h-[460px] overflow-hidden rounded-none ${card.ring}`}
                 style={backgroundStyle(card.image, card.fallback, card.overlay)}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="relative z-10 flex h-full flex-col justify-end p-7 md:p-8">
                   <div className="flex items-center gap-3">
                     <p className="text-xs uppercase tracking-[0.34em] text-white/80">{card.eyebrow}</p>
-                    <span className="rounded-full border border-white/20 px-2.5 py-0.5 text-[10px] text-white/60">{card.tag}</span>
+                    <span className="rounded-none border border-white/20 px-2.5 py-0.5 text-[10px] text-white/60">{card.tag}</span>
                   </div>
                   <h3 className="mt-4 max-w-sm font-display text-4xl leading-[0.96] text-white md:text-5xl">{card.title}</h3>
                   <p className="mt-4 max-w-sm text-sm leading-7 text-white/82 md:text-base">{card.description}</p>
                   <div className="mt-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-white">
                     <span>{card.cta}</span>
-                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
+                    <span className="inline-flex h-11 w-11 items-center justify-center rounded-none border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
                       <ArrowRight className="h-4 w-4" />
                     </span>
                   </div>
@@ -275,7 +275,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className="relative min-h-[420px] overflow-hidden rounded-[34px] border border-white/10"
+            className="relative min-h-[420px] overflow-hidden rounded-none border border-white/10"
             style={backgroundStyle(
               "/images/venue_ddp.jpg",
               "linear-gradient(135deg, #1B2A4A, #1A1A1F)",
@@ -296,7 +296,7 @@ export default function Home() {
             {zones.map((zone) => (
               <div
                 key={zone.title}
-                className="group relative h-[440px] overflow-hidden rounded-[30px]"
+                className="group relative h-[440px] overflow-hidden rounded-none"
                 style={backgroundStyle(zone.image, zone.fallback, zone.overlay)}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/82 via-black/24 to-transparent" />
@@ -326,7 +326,7 @@ export default function Home() {
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {lineup.map((artist) => (
-              <div key={artist.name} className="overflow-hidden rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-sm">
+              <div key={artist.name} className="overflow-hidden rounded-none border border-white/10 bg-white/5 backdrop-blur-sm">
                 <div
                   className="relative h-[300px]"
                   style={backgroundStyle(
@@ -376,7 +376,7 @@ export default function Home() {
       <section className="bg-muk py-20 md:py-28">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
           <div
-            className="group relative min-h-[440px] overflow-hidden rounded-[34px] border border-[#D4AF37]/35"
+            className="group relative min-h-[440px] overflow-hidden rounded-none border border-[#D4AF37]/35"
             style={backgroundStyle(
               "/images/business_brands.jpg",
               "linear-gradient(135deg, #1a1000, #2a1800)",
@@ -397,7 +397,7 @@ export default function Home() {
           </div>
 
           <div
-            className="group relative min-h-[440px] overflow-hidden rounded-[34px] border border-[#00C9A7]/35"
+            className="group relative min-h-[440px] overflow-hidden rounded-none border border-[#00C9A7]/35"
             style={backgroundStyle(
               "/images/audience_buyers.jpg",
               "linear-gradient(135deg, #001a10, #001a1a)",
@@ -423,7 +423,7 @@ export default function Home() {
       <section className="bg-muk py-20 md:py-28">
         <div className="container-shell">
           <div
-            className="group relative min-h-[520px] overflow-hidden rounded-[36px]"
+            className="group relative min-h-[520px] overflow-hidden rounded-none"
             style={backgroundStyle(
               "/images/venue_ddp.jpg",
               "linear-gradient(135deg, #1B2A4A, #1A1A1F)",
@@ -431,7 +431,7 @@ export default function Home() {
             )}
           >
             <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
-              <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-black/20 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/85 backdrop-blur-sm">
+              <div className="inline-flex w-fit items-center gap-2 rounded-none border border-white/20 bg-black/20 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/85 backdrop-blur-sm">
                 <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" /> SEOUL · DDP · APRIL 2027
               </div>
               <h2 className="mt-6 max-w-4xl font-display text-5xl leading-[0.9] text-white md:text-7xl">THE CITY. THE ICON. THE MOMENT.</h2>
@@ -447,7 +447,7 @@ export default function Home() {
       <section className="bg-[linear-gradient(135deg,#D4AF37_0%,#C8751E_100%)] py-20 md:py-24">
         <div className="container-shell text-center text-black">
           <div
-            className="relative overflow-hidden rounded-[36px] px-6 py-16 md:px-10 md:py-24"
+            className="relative overflow-hidden rounded-none px-6 py-16 md:px-10 md:py-24"
             style={backgroundStyle(
               "/images/final_cta.jpg",
               "linear-gradient(135deg,#D4AF37_0%,#C8751E_100%)",

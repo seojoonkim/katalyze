@@ -23,9 +23,9 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.24em] text-[#d4af37]">Newsletter</p>
-          <div className="k-card rounded-[28px] p-4">
-            <input className="mb-3 w-full rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none" placeholder="Email address" />
-            <button className="w-full rounded-full bg-[#d4af37] px-4 py-3 text-sm font-semibold text-black">Get festival updates</button>
+          <div className="k-card rounded-none p-4">
+            <input className="mb-3 w-full rounded-none border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none" placeholder="Email address" />
+            <button className="w-full rounded-none bg-[#d4af37] px-4 py-3 text-sm font-semibold text-black">Get festival updates</button>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ export function PillButton({ href, children, variant = "primary" }: { href: stri
     <Link
       href={href}
       className={clsx(
-        "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] transition",
+        "inline-flex items-center justify-center rounded-none px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] transition",
         variant === "primary" && "bg-[#d4af37] text-black hover:bg-[#e8c84a]",
         variant === "secondary" && "border border-white/15 bg-white/5 text-white hover:border-[#d4af37] hover:text-[#d4af37]",
         variant === "ghost" && "text-white/70 hover:text-white",
@@ -31,7 +31,7 @@ export function PillButton({ href, children, variant = "primary" }: { href: stri
 
 export function ImageCard({ image, title, subtitle, description, className = "" }: { image: string; title: string; subtitle?: string; description?: string; className?: string }) {
   return (
-    <div className={clsx("k-card overflow-hidden rounded-[28px]", className)}>
+    <div className={clsx("k-card overflow-hidden rounded-none", className)}>
       <div className="relative h-64 bg-white/5">
         <Image src={image} alt={title} fill className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
