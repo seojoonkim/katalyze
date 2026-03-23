@@ -1,3 +1,4 @@
+import React from "react";
 import { ArrowRight, Building2, BriefcaseBusiness, MapPin, Ticket } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { PillButton } from "@/components/ui";
@@ -109,13 +110,18 @@ const lineup = [
 ];
 
 function backgroundStyle(image: string, fallback: string, overlay?: string) {
-  const layers = [overlay, `url(${image})`, fallback].filter(Boolean).join(", ");
+  // overlay 위에 이미지, 그 아래 fallback 그라데이션
+  // 이미지가 없거나 로딩 실패 시 fallback이 보임
+  const parts: string[] = [];
+  if (overlay) parts.push(overlay);
+  if (image) parts.push(`url(${image})`);
+  parts.push(fallback);
   return {
-    backgroundImage: layers,
-    backgroundSize: overlay ? "cover, cover, cover" : "cover, cover",
-    backgroundPosition: overlay ? "center, center, center" : "center, center",
-    backgroundRepeat: overlay ? "no-repeat, no-repeat, no-repeat" : "no-repeat, no-repeat",
-  } as const;
+    backgroundImage: parts.join(", "),
+    backgroundSize: parts.map(() => "cover").join(", "),
+    backgroundPosition: parts.map(() => "center").join(", "),
+    backgroundRepeat: parts.map(() => "no-repeat").join(", "),
+  } as React.CSSProperties;
 }
 
 export default function Home() {
