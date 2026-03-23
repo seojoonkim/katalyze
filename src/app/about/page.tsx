@@ -40,11 +40,11 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-sm uppercase tracking-[0.5em] text-[#FABF13]">Manifesto</p>
+            <p className="mb-6 text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Manifesto</p>
             <p className="mb-8 font-rubik text-[clamp(2.5rem,6vw,5rem)] font-bold leading-none text-white/10 select-none">
               SEOUL IS THE CATALYST.
             </p>
-            <blockquote className="font-rubik text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl">
+            <blockquote className="font-rubik text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl" style={{fontWeight:800}}>
               문화가<br />
               <span className="text-[#FABF13]">비즈니스가</span><br />
               되는 곳.
@@ -63,10 +63,10 @@ export default function AboutPage() {
           <div className="grid gap-10 md:grid-cols-3">
             {aboutStats.map((stat) => (
               <div key={stat.value} className="border-l-2 border-[#FABF13] pl-6">
-                <p className="font-rubik text-6xl text-white md:text-8xl">
+                <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>
                   {stat.value}<span className="text-4xl text-[#FABF13] md:text-5xl">{stat.suffix}</span>
                 </p>
-                <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{stat.label}</p>
+                <p className="mt-3 font-rubik text-sm uppercase tracking-[0.3em] text-white/80 font-semibold">{stat.label}</p>
                 <p className="mt-1 font-outfit text-base text-[#5CBFB0]">{stat.ko}</p>
               </div>
             ))}
