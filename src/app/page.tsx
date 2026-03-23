@@ -219,7 +219,7 @@ export default function Home() {
       {/* ═══════ QUOTE / ABOUT — 에디토리얼 풀블리드 ═══════ */}
       <section className="py-32 md:py-44 bg-muk">
         <div className="container-shell">
-          <p className="font-rubik text-[clamp(2.2rem,5.5vw,5rem)] leading-[1.1] text-white max-w-5xl" style={{fontWeight:800}}>
+          <p className="font-rubik text-[clamp(1.8rem,3.8vw,3.8rem)] leading-[1.15] text-white max-w-5xl" style={{fontWeight:800}}>
             &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#FABF13]">It ignites them.&rdquo;</span>
           </p>
           <p className="mt-6 font-noto-kr text-lg font-light text-[#5CBFB0] max-w-xl">
