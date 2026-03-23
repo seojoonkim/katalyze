@@ -225,7 +225,7 @@ export default function Home() {
           <p className="mt-6 font-noto-kr text-lg font-light text-[#00D4B8] max-w-xl">
             서울은 트렌드를 따르지 않는다. 점화한다.
           </p>
-          <p className="mt-16 font-rubik text-[clamp(3rem,7vw,6rem)] font-bold leading-none text-white/10 select-none">
+          <p className="hidden">
             CULTURE.<br/>COMMERCE.<br/>CONVERGENCE.
           </p>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-12">
