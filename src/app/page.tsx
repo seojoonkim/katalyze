@@ -19,7 +19,7 @@ const audiences = [
       "5만 명이 동시에 발견하는 순간. KATALYZE 한정판 드롭, K-뷰티 월드 프리미어, 라이브 퍼포먼스, 서울만의 감각 — 하나의 주말에 압축.",
     href: "/tickets",
     cta: "Claim your pass",
-    image: "/images/imagen_ddp_night.jpg",
+    image: "/images/ddp_night.jpg",
     fallback: "linear-gradient(135deg, #DC1E5A, #8220DC)",
     overlay: "linear-gradient(180deg, rgba(220,30,90,0.24) 0%, rgba(130,32,220,0.18) 42%, rgba(0,0,0,0.85) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(220,30,90,0.45)]",
@@ -520,9 +520,9 @@ export default function Home() {
           <div
             className="group relative min-h-[520px] overflow-hidden rounded-none"
             style={backgroundStyle(
-              "/images/venue_ddp.jpg",
+              "/images/ddp_night.jpg",
               "linear-gradient(135deg, #1B2A4A, #0D0D10)",
-              "linear-gradient(180deg, rgba(27,42,74,0.12) 0%, rgba(0,0,0,0.85) 100%), radial-gradient(circle at top right, rgba(212,175,55,0.22), transparent 28%)"
+              "linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.92) 70%), radial-gradient(circle at top right, rgba(250,191,19,0.15), transparent 35%)"
             )}
           >
             <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
