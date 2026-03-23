@@ -21,7 +21,7 @@ export default {
         "lab-green": "#00B482",
         "gallery-gold": "#A67C00",
         "seoul-pink": "#FF0A73",
-        "cheongja-jade": "#5CBFB0",
+        "cheongja-jade": "#00D4B8",
       },
       fontFamily: {
         rubik: ["var(--font-rubik)", "sans-serif"],

@@ -77,7 +77,7 @@ export function StatCard({ value, suffix, label, ko }: { value: string; suffix?:
         {value}<span className="text-3xl text-[#FABF13] md:text-5xl">{suffix}</span>
       </p>
       <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/88">{label}</p>
-      {ko && <p className="mt-1 font-outfit text-base text-[#5CBFB0]">{ko}</p>}
+      {ko && <p className="mt-1 font-outfit text-base text-[#00D4B8]">{ko}</p>}
     </div>
   )
 }

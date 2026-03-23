@@ -182,7 +182,7 @@ export default function Home() {
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/92 md:text-2xl">
               Global brands. Seoul&apos;s energy.<br/>72 hours that <em>change</em> everything.
             </p>
-            <p className="mt-2 text-base font-noto-kr tracking-[0.1em] text-[#5CBFB0]">
+            <p className="mt-2 text-base font-noto-kr tracking-[0.1em] text-[#00D4B8]">
               세계의 브랜드, 서울의 에너지. 하나의 주말.
             </p>
             <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center">
@@ -222,7 +222,7 @@ export default function Home() {
           <p className="font-rubik text-[clamp(1.8rem,3.8vw,3.8rem)] leading-[1.15] text-white max-w-5xl" style={{fontWeight:800}}>
             &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#FABF13]">It ignites them.&rdquo;</span>
           </p>
-          <p className="mt-6 font-noto-kr text-lg font-light text-[#5CBFB0] max-w-xl">
+          <p className="mt-6 font-noto-kr text-lg font-light text-[#00D4B8] max-w-xl">
             서울은 트렌드를 따르지 않는다. 점화한다.
           </p>
           <p className="mt-16 font-rubik text-[clamp(3rem,7vw,6rem)] font-bold leading-none text-white/10 select-none">
@@ -260,22 +260,22 @@ export default function Home() {
             <div>
               <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>50K</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Attendees</p>
-              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">참석자</p>
+              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">참석자</p>
             </div>
             <div>
               <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>72h</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Duration</p>
-              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">페스티벌 시간</p>
+              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">페스티벌 시간</p>
             </div>
             <div>
               <p className="font-rubik text-7xl text-white md:text-9xl" style={{fontWeight:900}}>200+</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Brands</p>
-              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">참가 브랜드</p>
+              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">참가 브랜드</p>
             </div>
             <div>
               <p className="font-rubik text-7xl text-[#FABF13] md:text-9xl" style={{fontWeight:900}}>₩1조</p>
               <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Est. Value</p>
-              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">경제 효과</p>
+              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">경제 효과</p>
             </div>
           </div>
         </div>

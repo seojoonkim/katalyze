@@ -67,7 +67,7 @@ export default function AboutPage() {
                   {stat.value}<span className="text-4xl text-[#FABF13] md:text-5xl">{stat.suffix}</span>
                 </p>
                 <p className="mt-3 font-rubik text-sm uppercase tracking-[0.3em] text-white/90 font-semibold">{stat.label}</p>
-                <p className="mt-1 font-outfit text-base text-[#5CBFB0]">{stat.ko}</p>
+                <p className="mt-1 font-outfit text-base text-[#00D4B8]">{stat.ko}</p>
               </div>
             ))}
           </div>
