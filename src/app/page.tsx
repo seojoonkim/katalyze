@@ -85,8 +85,8 @@ const zones = [
     title: "THE LAB",
     subtitle: "트렌드가 되기 전에 만나는 곳.",
     description:
-      "파운더 키노트, 크리에이터 워크숍, 핸즈온 실험실 — 문화를 설계하는 사람들이 '다음'을 먼저 꺼내는 공간.",
-    en: "Founders keynote. Creators workshop. Hands build. What's next gets revealed — before it trends.",
+      "파운더 키노트, 크리에이터 워크숍, 핸즈온 실험실 — KATALYZE에서 문화를 설계하는 사람들이 '다음'을 먼저 꺼내는 공간.",
+    en: "Founders keynote. Creators experiment. What's next gets built here — before the world catches on.",
     image: "/images/imagen_lab_workshop.jpg",
     fallback: "linear-gradient(135deg, #00C9A7 0%, #001a10 100%)",
     color: "#00C9A7",
@@ -97,8 +97,8 @@ const zones = [
     title: "THE GALLERY",
     subtitle: "감각의 밀도가 다른 공간.",
     description:
-      "설치 미술, 아트 액티베이션, 프리미엄 호스피탈리티 — 큐레이션된 시선으로 페스티벌을 경험하는 가장 깊은 레이어.",
-    en: "Art installations. Premium hospitality. The deepest layer of KATALYZE — where art meets altitude.",
+      "설치 미술, 아트 액티베이션, 프리미엄 호스피탈리티 — KATALYZE의 가장 깊은 레이어. 감각의 밀도가 다른 공간.",
+    en: "Art installations. Private dinners. The deepest layer of KATALYZE — where altitude becomes art.",
     image: "/images/imagen_gallery_installation.jpg",
     fallback: "linear-gradient(135deg, #F59E0B 0%, #1a1000 100%)",
     color: "#F59E0B",
@@ -253,6 +253,7 @@ export default function Home() {
       {/* ═══════ NUMBERS — 임팩트 카운터 ═══════ */}
       <section className="py-20 border-y border-white/10 bg-muk">
         <div className="container-shell">
+          <p className="mb-2 text-sm font-rubik uppercase tracking-[0.35em] text-[#FF0A73] font-bold"><span className="text-[#FABF13]">KATALYZE</span> BY THE NUMBERS</p>
           <p className="mb-6 font-rubik text-[clamp(1.5rem,3vw,2.8rem)] tracking-tight text-white" style={{fontWeight:900}}>
             THE NUMBERS <span className="text-[#FABF13]">DON&apos;T LIE.</span>
           </p>
@@ -407,7 +408,8 @@ export default function Home() {
             <p className="font-rubik text-sm uppercase tracking-[0.35em] text-[#FABF13] font-bold">LINEUP · <span className="font-noto-kr">라인업</span></p>
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <h2 className="font-rubik text-5xl tracking-[0.05em] text-white md:text-6xl lg:text-7xl whitespace-nowrap overflow-hidden" style={{fontWeight:900}}>NAMES THAT MOVE<br className="lg:hidden"/> CULTURE</h2>
-              <p className="mt-6 font-rubik text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white/92">
+              <p className="mt-3 font-outfit text-base italic text-[#FABF13]/80">The names that will <em>katalyze</em> 2027.</p>
+              <p className="mt-4 font-rubik text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white/92">
                 APRIL 2027 · DDP SEOUL
               </p>
               <div className="flex flex-col items-start gap-3 md:items-end">
@@ -444,19 +446,19 @@ export default function Home() {
               <span>SAMSUNG</span>
               <span>·</span>
               <span>CJ</span>
-              <span>·</span>
+              <span className="text-[#FABF13] font-bold">· KATALYZE ·</span>
               <span>MUSINSA</span>
               <span>·</span>
               <span>HYBE</span>
               <span>·</span>
               <span>NURI HOUSE</span>
-              <span>·</span>
+              <span className="text-[#FABF13] font-bold">· KATALYZE ·</span>
               <span>DOD</span>
               <span>·</span>
               <span>KLOOK</span>
               <span>·</span>
               <span>KOREAN AIR</span>
-              <span>·</span>
+              <span className="text-[#FABF13] font-bold">· KATALYZE ·</span>
             </span>
           ))}
         </div>
@@ -535,7 +537,7 @@ export default function Home() {
       </section>
 
       {/* ═══════ FINAL CTA ═══════ */}
-      <section className="py-20 md:py-24" style={{background: "radial-gradient(ellipse at 30% 50%, rgba(255,10,115,0.15) 0%, rgba(250,191,19,0.05) 50%, #0D0D10 80%)", position: 'relative'}}}>
+      <section className="[&_*]:!text-white py-20 md:py-24" style={{background: 'radial-gradient(ellipse at 30% 50%, rgba(255,10,115,0.15) 0%, rgba(250,191,19,0.05) 50%, #0D0D10 80%)'}}}>
         <div className="container-shell text-center text-white">
           <div
             className="relative overflow-hidden rounded-none px-6 py-16 md:px-10 md:py-24"

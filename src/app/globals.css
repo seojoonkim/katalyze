@@ -1,19 +1,146 @@
-/* Hero & Primary pill button hover glow + scale */
-.pill-btn-primary:hover,
-[data-radix-collection-item][data-state="active"] {
-  transform: scale(1.02);
-  box-shadow: 0 0 30px rgba(255, 10, 115, 0.5), 0 0 60px rgba(255, 10, 115, 0.2);
+@import "tailwindcss";
+
+@theme {
+  --color-muk: #0D0D10;
+  --color-baekja: #F0EBE3;
+  --color-cheongja: #2DD4BF;
+  --color-dancheng: #E63B2E;
+  --color-seoul-red: #E63B2E;
+  --color-silver: #C0C0C0;
+  --color-gold: #FABF13;
+  --color-gold-light: #FABF13;
+  --color-ink: #0d0d0d;
+  --color-warm-white: #f5f2ed;
+  --color-celadon: #1b2a4a;
+  --color-catalyst: #00ff88;
+  --color-stage-purple: #8220dc;
+  --color-drop-pink: #dc1e5a;
+  --color-lab-teal: #00C9A7;
+  --color-lab-green: #00b482;
+  --color-gallery-amber: #F59E0B;
+  --color-gallery-gold: #A67C00;
+  --color-seoul-pink: #FF0A73;
+  --color-cheongja-jade: #5CBFB0;
+  --font-display: var(--font-bebas), Impact, sans-serif;
+  --font-impact: var(--font-anton), sans-serif;
+  --font-body: var(--font-outfit), sans-serif;
+  --font-space: var(--font-space), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
 }
 
-/* Lineup row hover - gold left border glow */
+:root {
+  --background: #0D0D10;
+  --foreground: #F0EBE3;
+  --ink: #0d0d0d;
+  --warm-white: #f5f2ed;
+  --gold: #FABF13;
+  --gold-light: #FABF13;
+  --celadon: #1b2a4a;
+  --catalyst: #00ff88;
+  --border: rgba(240, 237, 229, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0D0D10;
+  color: #F5F2ED;
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+.display-text {
+  font-family: var(--font-bebas), Impact, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-shell {
+  width: min(1280px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.section-pad {
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding: 7rem 0;
+  }
+}
+
+.k-border {
+  border: 1px solid var(--border);
+}
+
+.k-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025));
+  border: 1px solid rgba(240, 237, 229, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #FFD966, #FABF13 55%, #8B6914);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(13, 13, 16, 0.3) 0%, rgba(13, 13, 16, 0.65) 55%, #0D0D10 100%);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* NEW DESIGN IMPROVEMENTS */
+.pill-btn-primary:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 0 30px rgba(255, 10, 115, 0.5), 0 0 60px rgba(255, 10, 115, 0.2) !important;
+}
+
 .lineup-row:hover {
-  border-left: 4px solid #FABF13;
-  box-shadow: -10px 0 30px rgba(250, 191, 19, 0.3);
-  background: rgba(250, 191, 19, 0.03);
-  padding-left: 1rem;
+  border-left: 4px solid #FABF13 !important;
+  box-shadow: -10px 0 30px rgba(250, 191, 19, 0.3) !important;
+  background: rgba(250, 191, 19, 0.03) !important;
+  padding-left: 1rem !important;
 }
 
-/* Partner names hover underline */
 span:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
