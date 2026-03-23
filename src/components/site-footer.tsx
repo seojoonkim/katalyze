@@ -1,0 +1,30 @@
+import Link from "next/link";
+import { navItems } from "@/lib/site-data";
+
+export function SiteFooter() {
+  return (
+    <footer className="border-t border-white/10 bg-black/40 py-12">
+      <div className="container-shell grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
+        <div>
+          <p className="mb-3 text-2xl font-black tracking-[0.35em] text-white">KATALYZE</p>
+          <p className="max-w-md text-sm leading-7 text-white/65">
+            Where culture drops, deals close, and the world shows up. A Seoul-born platform for fans, brands, buyers, and builders.
+          </p>
+        </div>
+        <div>
+          <p className="mb-4 text-sm uppercase tracking-[0.24em] text-[#d4af37]">Navigate</p>
+          <div className="grid gap-3 text-sm text-white/70">
+            {navItems.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+          </div>
+        </div>
+        <div>
+          <p className="mb-4 text-sm uppercase tracking-[0.24em] text-[#d4af37]">Newsletter</p>
+          <div className="k-card rounded-[28px] p-4">
+            <input className="mb-3 w-full rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none" placeholder="Email address" />
+            <button className="w-full rounded-full bg-[#d4af37] px-4 py-3 text-sm font-semibold text-black">Get festival updates</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
