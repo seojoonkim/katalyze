@@ -14,12 +14,12 @@ const audiences = [
     eyebrow: "FOR VISITORS",
     tag: "방문객",
     tagClass: "font-noto-kr",
-    title: "Come for the drop. Stay for the obsession.",
+    title: "Come for the drop. Leave as a convert.",
     description:
-      "5만 명이 동시에 발견하는 순간. 한정판 드롭, K-뷰티 월드 프리미어, 라이브 퍼포먼스, 서울만의 감각 — 하나의 주말에 압축.",
+      "5만 명이 동시에 발견하는 순간. KATALYZE 한정판 드롭, K-뷰티 월드 프리미어, 라이브 퍼포먼스, 서울만의 감각 — 하나의 주말에 압축.",
     href: "/tickets",
-    cta: "Explore visitor passes",
-    image: "/images/audience_visitors.jpg",
+    cta: "Claim your pass",
+    image: "/images/imagen_ddp_night.jpg",
     fallback: "linear-gradient(135deg, #DC1E5A, #8220DC)",
     overlay: "linear-gradient(180deg, rgba(220,30,90,0.24) 0%, rgba(130,32,220,0.18) 42%, rgba(0,0,0,0.85) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(220,30,90,0.45)]",
@@ -63,7 +63,7 @@ const zones = [
     description:
       "한정판 캡슐 드롭, 글로벌 브랜드 첫 공개, 인플루언서 콜라보, 뷰티 디스커버리 — 카메라가 향하는 곳에서 전환이 일어난다.",
     en: "The queue forms. The camera points. The drop lands. Commerce at the speed of culture.",
-    image: "/images/zone_drop.jpg",
+    image: "/images/imagen_market_drop.jpg",
     fallback: "linear-gradient(135deg, #DC1E5A 0%, #1a0008 100%)",
     color: "#DC1E5A",
   },
@@ -75,7 +75,7 @@ const zones = [
     description:
       "음악, 댄스, 런웨이, 헤드라인 퍼포먼스 — 사운드가 건물을 타고 서울 전체로 퍼지는 밤. 피드를 지배하는 순간.",
     en: "The night DDP shakes. Sound climbs the walls. Performances that own every feed.",
-    image: "/images/zone_stage.jpg",
+    image: "/images/imagen_stage_show.jpg",
     fallback: "linear-gradient(135deg, #8220DC 0%, #1a0030 100%)",
     color: "#8220DC",
   },
@@ -87,7 +87,7 @@ const zones = [
     description:
       "파운더 키노트, 크리에이터 워크숍, 핸즈온 실험실 — 문화를 설계하는 사람들이 '다음'을 먼저 꺼내는 공간.",
     en: "Founders keynote. Creators workshop. Hands build. What's next gets revealed — before it trends.",
-    image: "/images/zone_lab.jpg",
+    image: "/images/imagen_lab_workshop.jpg",
     fallback: "linear-gradient(135deg, #00C9A7 0%, #001a10 100%)",
     color: "#00C9A7",
   },
@@ -99,7 +99,7 @@ const zones = [
     description:
       "설치 미술, 아트 액티베이션, 프리미엄 호스피탈리티 — 큐레이션된 시선으로 페스티벌을 경험하는 가장 깊은 레이어.",
     en: "Art installations. Premium hospitality. The deepest layer of KATALYZE — where art meets altitude.",
-    image: "/images/zone_gallery.jpg",
+    image: "/images/imagen_gallery_installation.jpg",
     fallback: "linear-gradient(135deg, #F59E0B 0%, #1a1000 100%)",
     color: "#F59E0B",
   },
