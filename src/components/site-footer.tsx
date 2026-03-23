@@ -3,18 +3,22 @@ import { navItems } from "@/lib/site-data";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 bg-black/40 py-12">
+    <footer className="border-t border-white/10 bg-black/60 py-12">
       <div className="container-shell grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <p className="mb-3 text-2xl font-black tracking-[0.35em] text-white">KATALYZE</p>
-          <p className="max-w-md text-sm leading-7 text-white/65">
-            Where culture drops, deals close, and the world shows up. A Seoul-born platform for fans, brands, buyers, and builders.
+          <p className="font-display text-4xl tracking-[0.16em] text-[#D4AF37]">KATALYZE</p>
+          <p className="mt-4 max-w-md text-sm leading-7 text-white/65">
+            Where culture drops, deals close, and the world shows up. A Seoul-born festival platform for fans, brands, buyers, and builders.
           </p>
         </div>
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.24em] text-[#d4af37]">Navigate</p>
           <div className="grid gap-3 text-sm text-white/70">
-            {navItems.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href}>
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
         <div>

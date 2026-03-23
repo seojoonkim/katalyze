@@ -4,8 +4,16 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const bebas = Bebas_Neue({ subsets: ["latin"], weight: "400", variable: "--font-bebas" });
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: "Katalyze Festival",
@@ -15,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${bebas.variable} ${inter.variable}`}>
+      <body className={`${bebasNeue.variable} ${inter.variable} font-body`}>
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
