@@ -286,6 +286,7 @@ export default function Home() {
         <div className="container-shell text-center">
           <p className="text-xs font-outfit uppercase tracking-[0.4em] text-white/75 mb-6">Backed by</p>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-xl tracking-[0.14em] text-white/70 md:text-2xl">
+            <span>HASHED</span>
             <span>SAMSUNG</span>
             <span>CJ</span>
             <span>MUSINSA</span>
