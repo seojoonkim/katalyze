@@ -7,7 +7,7 @@ import { navItems } from "@/lib/site-data";
 
 const navItemsWithImages = [
   { label: "Program", href: "/program", image: "/images/concert_stage.jpg" },
-  { label: "Market", href: "/marketplace", image: "/images/zone_drop.jpg" },
+  { label: "Market", href: "/marketplace", image: "/images/nav_market.jpg" },
   { label: "Partners", href: "/partners", image: "/images/business_meet.jpg" },
   { label: "B2B", href: "/b2b", image: "/images/b2b_connect.jpg" },
   { label: "About", href: "/about", image: "/images/seoul_night.jpg" },
