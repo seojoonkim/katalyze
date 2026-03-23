@@ -139,14 +139,26 @@ function backgroundStyle(image: string, fallback: string, overlay?: string) {
 export default function Home() {
   return (
     <div className="bg-[#050505] text-[var(--foreground)]">
-      <section
-        className="relative flex min-h-screen items-end overflow-hidden"
-        style={backgroundStyle(
-          "/images/hero_main.jpg",
-          "#1a0a2e",
-          "linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0.78) 100%), radial-gradient(circle at top, rgba(212,175,55,0.20), transparent 32%)"
-        )}
-      >
+      <section className="relative flex min-h-screen items-end overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/hero_main.jpg"
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ zIndex: 0 }}
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.35) 45%, rgba(0,0,0,0.80) 100%), radial-gradient(circle at top, rgba(212,175,55,0.20), transparent 32%)",
+            zIndex: 1,
+          }}
+        />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
           <div className="max-w-5xl">
             <p className="text-xs font-medium uppercase tracking-[0.45em] text-[#D4AF37] md:text-sm">SEOUL DDP · SEPTEMBER 2026</p>
