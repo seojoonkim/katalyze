@@ -228,7 +228,7 @@ export default function Home() {
           <p className="hidden">
             CULTURE.<br/>COMMERCE.<br/>CONVERGENCE.
           </p>
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-12">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-16">
             <p className="font-outfit text-lg font-light leading-relaxed text-white/90 max-w-xl">
               Born at DDP — the architectural icon Zaha Hadid designed to embody Seoul&apos;s restless creativity — KATALYZE compresses K-fashion, K-beauty, street culture, music, and global trade into 72 hours of cultural velocity. Not a convention. Not a concert. A convergence.
             </p>
