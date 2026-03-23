@@ -176,14 +176,14 @@ export default function Home() {
             <p className="text-sm font-outfit tracking-[0.25em] uppercase text-[#FABF13] pl-[0.04em]">
               SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
-            <h1 className="mt-4 font-bungee text-[clamp(5rem,20vw,12rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{fontFamily: "var(--font-bungee), sans-serif"}}>
+            <h1 className="mt-4 font-bungee text-[clamp(3.5rem,18vw,12rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{fontFamily: "var(--font-bungee), sans-serif"}}>
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
               The world&apos;s brands meet Seoul&apos;s energy —<br/>and <em>katalyze</em> everything.
             </p>
             <p className="mt-2 text-base font-noto-kr tracking-[0.1em] text-[#5CBFB0]">
-              세계의 브랜드, 서울의 에너지. 모든 것이 바뀌는 하나의 주말.
+              세계의 브랜드, 서울의 에너지. 하나의 주말.
             </p>
             <div className="mt-8 flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
               <div className="flex">
