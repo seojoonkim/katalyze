@@ -138,7 +138,8 @@ function backgroundStyle(image: string, fallback: string, overlay?: string) {
 export default function Home() {
   return (
     <div className="bg-[#050505] text-[var(--foreground)]">
-      <section className="relative flex min-h-screen items-end overflow-hidden" style={{ backgroundColor: '#0a0020' }}>
+      <section className="relative flex min-h-screen items-end overflow-hidden" style={{ backgroundColor: '#050510' }}>
+        {/* 한국적이고 컬러풀한 배경 영상 */}
         <video
           autoPlay
           muted
@@ -149,12 +150,12 @@ export default function Home() {
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
+        {/* 다크 오버레이 - 영상 위에 텍스트 가독성 보장 */}
         <div
           className="absolute inset-0"
           style={{
-            background:
-              "linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.35) 45%, rgba(0,0,0,0.80) 100%), radial-gradient(circle at top, rgba(212,175,55,0.20), transparent 32%)",
-            zIndex: 1,
+            background: "linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.30) 50%, rgba(0,0,0,0.75) 100%)",
+            zIndex: 1
           }}
         />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
