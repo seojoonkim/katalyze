@@ -173,7 +173,7 @@ export default function Home() {
             <p className="text-base font-outfit tracking-[0.5em] uppercase text-[#D4AF37]">
               서울 DDP · 2027. 4 · SEOUL&apos;S CULTURE-COMMERCE CONVERGENCE
             </p>
-            <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]">
+            <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{marginLeft: "-0.03em"}}>
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
