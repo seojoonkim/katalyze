@@ -1,35 +1,145 @@
 import { AnimatedSection } from "@/components/animated-section";
 import { PageHero } from "@/components/page-hero";
-import { partnerLogos } from "@/lib/site-data";
+import { SectionHeading, TierCard } from "@/components/ui";
+
+const impactStats = [
+  { value: "50,000+", label: "Expected Attendees", ko: "예상 참석자" },
+  { value: "200+", label: "Brands & Creators", ko: "브랜드·크리에이터" },
+  { value: "₩70B+", label: "Projected Revenue", ko: "예상 매출" },
+  { value: "50%", label: "International Visitors", ko: "해외 방문객" },
+]
+
+const partnerTiers = [
+  {
+    tier: "FOUNDING PARTNER",
+    ko: "파운딩 파트너",
+    price: "₩1B+",
+    color: "#D4AF37",
+    highlight: false,
+    cta: "미팅 신청",
+    benefits: [
+      "전용 존 소유권 (최대 500㎡)",
+      "메인 스테이지 브랜딩",
+      "파운딩 파트너 전용 VIP 라운지",
+      "출연진 미트앤그리트 우선 접근",
+      "공식 미디어 전면 노출",
+      "KATALYZE CONNECT 프리미엄 액세스",
+      "독점 런치 이벤트 호스팅권",
+    ],
+  },
+  {
+    tier: "CULTURAL PARTNER",
+    ko: "컬처럴 파트너",
+    price: "₩300M–1B",
+    color: "#C0C0C0",
+    highlight: false,
+    cta: "미팅 신청",
+    benefits: [
+      "브랜드 액티베이션 부스 (최대 200㎡)",
+      "에디토리얼 콘텐츠 통합",
+      "소셜 미디어 공동 캠페인",
+      "VIP 라운지 접근권 (30석)",
+      "공식 파트너 로고 노출",
+      "KATALYZE CONNECT 액세스",
+    ],
+  },
+  {
+    tier: "SUPPORTING PARTNER",
+    ko: "서포팅 파트너",
+    price: "₩50M–300M",
+    color: "#4A7A6B",
+    highlight: false,
+    cta: "문의하기",
+    benefits: [
+      "브랜드 노출 (현장 + 디지털)",
+      "티켓 패키지 (50매)",
+      "공식 파트너 리스팅",
+      "소셜 미디어 멘션",
+    ],
+  },
+]
+
+const currentPartners = [
+  "AMORE PACIFIC", "MUSINSA", "GENTLE MONSTER", "ADER ERROR",
+  "STYLENANDA", "CASS", "KAKAO", "HYBE",
+  "SM ENT", "YG PLUS", "OLIVE YOUNG", "LOTTE",
+]
 
 export default function PartnersPage() {
   return (
     <div>
-      <PageHero title="Partnerships with premium cultural gravity" eyebrow="Partners" description="From headline sponsorships to curated installations, Katalyze offers brand formats built for relevance and results." image="/images/business_meet.jpg" />
+      <PageHero
+        title="PARTNER WITH CULTURE"
+        eyebrow="Partners · 파트너"
+        description="KATALYZE와 함께하면 브랜드가 문화가 됩니다. 50,000명의 관객, 글로벌 미디어, 한국 최초의 플랫폼."
+        image="/images/festival_entry.jpg"
+      />
+
+      {/* 임팩트 수치 */}
+      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+        <div className="container-shell">
+          <SectionHeading eyebrow="Impact" title="숫자로 보는 KATALYZE" />
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+            {impactStats.map((stat) => (
+              <div key={stat.value} className="border-l-2 border-[#D4AF37] pl-6">
+                <p className="font-display text-4xl text-white md:text-5xl">{stat.value}</p>
+                <p className="mt-2 font-outfit text-xs uppercase tracking-[0.25em] text-white/60">{stat.label}</p>
+                <p className="mt-1 font-outfit text-xs text-[#4A7A6B]">{stat.ko}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* 파트너십 티어 */}
       <AnimatedSection className="section-pad">
         <div className="container-shell">
-          <div className="mb-16">
-            <h2 className="text-3xl font-black uppercase text-white mb-8">Partner tiers</h2>
-            <ul className="space-y-6 text-sm leading-8 text-white/70 max-w-2xl">
-              <li className="border-l border-[#d4af37] pl-6">
-                <span className="text-[#d4af37] font-semibold">Founding partner</span> — owned zone + launch event
-              </li>
-              <li className="border-l border-[#d4af37] pl-6">
-                <span className="text-[#d4af37] font-semibold">Cultural partner</span> — editorial integration + live content
-              </li>
-              <li className="border-l border-[#d4af37] pl-6">
-                <span className="text-[#d4af37] font-semibold">Hospitality partner</span> — VIP lounge and guest experience
-              </li>
-            </ul>
+          <SectionHeading eyebrow="Partnership Tiers" title="파트너십 옵션" description="3개 티어로 설계된 파트너십. 브랜드 목표에 맞게 선택하세요." />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {partnerTiers.map((t) => (
+              <TierCard key={t.tier} {...t} />
+            ))}
           </div>
-          <div className="border-t border-white/10 pt-12">
-            <p className="text-xs uppercase tracking-[0.3em] text-[#d4af37] mb-8">Current partners</p>
-            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-              {partnerLogos.map((logo) => (
-                <div key={logo} className="text-center">
-                  <p className="text-sm uppercase tracking-[0.28em] text-white/75">{logo}</p>
-                </div>
-              ))}
+        </div>
+      </AnimatedSection>
+
+      {/* 현재 파트너 로고 그리드 */}
+      <AnimatedSection className="section-pad bg-[#0f0f0f]">
+        <div className="container-shell">
+          <SectionHeading eyebrow="Current Partners" title="파트너사" description="KATALYZE와 함께하는 브랜드들." />
+          <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6">
+            {currentPartners.map((name) => (
+              <div key={name} className="flex items-center justify-center border border-white/10 bg-white/[0.02] px-4 py-6">
+                <p className="text-center font-display text-xs uppercase tracking-[0.2em] text-white/40">{name}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 font-outfit text-xs text-white/30">* 파트너사 로고는 추후 업데이트 예정.</p>
+        </div>
+      </AnimatedSection>
+
+      {/* 문의 CTA */}
+      <AnimatedSection className="section-pad">
+        <div className="container-shell">
+          <div className="flex flex-col items-center text-center">
+            <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#D4AF37]">Get in Touch</p>
+            <h2 className="font-display text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
+            <p className="mt-4 max-w-xl font-outfit text-base text-white/60">
+              파트너십 덱을 다운로드하거나 미팅을 신청하세요. 브랜드에 맞는 최적의 파트너십을 함께 설계합니다.
+            </p>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="/katalyze-partnership-deck.pdf"
+                className="inline-block border border-[#D4AF37] px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#D4AF37] transition hover:bg-[#D4AF37] hover:text-black"
+              >
+                Deck 다운로드
+              </a>
+              <a
+                href="mailto:partners@katalyze.live"
+                className="inline-block bg-[#D4AF37] px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-black transition hover:bg-[#e8c84a]"
+              >
+                미팅 신청
+              </a>
             </div>
           </div>
         </div>

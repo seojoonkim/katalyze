@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
+import React from "react";
 import clsx from "clsx";
 
 export function SectionHeading({ eyebrow, title, description }: { eyebrow: string; title: string; description?: string }) {
@@ -43,4 +44,75 @@ export function ImageCard({ image, title, subtitle, description, className = "" 
       </div>
     </div>
   );
+}
+
+// FAQ 아코디언
+export function AccordionFAQ({ items }: { items: { q: string; a: string }[] }) {
+  const [open, setOpen] = React.useState<number | null>(null)
+  return (
+    <div className="divide-y divide-white/10">
+      {items.map((item, i) => (
+        <div key={i} className="py-5">
+          <button
+            className="flex w-full items-center justify-between text-left"
+            onClick={() => setOpen(open === i ? null : i)}
+          >
+            <span className="font-outfit text-base font-medium text-white">{item.q}</span>
+            <span className="ml-4 text-[#D4AF37] text-xl">{open === i ? "−" : "+"}</span>
+          </button>
+          {open === i && (
+            <p className="mt-3 font-outfit text-sm leading-7 text-white/65">{item.a}</p>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+// 수치 카드
+export function StatCard({ value, suffix, label, ko }: { value: string; suffix?: string; label: string; ko?: string }) {
+  return (
+    <div className="border-l-2 border-[#D4AF37] pl-6">
+      <p className="font-display text-5xl text-white md:text-7xl">
+        {value}<span className="text-3xl text-[#D4AF37] md:text-5xl">{suffix}</span>
+      </p>
+      <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/60">{label}</p>
+      {ko && <p className="mt-1 font-outfit text-xs text-[#4A7A6B]">{ko}</p>}
+    </div>
+  )
+}
+
+// 티어 카드
+export function TierCard({ tier, ko, price, benefits, highlight, badge, color, cta }: {
+  tier: string; ko: string; price: string; benefits: string[];
+  highlight?: boolean; badge?: string; color: string; cta: string;
+}) {
+  return (
+    <div className={`relative flex flex-col border ${highlight ? 'border-[#D4AF37]' : 'border-white/10'} bg-white/[0.03]`}>
+      {badge && (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#D4AF37] px-4 py-1 text-xs font-bold uppercase tracking-widest text-black">
+          {badge}
+        </div>
+      )}
+      <div className="border-b p-6" style={{ borderColor: color + '33' }}>
+        <p style={{ color }} className="text-xs uppercase tracking-[0.4em]">{tier}</p>
+        <p className="mt-1 font-outfit text-sm text-white/50">{ko}</p>
+        <p className="mt-4 font-display text-4xl text-white">{price}</p>
+      </div>
+      <div className="flex flex-1 flex-col p-6">
+        <ul className="flex-1 space-y-3">
+          {benefits.map((b: string) => (
+            <li key={b} className="flex items-start gap-2 font-outfit text-sm text-white/70">
+              <span style={{ color }} className="mt-0.5 text-xs">✓</span>
+              {b}
+            </li>
+          ))}
+        </ul>
+        <a href="/tickets" className="mt-6 block border py-3 text-center text-xs font-semibold uppercase tracking-[0.3em] transition hover:bg-white hover:text-black"
+          style={{ borderColor: color, color }}>
+          {cta}
+        </a>
+      </div>
+    </div>
+  )
 }
