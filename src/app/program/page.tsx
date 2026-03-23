@@ -95,8 +95,8 @@ export default function ProgramPage() {
                     <p className="text-sm uppercase tracking-[0.4em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                   </div>
                   <h3 className="font-display text-4xl uppercase text-white">{zone.title}</h3>
-                  <p className="mt-2 font-outfit text-sm leading-6 text-white/85 max-w-sm">{zone.desc}</p>
-                  <p className="mt-1 font-outfit text-sm text-white/55 italic">{zone.en}</p>
+                  <p className="mt-2 font-outfit text-base leading-6 text-white/85 max-w-sm">{zone.desc}</p>
+                  <p className="mt-1 font-outfit text-base text-white/55 italic">{zone.en}</p>
                   <div className="mt-4 flex items-baseline gap-1">
                     <span className="font-display text-3xl" style={{ color: zone.color }}>{zone.stat}</span>
                     <span className="font-outfit text-sm uppercase tracking-widest text-white/55">{zone.statLabel}</span>
@@ -148,7 +148,7 @@ export default function ProgramPage() {
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white">{item.title}</p>
-                  <p className="font-outfit text-sm text-white/65">{item.desc}</p>
+                  <p className="font-outfit text-base text-white/65">{item.desc}</p>
                 </div>
                 <div>
                   <span

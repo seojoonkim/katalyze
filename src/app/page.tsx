@@ -170,7 +170,7 @@ export default function Home() {
         />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
           <div className="max-w-5xl">
-            <p className="text-sm font-outfit tracking-[0.5em] uppercase text-[#D4AF37]">
+            <p className="text-base font-outfit tracking-[0.5em] uppercase text-[#D4AF37]">
               서울 DDP · 2027. 4 · SEOUL&apos;S CULTURE-COMMERCE CONVERGENCE
             </p>
             <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]">
@@ -179,7 +179,7 @@ export default function Home() {
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
               The world&apos;s brands. Seoul&apos;s energy.<br/>One weekend that changes everything.
             </p>
-            <p className="mt-2 text-sm font-outfit tracking-[0.1em] text-[#4A7A6B]">
+            <p className="mt-2 text-base font-outfit tracking-[0.1em] text-[#4A7A6B]">
               세계의 브랜드, 서울의 에너지. 모든 것이 바뀌는 하나의 주말.
             </p>
             <div className="mt-8 flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
@@ -196,7 +196,7 @@ export default function Home() {
             {stats.map((stat) => (
               <div key={stat.label} className="flex-shrink-0">
                 <p className="font-display text-2xl tracking-[0.04em] text-white md:text-5xl">{stat.value}</p>
-                <p className="mt-0.5 text-sm uppercase tracking-[0.25em] text-white/75 md:text-sm">{stat.label}</p>
+                <p className="mt-0.5 text-sm uppercase tracking-[0.25em] text-white/75 md:text-base">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -254,22 +254,22 @@ export default function Home() {
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">50K</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Attendees</p>
-              <p className="mt-1 font-outfit text-xs text-[#4A7A6B]">참석자</p>
+              <p className="mt-1 font-outfit text-base text-[#4A7A6B]">참석자</p>
             </div>
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">72h</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Duration</p>
-              <p className="mt-1 font-outfit text-xs text-[#4A7A6B]">페스티벌 시간</p>
+              <p className="mt-1 font-outfit text-base text-[#4A7A6B]">페스티벌 시간</p>
             </div>
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">200+</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Brands</p>
-              <p className="mt-1 font-outfit text-xs text-[#4A7A6B]">참가 브랜드</p>
+              <p className="mt-1 font-outfit text-base text-[#4A7A6B]">참가 브랜드</p>
             </div>
             <div>
               <p className="font-display text-6xl text-[#D4AF37] md:text-8xl">₩1</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Est. Value</p>
-              <p className="mt-1 font-outfit text-xs text-[#4A7A6B]">조 원 경제 효과</p>
+              <p className="mt-1 font-outfit text-base text-[#4A7A6B]">조 원 경제 효과</p>
             </div>
           </div>
         </div>
@@ -293,11 +293,11 @@ export default function Home() {
               <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
                 <div className="flex items-center gap-3">
                   <p className="text-sm uppercase tracking-[0.34em] text-white/80">{audiences[0].eyebrow}</p>
-                  <span className="border border-white/20 px-2.5 py-0.5 text-sm text-white/75">{audiences[0].tag}</span>
+                  <span className="border border-white/20 px-2.5 py-0.5 text-base text-white/75">{audiences[0].tag}</span>
                 </div>
                 <h3 className="mt-4 max-w-lg font-display text-5xl leading-[0.96] text-white md:text-6xl">{audiences[0].title}</h3>
                 <p className="mt-4 max-w-lg text-base leading-7 text-white/80">{audiences[0].description}</p>
-                <div className="mt-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-white">
+                <div className="mt-6 flex items-center gap-3 text-base font-semibold uppercase tracking-[0.24em] text-white">
                   <span>{audiences[0].cta}</span>
                   <span className="inline-flex h-11 w-11 items-center justify-center border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
                     <IconArrowRight />
@@ -317,12 +317,12 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                   <div className="relative z-10 flex h-full flex-col justify-end p-7">
                     <div className="flex items-center gap-3">
-                      <p className="text-xs uppercase tracking-[0.34em] text-white/80">{card.eyebrow}</p>
-                      <span className="border border-white/20 px-2 py-0.5 text-xs text-white/75">{card.tag}</span>
+                      <p className="text-sm uppercase tracking-[0.34em] text-white/80">{card.eyebrow}</p>
+                      <span className="border border-white/20 px-2 py-0.5 text-base text-white/75">{card.tag}</span>
                     </div>
                     <h3 className="mt-3 max-w-sm font-display text-3xl leading-[0.96] text-white md:text-4xl">{card.title}</h3>
-                    <p className="mt-3 max-w-sm text-sm leading-6 text-white/75 line-clamp-2">{card.description}</p>
-                    <div className="mt-4 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-white">
+                    <p className="mt-3 max-w-sm text-base leading-6 text-white/75 line-clamp-2">{card.description}</p>
+                    <div className="mt-4 flex items-center gap-3 text-base font-semibold uppercase tracking-[0.24em] text-white">
                       <span>{card.cta}</span>
                       <span className="inline-flex h-9 w-9 items-center justify-center border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
                         <IconArrowRight />
@@ -368,7 +368,7 @@ export default function Home() {
                 <h3 className="mt-4 font-display text-4xl tracking-[0.05em] text-white md:text-5xl">{zone.title}</h3>
                 <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                 <p className="mt-6 font-outfit text-base font-light leading-relaxed text-white/80">{zone.description}</p>
-                <p className="mt-4 font-outfit text-sm italic text-white/50">{zone.en}</p>
+                <p className="mt-4 font-outfit text-base italic text-white/50">{zone.en}</p>
               </div>
             </div>
           ))}
@@ -383,7 +383,7 @@ export default function Home() {
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <h2 className="font-display text-5xl tracking-[0.07em] text-white md:text-8xl">NAMES THAT<br/>MOVE CULTURE</h2>
               <div className="flex flex-col items-start gap-3 md:items-end">
-                <p className="font-outfit text-sm text-white/50 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
+                <p className="font-outfit text-base text-white/50 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
                 <PillButton href="/program" variant="secondary">VIEW FULL PROGRAM</PillButton>
               </div>
             </div>
@@ -396,11 +396,11 @@ export default function Home() {
                   <span className="font-display text-2xl text-white/20 min-w-[2.5rem]">{String(idx + 1).padStart(2, '0')}</span>
                   <div>
                     <h3 className="font-display text-3xl tracking-[0.04em] text-white md:text-5xl">{artist.name}</h3>
-                    <p className="mt-1 font-outfit text-sm text-white/60">{artist.genre}</p>
+                    <p className="mt-1 font-outfit text-base text-white/60">{artist.genre}</p>
                   </div>
                 </div>
                 <div className="pl-[calc(2.5rem+1.5rem)] sm:pl-0 sm:text-right">
-                  <span className="inline-block border border-white/20 px-4 py-2 font-outfit text-xs uppercase tracking-[0.3em] text-[#D4AF37]">{artist.status}</span>
+                  <span className="inline-block border border-white/20 px-4 py-2 font-outfit text-sm uppercase tracking-[0.3em] text-[#D4AF37]">{artist.status}</span>
                 </div>
               </div>
             ))}
@@ -449,7 +449,7 @@ export default function Home() {
               <div className="h-8 w-8 text-[#D4AF37]"><IconBuilding /></div>
               <p className="mt-5 text-sm uppercase tracking-[0.34em] text-[#F0D980]">For Partners & Brands</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Build the most photographed booth in Seoul.</h3>
-              <p className="mt-4 max-w-lg text-sm leading-7 text-white/80 md:text-base">
+              <p className="mt-4 max-w-lg text-base leading-7 text-white/80 md:text-base">
                 Own premium real estate, launch limited drops, host founder conversations, and turn audience energy into measurable impact.
               </p>
               <div className="mt-7">
@@ -470,7 +470,7 @@ export default function Home() {
               <div className="h-8 w-8 text-[#00C9A7]"><IconBriefcase /></div>
               <p className="mt-5 text-sm uppercase tracking-[0.34em] text-[#00C9A7]">For Buyers</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Source the next breakout Korean brand before everyone else does.</h3>
-              <p className="mt-4 max-w-lg text-sm leading-7 text-white/80 md:text-base">
+              <p className="mt-4 max-w-lg text-base leading-7 text-white/80 md:text-base">
                 Curated meetings, premium hospitality, and access to labels spanning beauty, fashion, design, food, and cultural IP.
               </p>
               <div className="mt-7">
@@ -523,7 +523,7 @@ export default function Home() {
               <p className="mx-auto mt-4 max-w-2xl font-outfit text-base leading-8 text-white/90 md:text-lg">
                 4만 명의 관객, 200+ 브랜드, 하나의 주말. 당신의 자리를 지금 확보하세요.
               </p>
-              <p className="mx-auto mt-2 max-w-2xl font-outfit text-sm leading-7 text-white/85">
+              <p className="mx-auto mt-2 max-w-2xl font-outfit text-base leading-7 text-white/85">
                 40,000 attendees. 200+ brands. One weekend. Secure your place now.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3 md:gap-4">

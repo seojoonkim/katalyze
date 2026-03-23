@@ -64,7 +64,7 @@ export default function AboutPage() {
                   {stat.value}<span className="text-4xl text-[#D4AF37] md:text-5xl">{stat.suffix}</span>
                 </p>
                 <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{stat.label}</p>
-                <p className="mt-1 font-outfit text-sm text-[#4A7A6B]">{stat.ko}</p>
+                <p className="mt-1 font-outfit text-base text-[#4A7A6B]">{stat.ko}</p>
               </div>
             ))}
           </div>
@@ -122,8 +122,8 @@ export default function AboutPage() {
               <div key={i} className="border border-white/10 bg-white/[0.02] p-8">
                 <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#D4AF37]">0{i + 1}</p>
                 <h3 className="mt-3 font-display text-xl uppercase text-white leading-tight">{point.title}</h3>
-                <p className="mt-1 font-outfit text-sm text-white/55">{point.ko}</p>
-                <p className="mt-4 font-outfit text-sm leading-7 text-white/85">{point.desc}</p>
+                <p className="mt-1 font-outfit text-base text-white/55">{point.ko}</p>
+                <p className="mt-4 font-outfit text-base leading-7 text-white/85">{point.desc}</p>
               </div>
             ))}
           </div>

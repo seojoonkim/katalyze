@@ -82,8 +82,8 @@ export default function B2BPage() {
             <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#D4AF37] mb-6">Why CONNECT?</p>
             <ul className="space-y-5">
               {["단 2일 안에 한국 최고 브랜드와 직접 미팅", "검증된 바이어만 참가 — 퀄리티 보장", "AI 큐레이션으로 적합한 브랜드만 매칭", "팔로우업 지원 및 계약 협상 공간 제공"].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 font-outfit text-sm leading-6 text-white/85">
-                  <span className="mt-0.5 text-[#D4AF37] text-sm">→</span>
+                <li key={i} className="flex items-start gap-3 font-outfit text-base leading-6 text-white/85">
+                  <span className="mt-0.5 text-[#D4AF37] text-base">→</span>
                   {item}
                 </li>
               ))}
@@ -102,9 +102,9 @@ export default function B2BPage() {
                 <p className="font-display text-5xl" style={{ color: svc.color + "55" }}>{svc.number}</p>
                 <p className="mt-4 font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: svc.color }}>{svc.ko}</p>
                 <h3 className="mt-1 font-display text-xl uppercase text-white">{svc.title}</h3>
-                <p className="mt-4 font-outfit text-sm leading-7 text-white/85">{svc.desc}</p>
+                <p className="mt-4 font-outfit text-base leading-7 text-white/85">{svc.desc}</p>
                 <div className="mt-6 border-t border-white/10 pt-4">
-                  <p className="font-outfit text-sm text-white/55">{svc.stats}</p>
+                  <p className="font-outfit text-base text-white/55">{svc.stats}</p>
                 </div>
               </div>
             ))}
@@ -126,7 +126,7 @@ export default function B2BPage() {
                       type="text"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-sm text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
                       placeholder="Name"
                     />
                   </div>
@@ -136,7 +136,7 @@ export default function B2BPage() {
                       type="text"
                       value={form.company}
                       onChange={(e) => setForm({ ...form, company: e.target.value })}
-                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-sm text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
                       placeholder="Company"
                     />
                   </div>
@@ -147,7 +147,7 @@ export default function B2BPage() {
                     type="email"
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-sm text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
                     placeholder="email@company.com"
                   />
                 </div>
@@ -156,7 +156,7 @@ export default function B2BPage() {
                   <select
                     value={form.category}
                     onChange={(e) => setForm({ ...form, category: e.target.value })}
-                    className="w-full border border-white/20 bg-[#1a1a1f] px-4 py-3 font-outfit text-sm text-white focus:border-[#D4AF37] focus:outline-none"
+                    className="w-full border border-white/20 bg-[#1a1a1f] px-4 py-3 font-outfit text-base text-white focus:border-[#D4AF37] focus:outline-none"
                   >
                     <option value="">선택하세요</option>
                     {categories.map((c) => <option key={c} value={c}>{c}</option>)}
@@ -164,7 +164,7 @@ export default function B2BPage() {
                 </div>
                 <button
                   onClick={() => setSubmitted(true)}
-                  className="w-full bg-[#D4AF37] py-4 text-sm font-bold uppercase tracking-[0.4em] text-black transition hover:bg-[#e8c84a]"
+                  className="w-full bg-[#D4AF37] py-4 text-base font-bold uppercase tracking-[0.4em] text-black transition hover:bg-[#e8c84a]"
                 >
                   신청하기
                 </button>
@@ -172,7 +172,7 @@ export default function B2BPage() {
             ) : (
               <div className="border border-[#D4AF37]/30 bg-[#D4AF37]/5 p-8 text-center">
                 <p className="font-display text-2xl text-white">신청이 접수되었습니다</p>
-                <p className="mt-2 font-outfit text-sm text-white/75">검토 후 3영업일 내 이메일로 연락드립니다.</p>
+                <p className="mt-2 font-outfit text-base text-white/75">검토 후 3영업일 내 이메일로 연락드립니다.</p>
               </div>
             )}
           </div>

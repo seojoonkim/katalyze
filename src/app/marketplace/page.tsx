@@ -100,7 +100,7 @@ export default function MarketplacePage() {
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white/50 italic">{drop.brand}</p>
-                  <p className="font-outfit text-sm text-white/55">{drop.category}</p>
+                  <p className="font-outfit text-base text-white/55">{drop.category}</p>
                 </div>
                 <div>
                   <span className="inline-block border border-[#D4AF37]/40 px-3 py-1 text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
@@ -110,7 +110,7 @@ export default function MarketplacePage() {
               </div>
             ))}
           </div>
-          <p className="mt-6 font-outfit text-sm text-white/50">* 브랜드 및 드롭 정보는 추후 발표 예정. 사전 알림을 신청하세요.</p>
+          <p className="mt-6 font-outfit text-base text-white/50">* 브랜드 및 드롭 정보는 추후 발표 예정. 사전 알림을 신청하세요.</p>
         </div>
       </AnimatedSection>
 
@@ -130,17 +130,17 @@ export default function MarketplacePage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="brand@yourbrand.com"
-                  className="flex-1 border border-white/20 bg-white/5 px-4 py-3 font-outfit text-sm text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                  className="flex-1 border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
                 />
                 <button
                   onClick={() => setSubmitted(true)}
-                  className="border border-[#D4AF37] bg-[#D4AF37] px-6 py-3 text-sm font-bold uppercase tracking-[0.3em] text-black transition hover:bg-[#e8c84a]"
+                  className="border border-[#D4AF37] bg-[#D4AF37] px-6 py-3 text-base font-bold uppercase tracking-[0.3em] text-black transition hover:bg-[#e8c84a]"
                 >
                   신청
                 </button>
               </div>
             ) : (
-              <p className="mt-8 font-outfit text-sm text-[#D4AF37]">✓ 신청이 접수되었습니다. 곧 연락드리겠습니다.</p>
+              <p className="mt-8 font-outfit text-base text-[#D4AF37]">✓ 신청이 접수되었습니다. 곧 연락드리겠습니다.</p>
             )}
           </div>
         </div>

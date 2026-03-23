@@ -84,7 +84,7 @@ export default function PartnersPage() {
               <div key={stat.value} className="border-l-2 border-[#D4AF37] pl-6">
                 <p className="font-display text-4xl text-white md:text-5xl">{stat.value}</p>
                 <p className="mt-2 font-outfit text-sm uppercase tracking-[0.25em] text-white/75">{stat.label}</p>
-                <p className="mt-1 font-outfit text-sm text-[#4A7A6B]">{stat.ko}</p>
+                <p className="mt-1 font-outfit text-base text-[#4A7A6B]">{stat.ko}</p>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function PartnersPage() {
               </div>
             ))}
           </div>
-          <p className="mt-4 font-outfit text-sm text-white/50">* 파트너사 로고는 추후 업데이트 예정.</p>
+          <p className="mt-4 font-outfit text-base text-white/50">* 파트너사 로고는 추후 업데이트 예정.</p>
         </div>
       </AnimatedSection>
 

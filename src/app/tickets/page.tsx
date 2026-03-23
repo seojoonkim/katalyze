@@ -83,21 +83,21 @@ export default function TicketsPage() {
                 className={`relative flex flex-col border ${ticket.highlight ? 'border-[#D4AF37]' : 'border-white/10'} bg-white/[0.03]`}
               >
                 {ticket.badge && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#D4AF37] px-4 py-1 text-sm font-bold uppercase tracking-widest text-black">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#D4AF37] px-4 py-1 text-base font-bold uppercase tracking-widest text-black">
                     {ticket.badge}
                   </div>
                 )}
                 <div className="border-b p-6" style={{ borderColor: ticket.color + '33' }}>
                   <p style={{ color: ticket.color }} className="text-sm uppercase tracking-[0.35em]">{ticket.name}</p>
-                  <p className="mt-1 font-outfit text-sm text-white/65">{ticket.ko}</p>
+                  <p className="mt-1 font-outfit text-base text-white/65">{ticket.ko}</p>
                   <p className="mt-4 font-display text-4xl text-white">{ticket.price}</p>
-                  <p className="font-outfit text-sm text-white/55">{ticket.priceEn}</p>
+                  <p className="font-outfit text-base text-white/55">{ticket.priceEn}</p>
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <ul className="flex-1 space-y-3">
                     {ticket.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-2 font-outfit text-sm text-white/85">
-                        <span style={{ color: ticket.color }} className="mt-0.5 text-sm shrink-0">✓</span>
+                      <li key={item} className="flex items-start gap-2 font-outfit text-base text-white/85">
+                        <span style={{ color: ticket.color }} className="mt-0.5 text-base shrink-0">✓</span>
                         {item}
                       </li>
                     ))}
@@ -130,8 +130,8 @@ export default function TicketsPage() {
               <div key={fact.label} className="border border-white/10 bg-white/[0.02] p-6">
                 <p className="text-2xl">{fact.icon}</p>
                 <p className="mt-3 font-outfit text-sm uppercase tracking-[0.25em] text-[#D4AF37]">{fact.label}</p>
-                <p className="mt-2 font-outfit text-sm font-medium text-white">{fact.value}</p>
-                <p className="mt-1 font-outfit text-sm text-white/55">{fact.en}</p>
+                <p className="mt-2 font-outfit text-base font-medium text-white">{fact.value}</p>
+                <p className="mt-1 font-outfit text-base text-white/55">{fact.en}</p>
               </div>
             ))}
           </div>
@@ -153,7 +153,7 @@ export default function TicketsPage() {
         <div className="container-shell flex items-center justify-between py-4">
           <div>
             <p className="font-outfit text-sm uppercase tracking-[0.25em] text-[#D4AF37]">KATALYZE 2027</p>
-            <p className="font-outfit text-sm text-white/85">April 2027 · DDP Seoul</p>
+            <p className="font-outfit text-base text-white/85">April 2027 · DDP Seoul</p>
           </div>
           <div className="flex gap-3">
             <PillButton href="#" variant="secondary">

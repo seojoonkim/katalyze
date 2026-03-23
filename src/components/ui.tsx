@@ -19,7 +19,7 @@ export function PillButton({ href, children, variant = "primary" }: { href: stri
     <Link
       href={href}
       className={clsx(
-        "inline-flex items-center justify-center rounded-none px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] transition",
+        "inline-flex items-center justify-center rounded-none px-5 py-3 text-base font-semibold uppercase tracking-[0.16em] transition",
         variant === "primary" && "bg-[#d4af37] text-black hover:bg-[#e8c84a]",
         variant === "secondary" && "border border-white/15 bg-white/5 text-white hover:border-[#d4af37] hover:text-[#d4af37]",
         variant === "ghost" && "text-white/85 hover:text-white",
@@ -40,7 +40,7 @@ export function ImageCard({ image, title, subtitle, description, className = "" 
       <div className="p-6">
         {subtitle ? <p className="text-sm uppercase tracking-[0.24em] text-[#d4af37]">{subtitle}</p> : null}
         <h3 className="mt-2 text-2xl font-bold uppercase text-white">{title}</h3>
-        {description ? <p className="mt-3 text-sm leading-7 text-white/85">{description}</p> : null}
+        {description ? <p className="mt-3 text-base leading-7 text-white/85">{description}</p> : null}
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ export function AccordionFAQ({ items }: { items: { q: string; a: string }[] }) {
             <span className="ml-4 text-[#D4AF37] text-xl">{open === i ? "−" : "+"}</span>
           </button>
           {open === i && (
-            <p className="mt-3 font-outfit text-sm leading-7 text-white/85">{item.a}</p>
+            <p className="mt-3 font-outfit text-base leading-7 text-white/85">{item.a}</p>
           )}
         </div>
       ))}
@@ -77,7 +77,7 @@ export function StatCard({ value, suffix, label, ko }: { value: string; suffix?:
         {value}<span className="text-3xl text-[#D4AF37] md:text-5xl">{suffix}</span>
       </p>
       <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{label}</p>
-      {ko && <p className="mt-1 font-outfit text-sm text-[#4A7A6B]">{ko}</p>}
+      {ko && <p className="mt-1 font-outfit text-base text-[#4A7A6B]">{ko}</p>}
     </div>
   )
 }
@@ -90,25 +90,25 @@ export function TierCard({ tier, ko, price, benefits, highlight, badge, color, c
   return (
     <div className={`relative flex flex-col border ${highlight ? 'border-[#D4AF37]' : 'border-white/10'} bg-white/[0.03]`}>
       {badge && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#D4AF37] px-4 py-1 text-sm font-bold uppercase tracking-widest text-black">
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#D4AF37] px-4 py-1 text-base font-bold uppercase tracking-widest text-black">
           {badge}
         </div>
       )}
       <div className="border-b p-6" style={{ borderColor: color + '33' }}>
         <p style={{ color }} className="text-sm uppercase tracking-[0.4em]">{tier}</p>
-        <p className="mt-1 font-outfit text-sm text-white/65">{ko}</p>
+        <p className="mt-1 font-outfit text-base text-white/65">{ko}</p>
         <p className="mt-4 font-display text-4xl text-white">{price}</p>
       </div>
       <div className="flex flex-1 flex-col p-6">
         <ul className="flex-1 space-y-3">
           {benefits.map((b: string) => (
-            <li key={b} className="flex items-start gap-2 font-outfit text-sm text-white/85">
-              <span style={{ color }} className="mt-0.5 text-sm">✓</span>
+            <li key={b} className="flex items-start gap-2 font-outfit text-base text-white/85">
+              <span style={{ color }} className="mt-0.5 text-base">✓</span>
               {b}
             </li>
           ))}
         </ul>
-        <a href="/tickets" className="mt-6 block border py-3 text-center text-sm font-semibold uppercase tracking-[0.3em] transition hover:bg-white hover:text-black"
+        <a href="/tickets" className="mt-6 block border py-3 text-center text-base font-semibold uppercase tracking-[0.3em] transition hover:bg-white hover:text-black"
           style={{ borderColor: color, color }}>
           {cta}
         </a>
