@@ -177,18 +177,18 @@ export default function Home() {
               SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
             <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.01em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.65)]" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
-              KATALYZE
+              <span className="text-[#FABF13]">K</span>ATALYZ<span className="text-[#FF0A73]">E</span>
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/92 md:text-2xl">
               Global brands. Seoul&apos;s energy.<br/>72 hours that <em>katalyze</em> everything.
             </p>
             <p className="mt-2 text-base font-noto-kr tracking-[0.1em] text-[#00D4B8]">
-              세계의 브랜드, 서울의 에너지. 하나의 주말.
+              세계의 브랜드, 서울의 에너지. <span className="text-[#FABF13]">KATALYZE</span> 하나의 주말.
             </p>
             <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center">
               <PillButton href="/tickets">CLAIM YOUR SPOT</PillButton>
               <div className="flex gap-3">
-                <a href="/partners" className="inline-flex items-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all" style={{fontWeight:600}}>Partner with us</a>
+                <a href="/partners" className="inline-flex items-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all" style={{fontWeight:600}}>Partner with KATALYZE</a>
                 <a href="/b2b" className="inline-flex items-center gap-2 border border-white/40 px-5 py-3 text-sm text-white/88 font-rubik uppercase tracking-[0.1em] hover:border-white hover:text-white transition-all" style={{fontWeight:600}}>B2B access</a>
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function Home() {
           </p>
           <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-16">
             <p className="font-outfit text-xl font-normal leading-relaxed text-white md:text-2xl max-w-xl">
-              Born at DDP — the architectural icon Zaha Hadid designed to embody Seoul&apos;s restless creativity — KATALYZE compresses K-fashion, K-beauty, street culture, music, and global trade into 72 hours of cultural velocity. Not a convention. Not a concert. A convergence.
+              Born at DDP — the architectural icon Zaha Hadid designed to embody Seoul&apos;s restless creativity — <span className="text-[#FABF13] font-semibold">KATALYZE</span> compresses K-fashion, K-beauty, street culture, music, and global trade into 72 hours of cultural velocity. Not a convention. Not a concert. A convergence.
             </p>
             <div className="space-y-6">
               <div className="flex items-baseline gap-4">
@@ -478,9 +478,9 @@ export default function Home() {
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
               <div className="h-8 w-8 text-[#FABF13]"><IconBuilding /></div>
               <p className="mt-5 text-sm font-rubik uppercase tracking-[0.3em] text-[#F0D980] font-bold">For Partners & Brands</p>
-              <h3 className="mt-4 font-rubik text-4xl leading-[0.96] text-white md:text-5xl" style={{fontWeight:800}}>Build the most photographed booth in Seoul.</h3>
+              <h3 className="mt-4 font-rubik text-4xl leading-[0.96] text-white md:text-5xl" style={{fontWeight:800}}>Build the most photographed booth at <span className="text-[#FABF13]">KATALYZE</span>.</h3>
               <p className="mt-4 max-w-lg text-base leading-7 text-white/90 md:text-base">
-                Own premium real estate, launch limited drops, host founder conversations, and turn audience energy into measurable impact.
+                Own premium real estate, launch limited drops, host founder conversations, and convert 50K attendees into brand believers.
               </p>
               <div className="mt-7">
                 <PillButton href="/partners">REQUEST PARTNERSHIP DECK</PillButton>
@@ -499,9 +499,9 @@ export default function Home() {
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
               <div className="h-8 w-8 text-[#00C9A7]"><IconBriefcase /></div>
               <p className="mt-5 text-sm font-rubik uppercase tracking-[0.3em] text-[#00C9A7] font-bold">For Buyers</p>
-              <h3 className="mt-4 font-rubik text-4xl leading-[0.96] text-white md:text-5xl" style={{fontWeight:800}}>Source the next breakout Korean brand before everyone else does.</h3>
+              <h3 className="mt-4 font-rubik text-4xl leading-[0.96] text-white md:text-5xl" style={{fontWeight:800}}>The next breakout Korean brand is at <span className="text-[#00C9A7]">KATALYZE</span>. Get there first.</h3>
               <p className="mt-4 max-w-lg text-base leading-7 text-white/90 md:text-base">
-                Curated meetings, premium hospitality, and access to labels spanning beauty, fashion, design, food, and cultural IP.
+                Curated 1:1 meetings, premium VIP hospitality, and first access to labels spanning beauty, fashion, design, food, and cultural IP.
               </p>
               <div className="mt-7">
                 <PillButton href="/b2b" variant="secondary">APPLY FOR BUYER ACCESS</PillButton>
@@ -537,7 +537,7 @@ export default function Home() {
       </section>
 
       {/* ═══════ FINAL CTA ═══════ */}
-      <section className="[&_*]:!text-white py-20 md:py-24" style={{background: 'radial-gradient(ellipse at 30% 50%, rgba(255,10,115,0.15) 0%, rgba(250,191,19,0.05) 50%, #0D0D10 80%)'}}}>
+      <section className="[&_*]:!text-white py-20 md:py-24" style={{background: 'radial-gradient(ellipse at 30% 50%, rgba(255,10,115,0.15) 0%, rgba(250,191,19,0.05) 50%, #0D0D10 80%)'}}>
         <div className="container-shell text-center text-white">
           <div
             className="relative overflow-hidden rounded-none px-6 py-16 md:px-10 md:py-24"
@@ -568,12 +568,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-    </div>
         </div>
       </section>
     </div>
