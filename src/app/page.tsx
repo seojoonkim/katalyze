@@ -176,7 +176,7 @@ export default function Home() {
             <p className="text-sm font-outfit tracking-[0.25em] uppercase text-[#FABF13] pl-[0.04em]">
               SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
-            <h1 className="mt-4 font-bungee text-[clamp(5rem,20vw,12rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]">
+            <h1 className="mt-4 font-bungee text-[clamp(5rem,20vw,12rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]" style={{fontFamily: "var(--font-bungee), sans-serif"}}>
               KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
