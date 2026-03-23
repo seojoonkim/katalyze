@@ -109,7 +109,7 @@ const lineup = [
 ];
 
 function backgroundStyle(image: string, fallback: string, overlay?: string) {
-  // 이미지를 div 안에 absolute로 배치하는 대신, 
+  // 이미지를 div 안에 absolute로 배치하는 대신,
   // CSS custom property로 이미지 경로를 전달
   // 실제 렌더링은 컴포넌트 내부에서 처리
   const style: React.CSSProperties = {
@@ -216,10 +216,10 @@ export default function Home() {
 
       <section className="bg-[linear-gradient(180deg,#080808_0%,#12091c_55%,#080808_100%)] py-20 md:py-28">
         <div className="container-shell grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="rounded-[34px] border border-white/10 bg-white/5 p-8 backdrop-blur-sm md:p-12">
-            <div className="text-7xl leading-none text-[#D4AF37] md:text-8xl">“</div>
+          <div className="py-4">
+            <div className="text-7xl leading-none text-[#D4AF37] md:text-8xl">"</div>
             <p className="-mt-5 max-w-3xl font-display text-4xl leading-[0.95] text-white md:text-6xl">
-              KATALYZE is where Seoul’s creative electricity becomes a platform for fandom, discovery, and real business momentum.
+              KATALYZE is where Seoul's creative electricity becomes a platform for fandom, discovery, and real business momentum.
             </p>
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/72 md:text-lg">
               Not just a conference. Not just a festival. A live, deal-making, culture-shaping convergence of brands, buyers, creators, and audiences ready to move.
