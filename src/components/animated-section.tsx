@@ -1,9 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { PropsWithChildren } from "react";
+import { CSSProperties, PropsWithChildren } from "react";
 
-export function AnimatedSection({ children, className = "" }: PropsWithChildren<{ className?: string }>) {
+export function AnimatedSection({ 
+  children, 
+  className = "",
+  style
+}: PropsWithChildren<{ className?: string; style?: CSSProperties }>) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 16 }}
@@ -11,6 +15,7 @@ export function AnimatedSection({ children, className = "" }: PropsWithChildren<
       viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={className}
+      style={style}
     >
       {children}
     </motion.section>

@@ -115,7 +115,14 @@ export default function TicketsPage() {
       </AnimatedSection>
 
       {/* 날짜·장소·오시는 길 */}
-      <AnimatedSection className="section-pad bg-muk">
+      <AnimatedSection 
+        className="section-pad bg-muk"
+        style={{
+          backgroundImage: "linear-gradient(rgba(26,26,31,0.88), rgba(26,26,31,0.88)), url('/images/venue_ddp.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
         <div className="container-shell">
           <SectionHeading eyebrow="Venue" title="장소 안내" />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

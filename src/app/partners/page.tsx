@@ -104,7 +104,14 @@ export default function PartnersPage() {
       </AnimatedSection>
 
       {/* 현재 파트너 로고 그리드 */}
-      <AnimatedSection className="section-pad bg-muk">
+      <AnimatedSection 
+        className="section-pad bg-muk"
+        style={{
+          backgroundImage: "linear-gradient(rgba(26,26,31,0.92), rgba(26,26,31,0.92)), url('/images/business_brands.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
         <div className="container-shell">
           <SectionHeading eyebrow="Current Partners" title="파트너사" description="KATALYZE와 함께하는 브랜드들." />
           <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6">
