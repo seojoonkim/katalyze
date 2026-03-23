@@ -548,7 +548,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/35" />
             <div className="relative z-10">
               <p className="text-sm font-rubik uppercase tracking-[0.35em] text-white/90 font-bold">APRIL 2027 · <span className="font-noto-kr">서울 DDP</span></p>
-              <h2 className="mt-4 font-rubik text-7xl tracking-tight text-white md:text-[10rem] leading-[0.85]" style={{fontFamily:"var(--font-rubik),sans-serif", fontWeight:900}}>THE WORLD IS COMING TO SEOUL.<br/><span className="text-[#FABF13]">ARE YOU?</span></h2>
+              <h2 className="mt-4 font-rubik text-5xl tracking-tight text-white md:text-7xl leading-[0.9]" style={{fontFamily:"var(--font-rubik),sans-serif", fontWeight:900}}>THE WORLD IS COMING TO SEOUL.<br/><span className="text-[#FABF13]">ARE YOU?</span></h2>
               <p className="mx-auto mt-4 max-w-2xl font-noto-kr text-base leading-8 text-white/90 md:text-lg">
                 5만 명의 관객. 200+ 브랜드. 하나의 주말. 당신의 자리는 지금 이 순간 사라지고 있습니다.
               </p>
