@@ -33,7 +33,7 @@ export default function AboutPage() {
         title="WHERE CULTURE BECOMES COMMERCE"
         eyebrow="About KATALYZE · 소개"
         description="서울이 세계에게 자신을 보여주는 방식. 그 이름이 KATALYZE다."
-        image="/images/seoul_vibrant.jpg"
+        image="/images/about_seoul_bg.jpg"
       />
 
       {/* 매니페스토 인용 */}
@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div
             className="h-[400px] w-full"
             style={{
-              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.90) 100%), url('/images/seoul_vibrant.jpg')`,
+              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.90) 100%), url('/images/about_seoul_bg.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -112,7 +112,7 @@ export default function AboutPage() {
       <AnimatedSection 
         className="section-pad"
         style={{
-          backgroundImage: "linear-gradient(rgba(26,26,31,0.90), rgba(26,26,31,0.90)), url('/images/seoul_vibrant.jpg')",
+          backgroundImage: "linear-gradient(rgba(26,26,31,0.90), rgba(26,26,31,0.90)), url('/images/about_seoul_bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
