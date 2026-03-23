@@ -302,7 +302,7 @@ export default function Home() {
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Audience Selector</p>
-            <h2 className="mt-4 font-rubik text-3xl tracking-[0.01em] text-white md:text-4xl lg:text-[2.8rem]" style={{fontWeight:800}}>HOW WILL YOU SHOW UP?</h2>
+            <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-[2.4rem] whitespace-nowrap" style={{fontWeight:800}}>HOW WILL YOU SHOW UP?</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
             {/* 첫 번째 카드: 크게 */}
@@ -363,7 +363,7 @@ export default function Home() {
         <div className="container-shell py-20 md:py-28">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">4 Zones</p>
-            <h2 className="mt-4 font-rubik text-4xl tracking-[0.02em] text-white md:text-5xl lg:text-[3.6rem]" style={{fontWeight:800}}>FOUR WORLDS. ONE WEEKEND.</h2>
+            <h2 className="mt-4 font-rubik text-2xl tracking-[-0.01em] text-white md:text-3xl lg:text-4xl whitespace-nowrap" style={{fontWeight:800}}>FOUR WORLDS. ONE WEEKEND.</h2>
           </div>
         </div>
         <div className="space-y-0">
