@@ -1,31 +1,32 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Anton, Space_Grotesk, Outfit, Playfair_Display } from "next/font/google";
+import { Barlow_Condensed, Space_Grotesk, Inter, Noto_Sans_KR, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const bebasNeue = Bebas_Neue({
-  weight: "400",
+const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
-  variable: "--font-bebas",
-});
-
-const anton = Anton({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-anton",
+  weight: ["400", "600", "700", "800"],
+  style: ["normal", "italic"],
+  variable: "--font-barlow",
 });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const outfit = Outfit({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-outfit",
+  variable: "--font-inter",
   weight: ["300", "400", "500", "600"],
+});
+
+const notoSansKR = Noto_Sans_KR({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  variable: "--font-noto-kr",
 });
 
 const playfair = Playfair_Display({
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.variable} ${anton.variable} ${spaceGrotesk.variable} ${outfit.variable} ${playfair.variable} font-outfit`}>
+      <body className={`${barlowCondensed.variable} ${spaceGrotesk.variable} ${inter.variable} ${notoSansKR.variable} ${playfair.variable} font-outfit`}>
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

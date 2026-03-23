@@ -13,6 +13,7 @@ const audiences = [
   {
     eyebrow: "FOR VISITORS",
     tag: "방문객",
+    tagClass: "font-noto-kr",
     title: "Come for the drop. Stay for the obsession.",
     description:
       "50,000명이 서울 한복판에서 동시에 발견하는 순간. 패션 론칭, K-뷰티 첫 공개, 라이브 퍼포먼스, 그리고 서울만의 감각 — 하나의 주말에 전부.",
@@ -26,6 +27,7 @@ const audiences = [
   {
     eyebrow: "FOR BRANDS",
     tag: "브랜드",
+    tagClass: "font-noto-kr",
     title: "50,000 people. 72 hours. Your brand's defining Seoul moment.",
     description:
       "한정판 드롭, 몰입형 부스, 파운더 토크, 그리고 실시간 전환. 대한민국 최대 컬처 커머스 페스티벌에서 브랜드의 다음 챕터를 쓰세요.",
@@ -39,6 +41,7 @@ const audiences = [
   {
     eyebrow: "FOR BUYERS",
     tag: "바이어",
+    tagClass: "font-noto-kr",
     title: "The next global brand is Korean. Find it first.",
     description:
       "프라이빗 네트워킹, 큐레이티드 미팅, VIP 라운지. 뷰티, 패션, 디자인, F&B, 컬처 IP — 전 세계가 주목하기 전에, 먼저 만나세요.",
@@ -179,7 +182,7 @@ export default function Home() {
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
               KATALYZE — The world&apos;s brands. Seoul&apos;s energy.<br/>One weekend that changes everything.
             </p>
-            <p className="mt-2 text-base font-outfit tracking-[0.1em] text-[#5CBFB0]">
+            <p className="mt-2 text-base font-noto-kr tracking-[0.1em] text-[#5CBFB0]">
               세계의 브랜드, 서울의 에너지. 모든 것이 바뀌는 하나의 주말.
             </p>
             <div className="mt-8 flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
@@ -221,7 +224,7 @@ export default function Home() {
           <p className="font-display text-[clamp(1.8rem,4.5vw,4.2rem)] leading-[1.15] text-white max-w-5xl">
             &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#FABF13]">It catalyzes them.&rdquo;</span>
           </p>
-          <p className="mt-6 font-outfit text-lg font-light text-[#5CBFB0] max-w-xl">
+          <p className="mt-6 font-noto-kr text-lg font-light text-[#5CBFB0] max-w-xl">
             서울은 트렌드를 따르지 않는다. 촉발한다.
           </p>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-12">
@@ -253,22 +256,22 @@ export default function Home() {
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">50K</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Attendees</p>
-              <p className="mt-1 font-outfit text-base text-[#5CBFB0]">참석자</p>
+              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">참석자</p>
             </div>
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">72h</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Duration</p>
-              <p className="mt-1 font-outfit text-base text-[#5CBFB0]">페스티벌 시간</p>
+              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">페스티벌 시간</p>
             </div>
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">200+</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Brands</p>
-              <p className="mt-1 font-outfit text-base text-[#5CBFB0]">참가 브랜드</p>
+              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">참가 브랜드</p>
             </div>
             <div>
               <p className="font-display text-6xl text-[#FABF13] md:text-8xl">₩1</p>
               <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Est. Value</p>
-              <p className="mt-1 font-outfit text-base text-[#5CBFB0]">조 원 경제 효과</p>
+              <p className="mt-1 font-noto-kr text-base text-[#5CBFB0]">조 원 경제 효과</p>
             </div>
           </div>
         </div>
@@ -365,8 +368,8 @@ export default function Home() {
               <div className="w-full md:w-2/5 flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 bg-muk">
                 <span className="font-display text-6xl md:text-7xl" style={{ color: zone.color }}>{zone.number}</span>
                 <h3 className="mt-4 font-display text-4xl tracking-[0.05em] text-white md:text-5xl">{zone.title}</h3>
-                <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
-                <p className="mt-6 font-outfit text-base font-light leading-relaxed text-white/80">{zone.description}</p>
+                <p className="mt-3 font-noto-kr text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
+                <p className="mt-6 font-noto-kr text-base font-light leading-relaxed text-white/80">{zone.description}</p>
                 <p className="mt-4 font-outfit text-base italic text-white/70">{zone.en}</p>
               </div>
             </div>
@@ -378,11 +381,11 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-muk">
         <div className="container-shell">
           <div className="mb-16">
-            <p className="font-outfit text-sm uppercase tracking-[0.5em] text-[#FABF13]">LINEUP · 라인업</p>
+            <p className="font-outfit text-sm uppercase tracking-[0.5em] text-[#FABF13]">LINEUP · <span className="font-noto-kr">라인업</span></p>
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <h2 className="font-display text-5xl tracking-[0.07em] text-white md:text-8xl">NAMES THAT<br/>MOVE CULTURE</h2>
               <div className="flex flex-col items-start gap-3 md:items-end">
-                <p className="font-outfit text-base text-white/70 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
+                <p className="font-noto-kr text-base text-white/70 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
                 <PillButton href="/program" variant="secondary">VIEW FULL PROGRAM</PillButton>
               </div>
             </div>
@@ -517,9 +520,9 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10">
-              <p className="text-sm uppercase tracking-[0.5em] text-white/80">APRIL 2027 · 서울 DDP</p>
+              <p className="text-sm uppercase tracking-[0.5em] text-white/80">APRIL 2027 · <span className="font-noto-kr">서울 DDP</span></p>
               <h2 className="mt-4 font-impact text-7xl tracking-[0.08em] text-white md:text-9xl">THE WORLD SHOWS UP IN SEOUL.</h2>
-              <p className="mx-auto mt-4 max-w-2xl font-outfit text-base leading-8 text-white/90 md:text-lg">
+              <p className="mx-auto mt-4 max-w-2xl font-noto-kr text-base leading-8 text-white/90 md:text-lg">
                 4만 명의 관객, 200+ 브랜드, 하나의 주말. 당신의 자리를 지금 확보하세요.
               </p>
               <p className="mx-auto mt-2 max-w-2xl font-outfit text-base leading-7 text-white/85">
