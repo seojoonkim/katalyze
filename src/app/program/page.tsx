@@ -58,7 +58,7 @@ const zoneColorMap: Record<string, string> = {
   "THE STAGE": "#8220DC",
   "THE LAB": "#00C9A7",
   "THE GALLERY": "#F59E0B",
-  "ALL ZONES": "#D4AF37",
+  "ALL ZONES": "#C4913E",
 }
 
 export default function ProgramPage() {
@@ -132,7 +132,7 @@ export default function ProgramPage() {
                 onClick={() => setActiveDay(d)}
                 className={`px-8 py-3 text-sm uppercase tracking-[0.3em] font-semibold transition border-b-2 -mb-px ${
                   activeDay === d
-                    ? "border-[#D4AF37] text-[#D4AF37]"
+                    ? "border-[#C4913E] text-[#C4913E]"
                     : "border-transparent text-white/55 hover:text-white/85"
                 }`}
               >
@@ -144,7 +144,7 @@ export default function ProgramPage() {
             {items.map((item) => (
               <div key={item.time + item.title} className="flex flex-col gap-2 py-5 md:flex-row md:items-center md:gap-8">
                 <div className="w-16 shrink-0">
-                  <p className="font-display text-xl text-[#D4AF37]">{item.time}</p>
+                  <p className="font-display text-xl text-[#C4913E]">{item.time}</p>
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white">{item.title}</p>
@@ -154,8 +154,8 @@ export default function ProgramPage() {
                   <span
                     className="inline-block px-3 py-1 text-sm uppercase tracking-[0.25em] font-semibold"
                     style={{
-                      color: zoneColorMap[item.zone] ?? "#D4AF37",
-                      backgroundColor: (zoneColorMap[item.zone] ?? "#D4AF37") + "22",
+                      color: zoneColorMap[item.zone] ?? "#C4913E",
+                      backgroundColor: (zoneColorMap[item.zone] ?? "#C4913E") + "22",
                     }}
                   >
                     {item.zone}
@@ -186,7 +186,7 @@ export default function ProgramPage() {
       {/* CTA */}
       <AnimatedSection className="section-pad">
         <div className="container-shell flex flex-col items-center text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Get Your Ticket</p>
+          <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#C4913E]">Get Your Ticket</p>
           <h2 className="font-display text-4xl uppercase text-white md:text-6xl">지금 티켓 구매</h2>
           <p className="mt-4 max-w-xl font-outfit text-base text-white/75">April 2027, DDP Seoul. 72시간의 문화 속도를 직접 경험하세요.</p>
           <div className="mt-8">

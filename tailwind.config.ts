@@ -2,13 +2,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        muk: "#1A1A1F",
-        baekja: "#F0EDE5",
-        cheongja: "#4A7A6B",
-        dancheng: "#C73B3B",
+        muk: "#0D0D10",
+        baekja: "#F0EBE3",
+        cheongja: "#2D6B7A",
+        dancheng: "#E85030",
+        "seoul-red": "#E85030",
         silver: "#C0C0C0",
-        gold: "#D4AF37",
-        "gold-light": "#E8C84A",
+        gold: "#C4913E",
+        "gold-light": "#D4A84A",
         "stage-purple": "#8220DC",
         "drop-pink": "#DC1E5A",
         "lab-teal": "#00C9A7",
@@ -18,7 +19,7 @@ export default {
         celadon: "#1B2A4A",
         catalyst: "#00FF88",
         "lab-green": "#00B482",
-        "gallery-gold": "#C8A01E",
+        "gallery-gold": "#B08A1E",
       },
       fontFamily: {
         display: ["var(--font-bebas)", "Impact", "sans-serif"],

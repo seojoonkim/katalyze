@@ -11,7 +11,7 @@ const ticketTiers = [
     price: "₩89,000",
     priceEn: "$65",
     highlight: false,
-    color: "#F0EDE5",
+    color: "#F0EBE3",
     includes: ["2일 입장권", "전 존 기본 접근", "공식 굿즈백", "디지털 프로그램 가이드"],
     cta: "구매하기",
   },
@@ -21,7 +21,7 @@ const ticketTiers = [
     price: "₩189,000",
     priceEn: "$138",
     highlight: false,
-    color: "#4A7A6B",
+    color: "#2D6B7A",
     includes: ["2일 우선 입장", "THE LAB & GALLERY 프리미엄 접근", "파운더 토크 좌석 예약", "공식 굿즈백 + 한정판 아이템", "디지털 콘텐츠 패키지"],
     cta: "구매하기",
   },
@@ -32,7 +32,7 @@ const ticketTiers = [
     priceEn: "$285",
     highlight: true,
     badge: "MOST POPULAR",
-    color: "#D4AF37",
+    color: "#C4913E",
     includes: ["2일 VIP 입장", "KATALYZE CONNECT 네트워킹 액세스", "브랜드 라운지 접근", "큐레이티드 바이어 미팅 (최대 3건)", "프라이빗 런치 초대", "전용 굿즈 패키지"],
     cta: "구매하기",
   },
@@ -80,10 +80,10 @@ export default function TicketsPage() {
             {ticketTiers.map((ticket) => (
               <div
                 key={ticket.name}
-                className={`relative flex flex-col border ${ticket.highlight ? 'border-[#D4AF37]' : 'border-white/10'} bg-white/[0.03]`}
+                className={`relative flex flex-col border ${ticket.highlight ? 'border-[#C4913E]' : 'border-white/10'} bg-white/[0.03]`}
               >
                 {ticket.badge && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#D4AF37] px-4 py-1 text-base font-bold uppercase tracking-widest text-black">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#C4913E] px-4 py-1 text-base font-bold uppercase tracking-widest text-black">
                     {ticket.badge}
                   </div>
                 )}
@@ -129,7 +129,7 @@ export default function TicketsPage() {
             {venueFacts.map((fact) => (
               <div key={fact.label} className="border border-white/10 bg-white/[0.02] p-6">
                 <p className="text-2xl">{fact.icon}</p>
-                <p className="mt-3 font-outfit text-sm uppercase tracking-[0.25em] text-[#D4AF37]">{fact.label}</p>
+                <p className="mt-3 font-outfit text-sm uppercase tracking-[0.25em] text-[#C4913E]">{fact.label}</p>
                 <p className="mt-2 font-outfit text-base font-medium text-white">{fact.value}</p>
                 <p className="mt-1 font-outfit text-base text-white/55">{fact.en}</p>
               </div>
@@ -149,10 +149,10 @@ export default function TicketsPage() {
       </AnimatedSection>
 
       {/* 스티키 하단 CTA */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#1a1a1f]/95 backdrop-blur-sm">
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#0D0D10]/95 backdrop-blur-sm">
         <div className="container-shell flex items-center justify-between py-4">
           <div>
-            <p className="font-outfit text-sm uppercase tracking-[0.25em] text-[#D4AF37]">KATALYZE 2027</p>
+            <p className="font-outfit text-sm uppercase tracking-[0.25em] text-[#C4913E]">KATALYZE 2027</p>
             <p className="font-outfit text-base text-white/85">April 2027 · DDP Seoul</p>
           </div>
           <div className="flex gap-3">

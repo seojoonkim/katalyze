@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-muk: #1A1A1F;
-  --color-baekja: #F0EDE5;
-  --color-cheongja: #4A7A6B;
-  --color-dancheng: #C73B3B;
+  --color-muk: #0D0D10;
+  --color-baekja: #F0EBE3;
+  --color-cheongja: #2D6B7A;
+  --color-dancheng: #E85030;
+  --color-seoul-red: #E85030;
   --color-silver: #C0C0C0;
-  --color-gold: #d4af37;
-  --color-gold-light: #e8c84a;
+  --color-gold: #C4913E;
+  --color-gold-light: #D4A84A;
   --color-ink: #0d0d0d;
   --color-warm-white: #f5f2ed;
   --color-celadon: #1b2a4a;
@@ -17,7 +18,7 @@
   --color-lab-teal: #00C9A7;
   --color-lab-green: #00b482;
   --color-gallery-amber: #F59E0B;
-  --color-gallery-gold: #c8a01e;
+  --color-gallery-gold: #B08A1E;
   --font-display: var(--font-bebas), Impact, sans-serif;
   --font-impact: var(--font-anton), sans-serif;
   --font-body: var(--font-outfit), sans-serif;
@@ -27,12 +28,12 @@
 }
 
 :root {
-  --background: #1A1A1F;
-  --foreground: #F0EDE5;
+  --background: #0D0D10;
+  --foreground: #F0EBE3;
   --ink: #0d0d0d;
   --warm-white: #f5f2ed;
-  --gold: #d4af37;
-  --gold-light: #e8c84a;
+  --gold: #C4913E;
+  --gold-light: #D4A84A;
   --celadon: #1b2a4a;
   --catalyst: #00ff88;
   --border: rgba(240, 237, 229, 0.12);
@@ -48,7 +49,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #1A1A1F;
+  background-color: #0D0D10;
   color: #F5F2ED;
   font-family: var(--font-outfit), sans-serif;
   font-weight: 300;
@@ -99,14 +100,14 @@ img {
 }
 
 .gold-text {
-  background: linear-gradient(180deg, #f5e3a4, #d4af37 55%, #8c6b12);
+  background: linear-gradient(180deg, #e8d09a, #C4913E 55%, #7a5a18);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .hero-overlay {
-  background: linear-gradient(180deg, rgba(26, 26, 31, 0.3) 0%, rgba(26, 26, 31, 0.65) 55%, #1A1A1F 100%);
+  background: linear-gradient(180deg, rgba(13, 13, 16, 0.3) 0%, rgba(13, 13, 16, 0.65) 55%, #0D0D10 100%);
 }
 
 .marquee-track {

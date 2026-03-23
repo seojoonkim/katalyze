@@ -10,7 +10,7 @@ const categories = [
   { title: "K-Beauty", ko: "K-뷰티", count: "35+", image: "/images/beauty_drop.jpg", color: "#8220DC" },
   { title: "Design & Art", ko: "디자인·아트", count: "20+", image: "/images/zone_gallery.jpg", color: "#F59E0B" },
   { title: "Food & Beverage", ko: "F&B", count: "15+", image: "/images/crowd_energy.jpg", color: "#00C9A7" },
-  { title: "Tech & Innovation", ko: "테크·이노베이션", count: "10+", image: "/images/zone_lab.jpg", color: "#4A7A6B" },
+  { title: "Tech & Innovation", ko: "테크·이노베이션", count: "10+", image: "/images/zone_lab.jpg", color: "#2D6B7A" },
   { title: "Collectibles", ko: "컬렉터블", count: "20+", image: "/images/lineup_artist1.jpg", color: "#C73B3B" },
 ]
 
@@ -72,7 +72,7 @@ export default function MarketplacePage() {
           <div className="flex animate-marquee whitespace-nowrap">
             {[...brandLogos, ...brandLogos].map((logo, i) => (
               <span key={i} className="mx-8 font-display text-sm uppercase tracking-[0.4em] text-white/50">
-                {logo} <span className="text-[#D4AF37]">·</span>
+                {logo} <span className="text-[#C4913E]">·</span>
               </span>
             ))}
           </div>
@@ -96,14 +96,14 @@ export default function MarketplacePage() {
             {dropCalendar.map((drop, i) => (
               <div key={i} className="flex flex-col gap-2 py-5 md:flex-row md:items-center md:gap-8">
                 <div className="w-36 shrink-0">
-                  <p className="font-outfit text-sm uppercase tracking-[0.2em] text-[#D4AF37]">{drop.date}</p>
+                  <p className="font-outfit text-sm uppercase tracking-[0.2em] text-[#C4913E]">{drop.date}</p>
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white/50 italic">{drop.brand}</p>
                   <p className="font-outfit text-base text-white/55">{drop.category}</p>
                 </div>
                 <div>
-                  <span className="inline-block border border-[#D4AF37]/40 px-3 py-1 text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+                  <span className="inline-block border border-[#C4913E]/40 px-3 py-1 text-sm uppercase tracking-[0.25em] text-[#C4913E]">
                     {drop.type}
                   </span>
                 </div>
@@ -118,7 +118,7 @@ export default function MarketplacePage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Brand Application</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#C4913E]">Brand Application</p>
             <h2 className="font-display text-4xl uppercase text-white md:text-5xl">브랜드로 참가하기</h2>
             <p className="mt-4 max-w-xl font-outfit text-base text-white/75">
               KATALYZE 마켓플레이스에 참가할 브랜드를 모집합니다. 이메일을 등록하고 신청서를 받아보세요.
@@ -130,17 +130,17 @@ export default function MarketplacePage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="brand@yourbrand.com"
-                  className="flex-1 border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                  className="flex-1 border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#C4913E] focus:outline-none"
                 />
                 <button
                   onClick={() => setSubmitted(true)}
-                  className="border border-[#D4AF37] bg-[#D4AF37] px-6 py-3 text-base font-bold uppercase tracking-[0.3em] text-black transition hover:bg-[#e8c84a]"
+                  className="border border-[#C4913E] bg-[#C4913E] px-6 py-3 text-base font-bold uppercase tracking-[0.3em] text-black transition hover:bg-[#D4A84A]"
                 >
                   신청
                 </button>
               </div>
             ) : (
-              <p className="mt-8 font-outfit text-base text-[#D4AF37]">✓ 신청이 접수되었습니다. 곧 연락드리겠습니다.</p>
+              <p className="mt-8 font-outfit text-base text-[#C4913E]">✓ 신청이 접수되었습니다. 곧 연락드리겠습니다.</p>
             )}
           </div>
         </div>
