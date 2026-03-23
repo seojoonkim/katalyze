@@ -1,6 +1,6 @@
 import { AnimatedSection } from "@/components/animated-section";
 import { PageHero } from "@/components/page-hero";
-import { ImageCard, SectionHeading } from "@/components/ui";
+import { SectionHeading } from "@/components/ui";
 import { zones } from "@/lib/site-data";
 
 export default function ExplorePage() {
@@ -10,7 +10,15 @@ export default function ExplorePage() {
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <SectionHeading eyebrow="Zones" title="Curated experiences with distinct business intent" />
-          <div className="grid gap-6 md:grid-cols-2">{zones.map((zone) => <ImageCard key={zone.slug} {...zone} className="h-full" />)}</div>
+          <div className="grid gap-12 md:grid-cols-2">
+            {zones.map((zone) => (
+              <div key={zone.slug} className="border-l border-[#d4af37] pl-8">
+                {zone.subtitle ? <p className="text-xs uppercase tracking-[0.24em] text-[#d4af37]">{zone.subtitle}</p> : null}
+                <h3 className="mt-3 text-3xl font-bold uppercase text-white">{zone.title}</h3>
+                {zone.description ? <p className="mt-4 text-sm leading-7 text-white/65">{zone.description}</p> : null}
+              </div>
+            ))}
+          </div>
         </div>
       </AnimatedSection>
     </div>
