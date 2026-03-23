@@ -51,6 +51,18 @@ const schedule = {
     { time: "19:00", title: "Closing Night", zone: "THE STAGE", desc: "클로징 나이트 퍼포먼스" },
     { time: "22:00", title: "After Party", zone: "THE GALLERY", desc: "VIP 애프터파티" },
   ],
+  day3: [
+    { time: "10:00", title: "Grand Finale Opening Ceremony", zone: "THE STAGE", desc: "Day 3 그랜드 피날레 오프닝" },
+    { time: "11:00", title: "Brand Award Ceremony", zone: "ALL ZONES", desc: "3일간 최고 인기 브랜드 시상" },
+    { time: "12:00", title: "K-Beauty Masterclass", zone: "THE LAB", desc: "글로벌 뷰티 트렌드 총결산" },
+    { time: "13:00", title: "Buyer Closing Summit", zone: "THE LAB", desc: "B2B 최종 미팅 & 딜 클로징" },
+    { time: "14:00", title: "Collector Auction", zone: "THE GALLERY", desc: "THE GALLERY 리미티드 에디션 경매" },
+    { time: "15:00", title: "Artist Showcase Finale", zone: "THE STAGE", desc: "3일간 참가 아티스트 그랜드 피날레" },
+    { time: "16:00", title: "Brand Collabo Reveal", zone: "THE DROP", desc: "3일간 비밀 컬래버레이션 공개" },
+    { time: "17:00", title: "Closing Keynote", zone: "THE STAGE", desc: "KATALYZE 2028 프리뷰" },
+    { time: "18:00", title: "Grand Closing Party", zone: "ALL ZONES", desc: "DDP 전관 파티" },
+    { time: "22:00", title: "End", zone: "ALL ZONES", desc: "KATALYZE 2027 폐막" },
+  ],
 }
 
 const zoneColorMap: Record<string, string> = {
@@ -62,7 +74,7 @@ const zoneColorMap: Record<string, string> = {
 }
 
 export default function ProgramPage() {
-  const [activeDay, setActiveDay] = useState<"day1" | "day2">("day1")
+  const [activeDay, setActiveDay] = useState<"day1" | "day2" | "day3">("day1")
   const items = schedule[activeDay]
 
   return (
@@ -129,7 +141,7 @@ export default function ProgramPage() {
           <SectionHeading eyebrow="Schedule" title="타임테이블" />
           {/* Day 탭 */}
           <div className="mb-8 flex gap-0 border-b border-white/10">
-            {(["day1", "day2"] as const).map((d) => (
+            {(["day1", "day2", "day3"] as const).map((d) => (
               <button
                 key={d}
                 onClick={() => setActiveDay(d)}
@@ -139,7 +151,7 @@ export default function ProgramPage() {
                     : "border-transparent text-white/55 hover:text-white/92"
                 }`}
               >
-                {d === "day1" ? "DAY 1" : "DAY 2"}
+                {d === "day1" ? "DAY 1" : d === "day2" ? "DAY 2" : "DAY 3"}
               </button>
             ))}
           </div>
