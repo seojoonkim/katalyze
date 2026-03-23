@@ -408,9 +408,11 @@ export default function Home() {
           <div className="mb-16">
             <p className="font-rubik text-sm uppercase tracking-[0.35em] text-[#FABF13] font-bold">LINEUP · <span className="font-noto-kr">라인업</span></p>
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-              <h2 className="font-rubik text-5xl tracking-[0.05em] text-white md:text-6xl lg:text-7xl whitespace-nowrap overflow-hidden" style={{fontWeight:900}}>NAMES THAT MOVE<br className="lg:hidden"/> CULTURE</h2>
-              <p className="mt-3 font-outfit text-base italic text-[#FABF13]/80">The names that will <em>katalyze</em> 2027.</p>
-              <p className="mt-4 font-rubik text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white/92">
+              <div>
+                <h2 className="font-rubik text-4xl tracking-[0.02em] text-white md:text-5xl lg:text-5xl" style={{fontWeight:900}}>NAMES THAT MOVE CULTURE</h2>
+                <p className="mt-3 font-outfit text-base italic text-[#FABF13]/80">The names that will <em>katalyze</em> 2027.</p>
+              </div>
+              <p className="mt-4 font-rubik text-2xl font-bold text-white/92 md:text-3xl">
                 APRIL 2027 · DDP SEOUL
               </p>
               <div className="flex flex-col items-start gap-3 md:items-end">
