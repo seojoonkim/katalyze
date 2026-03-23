@@ -158,7 +158,7 @@ export default function Home() {
         />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
           <div className="max-w-5xl">
-            <p className="text-xs font-medium uppercase tracking-[0.45em] text-[#D4AF37] md:text-sm">SEOUL DDP · SEPTEMBER 2026</p>
+            <p className="text-xs font-medium uppercase tracking-[0.45em] text-[#D4AF37] md:text-sm">SEOUL DDP · APRIL 2027</p>
             <h1 className="mt-5 font-display text-[clamp(5.25rem,20vw,10rem)] leading-[0.88] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)] md:text-[clamp(7rem,18vw,12rem)]">
               KATALYZE
             </h1>
@@ -171,11 +171,11 @@ export default function Home() {
               <PillButton href="/b2b" variant="secondary">B2B ACCESS</PillButton>
             </div>
           </div>
-          <div className="mt-12 grid gap-3 md:mt-16 md:grid-cols-4">
+          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-6 md:mt-14 md:gap-x-12">
             {stats.map((stat) => (
-              <div key={stat.label} className="rounded-[24px] border border-white/12 bg-white/8 px-5 py-5 backdrop-blur-md">
+              <div key={stat.label}>
                 <p className="font-display text-4xl tracking-[0.06em] text-white md:text-5xl">{stat.value}</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.3em] text-white/70 md:text-sm">{stat.label}</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/60 md:text-sm">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -374,7 +374,7 @@ export default function Home() {
           >
             <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-black/20 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/85 backdrop-blur-sm">
-                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" /> SEOUL · DDP · SEPTEMBER 2026
+                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" /> SEOUL · DDP · APRIL 2027
               </div>
               <h2 className="mt-6 max-w-4xl font-display text-5xl leading-[0.9] text-white md:text-7xl">THE CITY. THE ICON. THE MOMENT.</h2>
               <div className="mt-8">
