@@ -138,23 +138,21 @@ function backgroundStyle(image: string, fallback: string, overlay?: string) {
 export default function Home() {
   return (
     <div className="bg-[#050505] text-[var(--foreground)]">
-      <section className="relative flex min-h-screen items-end overflow-hidden" style={{ backgroundColor: '#050510' }}>
-        {/* 한국적이고 컬러풀한 배경 영상 */}
+            <section className="relative flex min-h-screen items-end overflow-hidden" style={{ backgroundColor: '#030015' }}>
         <video
           autoPlay
           muted
           loop
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
-          style={{ zIndex: 0, opacity: 1 }}
+          style={{ zIndex: 0 }}
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
-        {/* 다크 오버레이 - 영상 위에 텍스트 가독성 보장 */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.30) 50%, rgba(0,0,0,0.75) 100%)",
+            background: "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.30) 55%, rgba(0,0,0,0.82) 100%)",
             zIndex: 1
           }}
         />
@@ -173,7 +171,6 @@ export default function Home() {
               <PillButton href="/b2b" variant="secondary">B2B ACCESS</PillButton>
             </div>
           </div>
-
           <div className="mt-12 grid gap-3 md:mt-16 md:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="rounded-[24px] border border-white/12 bg-white/8 px-5 py-5 backdrop-blur-md">
