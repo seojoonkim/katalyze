@@ -155,17 +155,7 @@ export default function Home() {
   return (
     <div className="bg-muk text-baekja">
       {/* ═══════ HERO ═══════ */}
-      <section className="relative flex min-h-screen items-end overflow-hidden" style={{ backgroundColor: '#1A1A1F' }}>
-        {/* Hero background: hero_main.jpg with video fallback */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/images/hero_main.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            zIndex: 0,
-          }}
-        />
+      <section className="relative flex min-h-screen items-end overflow-hidden" style={{ backgroundColor: '#030015' }}>
         <video
           autoPlay
           muted
