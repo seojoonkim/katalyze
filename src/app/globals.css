@@ -1,31 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0d0d0d;
-  --color-warm-white: #f5f2ed;
+  --color-muk: #1A1A1F;
+  --color-baekja: #F0EDE5;
+  --color-cheongja: #4A7A6B;
+  --color-dancheng: #C73B3B;
+  --color-silver: #C0C0C0;
   --color-gold: #d4af37;
   --color-gold-light: #e8c84a;
+  --color-ink: #0d0d0d;
+  --color-warm-white: #f5f2ed;
   --color-celadon: #1b2a4a;
   --color-catalyst: #00ff88;
   --color-stage-purple: #8220dc;
   --color-drop-pink: #dc1e5a;
+  --color-lab-teal: #00C9A7;
   --color-lab-green: #00b482;
+  --color-gallery-amber: #F59E0B;
   --color-gallery-gold: #c8a01e;
   --font-display: var(--font-bebas), Impact, sans-serif;
   --font-impact: var(--font-anton), sans-serif;
-  --font-body: var(--font-inter), sans-serif;
+  --font-body: var(--font-outfit), sans-serif;
+  --font-space: var(--font-space), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
 }
 
 :root {
-  --background: #050505;
-  --foreground: #f5f2ed;
+  --background: #1A1A1F;
+  --foreground: #F0EDE5;
   --ink: #0d0d0d;
   --warm-white: #f5f2ed;
   --gold: #d4af37;
   --gold-light: #e8c84a;
   --celadon: #1b2a4a;
   --catalyst: #00ff88;
-  --border: rgba(245, 242, 237, 0.12);
+  --border: rgba(240, 237, 229, 0.12);
 }
 
 * {
@@ -38,11 +48,9 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at top, rgba(212, 175, 55, 0.12), transparent 28%),
-    linear-gradient(180deg, #0a0a0a 0%, #050505 48%, #030303 100%);
-  color: var(--foreground);
-  font-family: var(--font-inter), sans-serif;
+  background-color: #1A1A1F;
+  color: #F0EDE5;
+  font-family: var(--font-outfit), sans-serif;
   font-weight: 300;
   letter-spacing: 0.01em;
 }
@@ -80,7 +88,7 @@ img {
 
 .k-card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025));
-  border: 1px solid rgba(245, 242, 237, 0.12);
+  border: 1px solid rgba(240, 237, 229, 0.12);
   backdrop-filter: blur(14px);
 }
 
@@ -92,7 +100,7 @@ img {
 }
 
 .hero-overlay {
-  background: linear-gradient(180deg, rgba(13, 13, 13, 0.3) 0%, rgba(13, 13, 13, 0.65) 55%, #0d0d0d 100%);
+  background: linear-gradient(180deg, rgba(26, 26, 31, 0.3) 0%, rgba(26, 26, 31, 0.65) 55%, #1A1A1F 100%);
 }
 
 .marquee-track {
