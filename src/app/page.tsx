@@ -109,18 +109,13 @@ const lineup = [
   },
 ];
 
-function backgroundStyle(image: string, fallback: string, overlay?: string) {
-  // overlay 위에 이미지, 그 아래 fallback 그라데이션
-  // 이미지가 없거나 로딩 실패 시 fallback이 보임
+function backgroundStyle(_image: string, fallback: string, overlay?: string) {
+  // 그라데이션만 사용 (이미지 URL은 Vercel에서 CSS background로 사용 시 문제 있음)
   const parts: string[] = [];
   if (overlay) parts.push(overlay);
-  if (image) parts.push(`url(${image})`);
   parts.push(fallback);
   return {
     backgroundImage: parts.join(", "),
-    backgroundSize: parts.map(() => "cover").join(", "),
-    backgroundPosition: parts.map(() => "center").join(", "),
-    backgroundRepeat: parts.map(() => "no-repeat").join(", "),
   } as React.CSSProperties;
 }
 
