@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowRight, Building2, BriefcaseBusiness, MapPin, Ticket } from "lucide-react";
-import { AnimatedSection } from "@/components/animated-section";
 import { PillButton } from "@/components/ui";
 
 const stats = [
@@ -186,7 +185,7 @@ export default function Home() {
         </div>
       </section>
 
-      <AnimatedSection className="bg-[#0D0D0D] py-20 md:py-28">
+      <section className="bg-[#0D0D0D] py-20 md:py-28">
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-xs uppercase tracking-[0.38em] text-[#D4AF37]">Audience Selector</p>
@@ -216,9 +215,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="bg-[linear-gradient(180deg,#080808_0%,#12091c_55%,#080808_100%)] py-20 md:py-28">
+      <section className="bg-[linear-gradient(180deg,#080808_0%,#12091c_55%,#080808_100%)] py-20 md:py-28">
         <div className="container-shell grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="rounded-[34px] border border-white/10 bg-white/5 p-8 backdrop-blur-sm md:p-12">
             <div className="text-7xl leading-none text-[#D4AF37] md:text-8xl">“</div>
@@ -238,9 +237,9 @@ export default function Home() {
             )}
           />
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="bg-[#0A0A0A] py-20 md:py-28">
+      <section className="bg-[#0A0A0A] py-20 md:py-28">
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-xs uppercase tracking-[0.38em] text-[#D4AF37]">4 Zones</p>
@@ -263,9 +262,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="bg-[linear-gradient(135deg,#1a0a2e_0%,#0D0D0D_100%)] py-20 md:py-28">
+      <section className="bg-[linear-gradient(135deg,#1a0a2e_0%,#0D0D0D_100%)] py-20 md:py-28">
         <div className="container-shell">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
@@ -293,7 +292,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
       <section className="overflow-hidden bg-[#F5F2ED] py-7 text-[#0D0D0D] md:py-8">
         <div className="marquee-track font-display text-3xl tracking-[0.18em] md:text-4xl">
@@ -320,7 +319,7 @@ export default function Home() {
         </div>
       </section>
 
-      <AnimatedSection className="bg-[#090909] py-20 md:py-28">
+      <section className="bg-[#090909] py-20 md:py-28">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
           <div
             className="group relative min-h-[440px] overflow-hidden rounded-[34px] border border-[#D4AF37]/35"
@@ -364,9 +363,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="bg-[#050505] py-20 md:py-28">
+      <section className="bg-[#050505] py-20 md:py-28">
         <div className="container-shell">
           <div
             className="group relative min-h-[520px] overflow-hidden rounded-[36px]"
@@ -387,9 +386,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="bg-[linear-gradient(135deg,#D4AF37_0%,#C8751E_100%)] py-20 md:py-24">
+      <section className="bg-[linear-gradient(135deg,#D4AF37_0%,#C8751E_100%)] py-20 md:py-24">
         <div className="container-shell text-center text-black">
           <div
             className="relative overflow-hidden rounded-[36px] px-6 py-16 md:px-10 md:py-24"
@@ -416,7 +415,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
     </div>
   );
 }
