@@ -301,7 +301,7 @@ export default function Home() {
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm uppercase tracking-[0.5em] text-[#FABF13]">Audience Selector</p>
-            <h2 className="mt-4 font-rubik text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">HOW WILL YOU SHOW UP?</h2>
+            <h2 className="mt-4 font-rubik text-4xl tracking-[0.02em] text-white md:text-5xl lg:text-[3.2rem]">HOW WILL YOU SHOW UP?</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
             {/* 첫 번째 카드: 크게 */}
@@ -362,7 +362,7 @@ export default function Home() {
         <div className="container-shell py-20 md:py-28">
           <div className="mb-10 max-w-3xl md:mb-14">
             <p className="text-sm uppercase tracking-[0.5em] text-[#FABF13]">4 Zones</p>
-            <h2 className="mt-4 font-rubik text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">FOUR WORLDS. ONE WEEKEND.</h2>
+            <h2 className="mt-4 font-rubik text-4xl tracking-[0.02em] text-white md:text-5xl lg:text-[3.2rem]">FOUR WORLDS. ONE WEEKEND.</h2>
           </div>
         </div>
         <div className="space-y-0">
