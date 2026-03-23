@@ -58,7 +58,7 @@ const zoneColorMap: Record<string, string> = {
   "THE STAGE": "#8220DC",
   "THE LAB": "#00C9A7",
   "THE GALLERY": "#F59E0B",
-  "ALL ZONES": "#C4913E",
+  "ALL ZONES": "#F0B429",
 }
 
 export default function ProgramPage() {
@@ -132,7 +132,7 @@ export default function ProgramPage() {
                 onClick={() => setActiveDay(d)}
                 className={`px-8 py-3 text-sm uppercase tracking-[0.3em] font-semibold transition border-b-2 -mb-px ${
                   activeDay === d
-                    ? "border-[#C4913E] text-[#C4913E]"
+                    ? "border-[#F0B429] text-[#F0B429]"
                     : "border-transparent text-white/55 hover:text-white/85"
                 }`}
               >
@@ -144,7 +144,7 @@ export default function ProgramPage() {
             {items.map((item) => (
               <div key={item.time + item.title} className="flex flex-col gap-2 py-5 md:flex-row md:items-center md:gap-8">
                 <div className="w-16 shrink-0">
-                  <p className="font-display text-xl text-[#C4913E]">{item.time}</p>
+                  <p className="font-display text-xl text-[#F0B429]">{item.time}</p>
                 </div>
                 <div className="flex-1">
                   <p className="font-outfit text-base font-semibold text-white">{item.title}</p>
@@ -154,8 +154,8 @@ export default function ProgramPage() {
                   <span
                     className="inline-block px-3 py-1 text-sm uppercase tracking-[0.25em] font-semibold"
                     style={{
-                      color: zoneColorMap[item.zone] ?? "#C4913E",
-                      backgroundColor: (zoneColorMap[item.zone] ?? "#C4913E") + "22",
+                      color: zoneColorMap[item.zone] ?? "#F0B429",
+                      backgroundColor: (zoneColorMap[item.zone] ?? "#F0B429") + "22",
                     }}
                   >
                     {item.zone}
@@ -175,7 +175,7 @@ export default function ProgramPage() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex flex-col items-center justify-center border border-white/10 bg-white/[0.02] py-16 px-8">
                 <div className="mb-4 h-20 w-20 rounded-full bg-white/10 blur-sm" />
-                <p className="font-outfit text-sm uppercase tracking-[0.4em] text-white/50">Coming Soon</p>
+                <p className="font-outfit text-sm uppercase tracking-[0.4em] text-white/70">Coming Soon</p>
                 <p className="mt-2 font-display text-2xl uppercase text-white/20">TBA</p>
               </div>
             ))}
@@ -186,7 +186,7 @@ export default function ProgramPage() {
       {/* CTA */}
       <AnimatedSection className="section-pad">
         <div className="container-shell flex flex-col items-center text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#C4913E]">Get Your Ticket</p>
+          <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#F0B429]">Get Your Ticket</p>
           <h2 className="font-display text-4xl uppercase text-white md:text-6xl">지금 티켓 구매</h2>
           <p className="mt-4 max-w-xl font-outfit text-base text-white/75">April 2027, DDP Seoul. 72시간의 문화 속도를 직접 경험하세요.</p>
           <div className="mt-8">

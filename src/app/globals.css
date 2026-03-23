@@ -3,12 +3,12 @@
 @theme {
   --color-muk: #0D0D10;
   --color-baekja: #F0EBE3;
-  --color-cheongja: #2D6B7A;
-  --color-dancheng: #E85030;
-  --color-seoul-red: #E85030;
+  --color-cheongja: #2DD4BF;
+  --color-dancheng: #FF4D2E;
+  --color-seoul-red: #FF4D2E;
   --color-silver: #C0C0C0;
-  --color-gold: #C4913E;
-  --color-gold-light: #D4A84A;
+  --color-gold: #F0B429;
+  --color-gold-light: #F0B429;
   --color-ink: #0d0d0d;
   --color-warm-white: #f5f2ed;
   --color-celadon: #1b2a4a;
@@ -32,8 +32,8 @@
   --foreground: #F0EBE3;
   --ink: #0d0d0d;
   --warm-white: #f5f2ed;
-  --gold: #C4913E;
-  --gold-light: #D4A84A;
+  --gold: #F0B429;
+  --gold-light: #F0B429;
   --celadon: #1b2a4a;
   --catalyst: #00ff88;
   --border: rgba(240, 237, 229, 0.12);
@@ -100,7 +100,7 @@ img {
 }
 
 .gold-text {
-  background: linear-gradient(180deg, #e8d09a, #C4913E 55%, #7a5a18);
+  background: linear-gradient(180deg, #e8d09a, #F0B429 55%, #7a5a18);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

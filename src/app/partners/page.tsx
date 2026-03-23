@@ -14,7 +14,7 @@ const partnerTiers = [
     tier: "FOUNDING PARTNER",
     ko: "파운딩 파트너",
     price: "₩1B+",
-    color: "#C4913E",
+    color: "#F0B429",
     highlight: false,
     cta: "미팅 신청",
     benefits: [
@@ -47,7 +47,7 @@ const partnerTiers = [
     tier: "SUPPORTING PARTNER",
     ko: "서포팅 파트너",
     price: "₩50M–300M",
-    color: "#2D6B7A",
+    color: "#2DD4BF",
     highlight: false,
     cta: "문의하기",
     benefits: [
@@ -81,10 +81,10 @@ export default function PartnersPage() {
           <SectionHeading eyebrow="Impact" title="숫자로 보는 KATALYZE" />
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {impactStats.map((stat) => (
-              <div key={stat.value} className="border-l-2 border-[#C4913E] pl-6">
+              <div key={stat.value} className="border-l-2 border-[#F0B429] pl-6">
                 <p className="font-display text-4xl text-white md:text-5xl">{stat.value}</p>
                 <p className="mt-2 font-outfit text-sm uppercase tracking-[0.25em] text-white/75">{stat.label}</p>
-                <p className="mt-1 font-outfit text-base text-[#2D6B7A]">{stat.ko}</p>
+                <p className="mt-1 font-outfit text-base text-[#2DD4BF]">{stat.ko}</p>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ export default function PartnersPage() {
               </div>
             ))}
           </div>
-          <p className="mt-4 font-outfit text-base text-white/50">* 파트너사 로고는 추후 업데이트 예정.</p>
+          <p className="mt-4 font-outfit text-base text-white/70">* 파트너사 로고는 추후 업데이트 예정.</p>
         </div>
       </AnimatedSection>
 
@@ -129,7 +129,7 @@ export default function PartnersPage() {
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <div className="flex flex-col items-center text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#C4913E]">Get in Touch</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#F0B429]">Get in Touch</p>
             <h2 className="font-display text-4xl uppercase text-white md:text-5xl">함께 만들어가요</h2>
             <p className="mt-4 max-w-xl font-outfit text-base text-white/75">
               파트너십 덱을 다운로드하거나 미팅을 신청하세요. 브랜드에 맞는 최적의 파트너십을 함께 설계합니다.

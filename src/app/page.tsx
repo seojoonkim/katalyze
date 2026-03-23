@@ -32,7 +32,7 @@ const audiences = [
     href: "/partners",
     cta: "Partner with us",
     image: "/images/audience_brands.jpg",
-    fallback: "linear-gradient(135deg, #C4913E, #B08A1E)",
+    fallback: "linear-gradient(135deg, #F0B429, #B08A1E)",
     overlay: "linear-gradient(180deg, rgba(212,175,55,0.22) 0%, rgba(200,160,30,0.14) 40%, rgba(0,0,0,0.72) 100%)",
     ring: "shadow-[0_0_0_1px_rgba(212,175,55,0.45)]",
   },
@@ -170,7 +170,7 @@ export default function Home() {
         />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
           <div className="w-full">
-            <p className="text-base font-outfit tracking-[0.5em] uppercase text-[#C4913E] pl-[0.08em]">
+            <p className="text-base font-outfit tracking-[0.5em] uppercase text-[#F0B429] pl-[0.08em]">
               서울 DDP · 2027. 4 · SEOUL&apos;S CULTURE-COMMERCE CONVERGENCE
             </p>
             <h1 className="mt-4 font-display text-[clamp(6rem,22vw,13rem)] leading-[0.85] tracking-[0.03em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.45)]">
@@ -179,7 +179,7 @@ export default function Home() {
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/85 md:text-2xl">
               KATALYZE — The world&apos;s brands. Seoul&apos;s energy.<br/>One weekend that changes everything.
             </p>
-            <p className="mt-2 text-base font-outfit tracking-[0.1em] text-[#2D6B7A]">
+            <p className="mt-2 text-base font-outfit tracking-[0.1em] text-[#2DD4BF]">
               세계의 브랜드, 서울의 에너지. 모든 것이 바뀌는 하나의 주말.
             </p>
             <div className="mt-8 flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
@@ -207,7 +207,7 @@ export default function Home() {
       <section className="py-16 md:py-24 overflow-hidden bg-muk">
         <div className="overflow-x-hidden">
           <div
-            className="whitespace-nowrap font-display text-[clamp(4rem,12vw,9rem)] leading-none text-white/[0.06] select-none"
+            className="whitespace-nowrap font-display text-[clamp(4rem,12vw,9rem)] leading-none text-white/[0.08] select-none"
             style={{ animation: 'marquee 30s linear infinite' }}
           >
             CULTURE × COMMERCE × COMMUNITY × SEOUL × DDP × KATALYZE × CULTURE × COMMERCE × COMMUNITY × SEOUL × DDP × KATALYZE ×&nbsp;
@@ -219,9 +219,9 @@ export default function Home() {
       <section className="py-32 md:py-44 bg-muk">
         <div className="container-shell">
           <p className="font-display text-[clamp(1.8rem,4.5vw,4.2rem)] leading-[1.15] text-white max-w-5xl">
-            &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#C4913E]">It catalyzes them.&rdquo;</span>
+            &ldquo;Seoul doesn&apos;t follow trends.<br/><span className="text-[#F0B429]">It catalyzes them.&rdquo;</span>
           </p>
-          <p className="mt-6 font-outfit text-lg font-light text-[#2D6B7A] max-w-xl">
+          <p className="mt-6 font-outfit text-lg font-light text-[#2DD4BF] max-w-xl">
             서울은 트렌드를 따르지 않는다. 촉발한다.
           </p>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-12">
@@ -230,15 +230,15 @@ export default function Home() {
             </p>
             <div className="space-y-6">
               <div className="flex items-baseline gap-4">
-                <span className="font-display text-5xl text-[#C4913E]">72</span>
+                <span className="font-display text-5xl text-[#F0B429]">72</span>
                 <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/60">Hours of culture velocity</span>
               </div>
               <div className="flex items-baseline gap-4">
-                <span className="font-display text-5xl text-[#C4913E]">50K+</span>
+                <span className="font-display text-5xl text-[#F0B429]">50K+</span>
                 <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/60">Global attendees</span>
               </div>
               <div className="flex items-baseline gap-4">
-                <span className="font-display text-5xl text-[#C4913E]">₩70B+</span>
+                <span className="font-display text-5xl text-[#F0B429]">₩70B+</span>
                 <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/60">Projected economic impact</span>
               </div>
             </div>
@@ -252,23 +252,23 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">50K</p>
-              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Attendees</p>
-              <p className="mt-1 font-outfit text-base text-[#2D6B7A]">참석자</p>
+              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Attendees</p>
+              <p className="mt-1 font-outfit text-base text-[#2DD4BF]">참석자</p>
             </div>
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">72h</p>
-              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Duration</p>
-              <p className="mt-1 font-outfit text-base text-[#2D6B7A]">페스티벌 시간</p>
+              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Duration</p>
+              <p className="mt-1 font-outfit text-base text-[#2DD4BF]">페스티벌 시간</p>
             </div>
             <div>
               <p className="font-display text-6xl text-white md:text-8xl">200+</p>
-              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Brands</p>
-              <p className="mt-1 font-outfit text-base text-[#2D6B7A]">참가 브랜드</p>
+              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Brands</p>
+              <p className="mt-1 font-outfit text-base text-[#2DD4BF]">참가 브랜드</p>
             </div>
             <div>
-              <p className="font-display text-6xl text-[#C4913E] md:text-8xl">₩1</p>
-              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/50">Est. Value</p>
-              <p className="mt-1 font-outfit text-base text-[#2D6B7A]">조 원 경제 효과</p>
+              <p className="font-display text-6xl text-[#F0B429] md:text-8xl">₩1</p>
+              <p className="mt-2 font-outfit text-sm uppercase tracking-[0.3em] text-white/70">Est. Value</p>
+              <p className="mt-1 font-outfit text-base text-[#2DD4BF]">조 원 경제 효과</p>
             </div>
           </div>
         </div>
@@ -278,7 +278,7 @@ export default function Home() {
       <section className="bg-muk py-20 md:py-28">
         <div className="container-shell">
           <div className="mb-10 max-w-3xl md:mb-14">
-            <p className="text-sm uppercase tracking-[0.5em] text-[#C4913E]">Audience Selector</p>
+            <p className="text-sm uppercase tracking-[0.5em] text-[#F0B429]">Audience Selector</p>
             <h2 className="mt-4 font-impact text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">CHOOSE YOUR ENTRY POINT</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
@@ -339,7 +339,7 @@ export default function Home() {
       <section className="bg-muk">
         <div className="container-shell py-20 md:py-28">
           <div className="mb-10 max-w-3xl md:mb-14">
-            <p className="text-sm uppercase tracking-[0.5em] text-[#C4913E]">4 Zones</p>
+            <p className="text-sm uppercase tracking-[0.5em] text-[#F0B429]">4 Zones</p>
             <h2 className="mt-4 font-impact text-5xl tracking-[0.04em] text-white md:text-[3.5rem] lg:text-6xl">THE WORLD OF KATALYZE</h2>
           </div>
         </div>
@@ -367,7 +367,7 @@ export default function Home() {
                 <h3 className="mt-4 font-display text-4xl tracking-[0.05em] text-white md:text-5xl">{zone.title}</h3>
                 <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
                 <p className="mt-6 font-outfit text-base font-light leading-relaxed text-white/80">{zone.description}</p>
-                <p className="mt-4 font-outfit text-base italic text-white/50">{zone.en}</p>
+                <p className="mt-4 font-outfit text-base italic text-white/70">{zone.en}</p>
               </div>
             </div>
           ))}
@@ -378,11 +378,11 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-muk">
         <div className="container-shell">
           <div className="mb-16">
-            <p className="font-outfit text-sm uppercase tracking-[0.5em] text-[#C4913E]">LINEUP · 라인업</p>
+            <p className="font-outfit text-sm uppercase tracking-[0.5em] text-[#F0B429]">LINEUP · 라인업</p>
             <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <h2 className="font-display text-5xl tracking-[0.07em] text-white md:text-8xl">NAMES THAT<br/>MOVE CULTURE</h2>
               <div className="flex flex-col items-start gap-3 md:items-end">
-                <p className="font-outfit text-base text-white/50 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
+                <p className="font-outfit text-base text-white/70 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
                 <PillButton href="/program" variant="secondary">VIEW FULL PROGRAM</PillButton>
               </div>
             </div>
@@ -399,7 +399,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="pl-[calc(2.5rem+1.5rem)] sm:pl-0 sm:text-right">
-                  <span className="inline-block border border-white/20 px-4 py-2 font-outfit text-sm uppercase tracking-[0.3em] text-[#C4913E]">{artist.status}</span>
+                  <span className="inline-block border border-white/20 px-4 py-2 font-outfit text-sm uppercase tracking-[0.3em] text-[#F0B429]">{artist.status}</span>
                 </div>
               </div>
             ))}
@@ -437,7 +437,7 @@ export default function Home() {
       <section className="bg-muk py-20 md:py-28">
         <div className="container-shell grid gap-6 lg:grid-cols-2">
           <div
-            className="group relative min-h-[440px] overflow-hidden rounded-none border border-[#C4913E]/35"
+            className="group relative min-h-[440px] overflow-hidden rounded-none border border-[#F0B429]/35"
             style={backgroundStyle(
               "/images/business_brands.jpg",
               "linear-gradient(135deg, #1a1000, #2a1800)",
@@ -445,7 +445,7 @@ export default function Home() {
             )}
           >
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
-              <div className="h-8 w-8 text-[#C4913E]"><IconBuilding /></div>
+              <div className="h-8 w-8 text-[#F0B429]"><IconBuilding /></div>
               <p className="mt-5 text-sm uppercase tracking-[0.34em] text-[#F0D980]">For Partners & Brands</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Build the most photographed booth in Seoul.</h3>
               <p className="mt-4 max-w-lg text-base leading-7 text-white/80 md:text-base">
@@ -493,7 +493,7 @@ export default function Home() {
           >
             <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
               <div className="inline-flex w-fit items-center gap-2 rounded-none border border-white/20 bg-black/20 px-4 py-2 text-sm uppercase tracking-[0.26em] text-white/85 backdrop-blur-sm">
-                <span className="h-3.5 w-3.5 text-[#C4913E] inline-flex"><IconMapPin /></span> SEOUL · DDP · APRIL 2027
+                <span className="h-3.5 w-3.5 text-[#F0B429] inline-flex"><IconMapPin /></span> SEOUL · DDP · APRIL 2027
               </div>
               <h2 className="mt-6 max-w-4xl font-display text-5xl leading-[0.9] text-white md:text-7xl">THE CITY. THE ICON. THE MOMENT.</h2>
               <div className="mt-8">
@@ -505,13 +505,13 @@ export default function Home() {
       </section>
 
       {/* ═══════ FINAL CTA ═══════ */}
-      <section className="bg-[linear-gradient(135deg,#C4913E_0%,#A06A20_100%)] py-20 md:py-24">
+      <section className="bg-[linear-gradient(135deg,#F0B429_0%,#A06A20_100%)] py-20 md:py-24">
         <div className="container-shell text-center text-black">
           <div
             className="relative overflow-hidden rounded-none px-6 py-16 md:px-10 md:py-24"
             style={backgroundStyle(
               "/images/final_cta.jpg",
-              "linear-gradient(135deg,#C4913E_0%,#A06A20_100%)",
+              "linear-gradient(135deg,#F0B429_0%,#A06A20_100%)",
               "linear-gradient(180deg, rgba(212,175,55,0.18) 0%, rgba(0,0,0,0.28) 100%)"
             )}
           >
