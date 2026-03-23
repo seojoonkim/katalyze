@@ -28,11 +28,11 @@ const audiences = [
     eyebrow: "FOR BRANDS",
     tag: "브랜드",
     tagClass: "font-noto-kr",
-    title: "50K people. 72h. Your Seoul chapter.",
+    title: "50K people. 72h. Your KATALYZE chapter.",
     description:
       "한정판 드롭, 몰입형 부스, 파운더 토크, 실시간 전환 — 대한민국 최대 컬처 커머스 무대에서 브랜드의 다음 챕터를 여세요.",
     href: "/partners",
-    cta: "Partner with us",
+    cta: "Partner with KATALYZE",
     image: "/images/audience_brands.jpg",
     fallback: "linear-gradient(135deg, #FABF13, #A67C00)",
     overlay: "linear-gradient(180deg, rgba(212,175,55,0.22) 0%, rgba(200,160,30,0.14) 40%, rgba(0,0,0,0.85) 100%)",
@@ -42,7 +42,7 @@ const audiences = [
     eyebrow: "FOR BUYERS",
     tag: "바이어",
     tagClass: "font-noto-kr",
-    title: "The next global brand is Korean. Find it first.",
+    title: "The next global brand is Korean. Find it at KATALYZE.",
     description:
       "프라이빗 네트워킹, 큐레이티드 1:1 미팅, VIP 라운지. 뷰티·패션·디자인·F&B·컬처 IP — 세계가 주목하기 전에, 먼저 선점하세요.",
     href: "/b2b",
@@ -61,8 +61,8 @@ const zones = [
     title: "THE DROP",
     subtitle: "줄 서는 이유가 있는 공간.",
     description:
-      "한정판 캡슐 드롭, 글로벌 브랜드 첫 공개, 인플루언서 콜라보, 뷰티 디스커버리 — 카메라가 향하는 곳에서 전환이 일어난다.",
-    en: "The queue forms. The camera points. The drop lands. Commerce at the speed of culture.",
+      "한정판 캡슐 드롭, 글로벌 브랜드 첫 공개, 인플루언서 콜라보, 뷰티 디스커버리 — KATALYZE가 카메라를 모으는 곳에서 전환이 일어난다.",
+    en: "The queue forms before doors open. The camera locks. The drop lands — and KATALYZE makes it viral.",
     image: "/images/imagen_market_drop.jpg",
     fallback: "linear-gradient(135deg, #DC1E5A 0%, #1a0008 100%)",
     color: "#DC1E5A",
@@ -73,8 +73,8 @@ const zones = [
     title: "THE STAGE",
     subtitle: "DDP가 울리는 밤.",
     description:
-      "음악, 댄스, 런웨이, 헤드라인 퍼포먼스 — 사운드가 건물을 타고 서울 전체로 퍼지는 밤. 피드를 지배하는 순간.",
-    en: "The night DDP shakes. Sound climbs the walls. Performances that own every feed.",
+      "음악, 댄스, 런웨이, 헤드라인 퍼포먼스 — KATALYZE의 사운드가 DDP를 타고 서울 전체로 퍼지는 밤. 피드를 지배하는 순간.",
+    en: "The night DDP shakes. Sound climbs walls and crosses feeds. KATALYZE owns the Seoul night.",
     image: "/images/imagen_stage_show.jpg",
     fallback: "linear-gradient(135deg, #8220DC 0%, #1a0030 100%)",
     color: "#8220DC",
@@ -229,7 +229,7 @@ export default function Home() {
             CULTURE.<br/>COMMERCE.<br/>CONVERGENCE.
           </p>
           <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-16">
-            <p className="font-outfit text-lg font-light leading-relaxed text-white/90 max-w-xl">
+            <p className="font-outfit text-xl font-normal leading-relaxed text-white md:text-2xl max-w-xl">
               Born at DDP — the architectural icon Zaha Hadid designed to embody Seoul&apos;s restless creativity — KATALYZE compresses K-fashion, K-beauty, street culture, music, and global trade into 72 hours of cultural velocity. Not a convention. Not a concert. A convergence.
             </p>
             <div className="space-y-6">
@@ -535,7 +535,7 @@ export default function Home() {
       </section>
 
       {/* ═══════ FINAL CTA ═══════ */}
-      <section className="bg-[linear-gradient(135deg,#FF0A73_0%,#B80050_100%)] py-20 md:py-24">
+      <section className="py-20 md:py-24" style={{background: "radial-gradient(ellipse at 30% 50%, rgba(255,10,115,0.15) 0%, rgba(250,191,19,0.05) 50%, #0D0D10 80%)", position: 'relative'}}}>
         <div className="container-shell text-center text-white">
           <div
             className="relative overflow-hidden rounded-none px-6 py-16 md:px-10 md:py-24"
@@ -566,6 +566,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+    </div>
         </div>
       </section>
     </div>
