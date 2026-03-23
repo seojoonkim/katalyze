@@ -369,36 +369,47 @@ export default function Home() {
           </div>
         </div>
         <div className="space-y-0">
-          {zones.map((zone, idx) => (
-            <div
-              key={zone.id}
-              className={`relative flex flex-col min-h-[50vh] overflow-hidden md:flex-row ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
-            >
-              {/* 이미지: 60% */}
-              <div className="relative w-full md:w-3/5 min-h-[280px] md:min-h-0">
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    backgroundImage: `url('${zone.image}')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
-                <div className="absolute inset-0 bg-black/45" />
+          {zones.map((zone, idx) => {
+            const isEven = idx % 2 === 0;
+            /* Mobile: alternate between image-top and gradient-only styles */
+            return (
+              <div
+                key={zone.id}
+                className={`relative flex flex-col min-h-[50vh] overflow-hidden md:flex-row ${!isEven ? 'md:flex-row-reverse' : ''}`}
+              >
+                {/* 이미지: 60% — even zones show image on mobile, odd zones use gradient overlay */}
+                <div className={`relative w-full md:w-3/5 ${isEven ? 'min-h-[280px]' : 'min-h-[180px] md:min-h-0'}`}>
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      backgroundImage: `url('${zone.image}')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                    }}
+                  />
+                  {/* Odd zones on mobile: stronger overlay for text-dominant look */}
+                  <div className={`absolute inset-0 ${isEven ? 'bg-black/45' : 'bg-black/45 max-md:bg-gradient-to-b max-md:from-black/80 max-md:to-black/60'}`} />
+                  {/* Odd zones: show number + title overlay on mobile image area */}
+                  {!isEven && (
+                    <div className="absolute inset-0 flex items-center justify-center md:hidden z-10">
+                      <span className="font-rubik text-[6rem] leading-none" style={{ color: zone.color, fontWeight: 900, opacity: 0.35 }}>{zone.number}</span>
+                    </div>
+                  )}
+                </div>
+                {/* 텍스트: 40% */}
+                <div className={`relative w-full md:w-2/5 flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 overflow-hidden ${isEven ? 'bg-muk' : 'max-md:border-l-4 bg-muk'}`} style={!isEven ? { borderColor: zone.color } as React.CSSProperties : undefined}>
+                  <p className="font-rubik text-[clamp(3rem,5vw,5.5rem)] font-black leading-none text-white/[0.03] pointer-events-none absolute bottom-0 right-2 select-none" style={{transform: 'translate(15%, 15%)'}}>
+                    {zone.title.split(' ')[0]}
+                  </p>
+                  <span className={`font-rubik text-7xl md:text-8xl relative z-10 ${!isEven ? 'max-md:hidden' : ''}`} style={{ color: zone.color, fontWeight: 900 }}>{zone.number}</span>
+                  <h3 className="mt-4 font-rubik text-4xl tracking-[0.05em] text-white md:text-5xl" style={{textShadow:"0 2px 16px rgba(0,0,0,0.9)", fontWeight:800}}>{zone.title}</h3>
+                  <p className="mt-3 font-noto-kr text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
+                  <p className="mt-6 font-noto-kr text-base font-light leading-relaxed text-white/90">{zone.description}</p>
+                  <p className="mt-4 font-outfit text-base italic text-white/92">{zone.en}</p>
+                </div>
               </div>
-              {/* 텍스트: 40% */}
-              <div className="relative w-full md:w-2/5 flex flex-col justify-center px-8 py-12 md:px-12 md:py-16 bg-muk overflow-hidden">
-                <p className="font-rubik text-[clamp(3rem,5vw,5.5rem)] font-black leading-none text-white/[0.03] pointer-events-none absolute bottom-0 right-2 select-none" style={{transform: 'translate(15%, 15%)'}}>
-                  {zone.title.split(' ')[0]}
-                </p>
-                <span className="font-rubik text-7xl md:text-8xl relative z-10" style={{ color: zone.color, fontWeight: 900 }}>{zone.number}</span>
-                <h3 className="mt-4 font-rubik text-4xl tracking-[0.05em] text-white md:text-5xl" style={{textShadow:"0 2px 16px rgba(0,0,0,0.9)", fontWeight:800}}>{zone.title}</h3>
-                <p className="mt-3 font-noto-kr text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
-                <p className="mt-6 font-noto-kr text-base font-light leading-relaxed text-white/90">{zone.description}</p>
-                <p className="mt-4 font-outfit text-base italic text-white/92">{zone.en}</p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 

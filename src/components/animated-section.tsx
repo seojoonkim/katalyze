@@ -6,8 +6,16 @@ import { CSSProperties, PropsWithChildren } from "react";
 export function AnimatedSection({ 
   children, 
   className = "",
-  style
-}: PropsWithChildren<{ className?: string; style?: CSSProperties }>) {
+  style,
+  noAnimation = false
+}: PropsWithChildren<{ className?: string; style?: CSSProperties; noAnimation?: boolean }>) {
+  if (noAnimation) {
+    return (
+      <section className={className} style={style}>
+        {children}
+      </section>
+    );
+  }
   return (
     <motion.section
       initial={{ opacity: 0, y: 12 }}

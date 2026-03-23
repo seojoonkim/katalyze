@@ -72,7 +72,7 @@ export default function PartnersPage() {
         title="PARTNER WITH KATALYZE"
         eyebrow="Partners · 파트너"
         description="KATALYZE와 함께하면 브랜드가 문화가 됩니다. 50,000명의 관객, 글로벌 미디어, 한국 최초의 컬처-커머스 플랫폼."
-        image="/images/festival_entry.jpg"
+        image="/images/partners_hero.jpg"
       />
 
       {/* 임팩트 수치 */}
@@ -110,7 +110,7 @@ export default function PartnersPage() {
       <AnimatedSection 
         className="section-pad bg-muk"
         style={{
-          backgroundImage: "linear-gradient(rgba(26,26,31,0.92), rgba(26,26,31,0.92)), url('/images/business_brands.jpg')",
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.70)), url('/images/business_brands.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}

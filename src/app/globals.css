@@ -85,12 +85,12 @@ img {
 }
 
 .section-pad {
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 @media (min-width: 768px) {
   .section-pad {
-    padding: 7rem 0;
+    padding: 6rem 0;
   }
 }
 
