@@ -10,10 +10,10 @@ export function AnimatedSection({
 }: PropsWithChildren<{ className?: string; style?: CSSProperties }>) {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 16 }}
+      initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.05 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className={className}
       style={style}
     >
