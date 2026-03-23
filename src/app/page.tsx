@@ -165,17 +165,21 @@ export default function Home() {
             <p className="mt-4 max-w-3xl text-lg leading-8 text-white/88 md:text-2xl md:leading-10">
               Where Culture Drops, Deals Close, and the World Shows Up
             </p>
-            <div className="mt-8 flex flex-wrap gap-3 md:gap-4">
-              <PillButton href="/tickets">GET TICKETS</PillButton>
-              <PillButton href="/partners" variant="secondary">PARTNER WITH US</PillButton>
-              <PillButton href="/b2b" variant="secondary">B2B ACCESS</PillButton>
+            <div className="mt-8 flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-4">
+              <div className="flex">
+                <PillButton href="/tickets">GET TICKETS</PillButton>
+              </div>
+              <div className="flex gap-3">
+                <PillButton href="/partners" variant="secondary">PARTNER WITH US</PillButton>
+                <PillButton href="/b2b" variant="secondary">B2B ACCESS</PillButton>
+              </div>
             </div>
           </div>
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-6 md:mt-14 md:gap-x-12">
+          <div className="mt-8 flex flex-nowrap gap-x-4 overflow-x-auto md:mt-14 md:gap-x-10 md:overflow-visible">
             {stats.map((stat) => (
-              <div key={stat.label}>
-                <p className="font-display text-4xl tracking-[0.06em] text-white md:text-5xl">{stat.value}</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/60 md:text-sm">{stat.label}</p>
+              <div key={stat.label} className="flex-shrink-0">
+                <p className="font-display text-2xl tracking-[0.04em] text-white md:text-5xl">{stat.value}</p>
+                <p className="mt-0.5 text-[9px] uppercase tracking-[0.25em] text-white/60 md:text-sm">{stat.label}</p>
               </div>
             ))}
           </div>

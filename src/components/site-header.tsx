@@ -17,7 +17,7 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "border-b border-white/10 bg-[rgba(13,13,13,0.95)] backdrop-blur-xl" : "bg-transparent"}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "border-b border-white/10 bg-[rgba(13,13,13,0.95)] backdrop-blur-xl" : "bg-transparent"}`} style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       <div className="container-shell flex h-16 items-center justify-between gap-4 px-4 py-2 md:h-20 md:py-4">
         <Link href="/" className="font-display text-base tracking-[0.35em] text-[#D4AF37] font-normal md:text-2xl">
           KATALYZE
