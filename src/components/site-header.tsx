@@ -29,7 +29,7 @@ export function SiteHeader() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "border-b border-white/10 bg-[rgba(13,13,13,0.95)] backdrop-blur-xl" : "bg-transparent"}`} style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       <div className="container-shell flex h-16 items-center justify-between gap-4 py-2 md:h-20 md:py-4">
-        <Link href="/" className="font-bebas text-sm tracking-[0.5em] text-[#F0B429] font-light md:text-lg md:tracking-[0.6em] uppercase transition-all duration-300 hover:text-white/80">
+        <Link href="/" className="font-bebas text-sm tracking-[0.5em] text-[#FABF13] font-light md:text-lg md:tracking-[0.6em] uppercase transition-all duration-300 hover:text-white/80">
           KATALYZE
         </Link>
 
@@ -43,7 +43,7 @@ export function SiteHeader() {
             >
               <Link
                 href={item.href}
-                className="px-3 py-2 transition hover:text-[#F0B429] flex items-center gap-1"
+                className="px-3 py-2 transition hover:text-[#FABF13] flex items-center gap-1"
               >
                 {item.label}
                 {item.href !== "/tickets" && (
@@ -67,7 +67,7 @@ export function SiteHeader() {
                     <div className="p-4">
                       <Link
                         href={item.href}
-                        className="block text-center font-semibold text-[#F0B429] hover:text-white transition text-sm uppercase tracking-wider"
+                        className="block text-center font-semibold text-[#FABF13] hover:text-white transition text-sm uppercase tracking-wider"
                       >
                         Explore {item.label}
                       </Link>
@@ -82,7 +82,7 @@ export function SiteHeader() {
         <div className="hidden md:block">
           <Link
             href="/tickets"
-            className="inline-flex items-center gap-2 rounded-none bg-[#F0B429] px-5 py-3 text-base font-semibold uppercase tracking-[0.16em] text-black transition hover:bg-[#F0B429]"
+            className="inline-flex items-center gap-2 rounded-none bg-[#FABF13] px-5 py-3 text-base font-semibold uppercase tracking-[0.16em] text-black transition hover:bg-[#FABF13]"
           >
             <span className="h-4 w-4 inline-flex"><IconTicket /></span>
             GET TICKETS
@@ -120,7 +120,7 @@ export function SiteHeader() {
             <Link
               href="/tickets"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center rounded-none bg-[#F0B429] px-5 py-3 text-base font-semibold text-black"
+              className="inline-flex items-center justify-center rounded-none bg-[#FABF13] px-5 py-3 text-base font-semibold text-black"
             >
               GET TICKETS
             </Link>

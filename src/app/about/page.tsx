@@ -40,10 +40,10 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-6 text-sm uppercase tracking-[0.5em] text-[#F0B429]">Manifesto</p>
+            <p className="mb-6 text-sm uppercase tracking-[0.5em] text-[#FABF13]">Manifesto</p>
             <blockquote className="font-display text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl">
               문화가<br />
-              <span className="text-[#F0B429]">비즈니스가</span><br />
+              <span className="text-[#FABF13]">비즈니스가</span><br />
               되는 곳.
             </blockquote>
             <p className="mt-8 font-outfit text-lg leading-8 text-white/75 max-w-2xl mx-auto">
@@ -59,12 +59,12 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="grid gap-10 md:grid-cols-3">
             {aboutStats.map((stat) => (
-              <div key={stat.value} className="border-l-2 border-[#F0B429] pl-6">
+              <div key={stat.value} className="border-l-2 border-[#FABF13] pl-6">
                 <p className="font-display text-6xl text-white md:text-8xl">
-                  {stat.value}<span className="text-4xl text-[#F0B429] md:text-5xl">{stat.suffix}</span>
+                  {stat.value}<span className="text-4xl text-[#FABF13] md:text-5xl">{stat.suffix}</span>
                 </p>
                 <p className="mt-3 font-outfit text-sm uppercase tracking-[0.3em] text-white/75">{stat.label}</p>
-                <p className="mt-1 font-outfit text-base text-[#2DD4BF]">{stat.ko}</p>
+                <p className="mt-1 font-outfit text-base text-[#5CBFB0]">{stat.ko}</p>
               </div>
             ))}
           </div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
             }}
           />
           <div>
-            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#F0B429]">The Venue</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">The Venue</p>
             <h2 className="font-display text-4xl uppercase text-white md:text-5xl leading-tight">
               DDP<br />동대문디자인플라자
             </h2>
@@ -93,11 +93,11 @@ export default function AboutPage() {
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div>
-                <p className="font-display text-3xl text-[#F0B429]">86,574㎡</p>
+                <p className="font-display text-3xl text-[#FABF13]">86,574㎡</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Total Floor Area</p>
               </div>
               <div>
-                <p className="font-display text-3xl text-[#F0B429]">5</p>
+                <p className="font-display text-3xl text-[#FABF13]">5</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Connected Buildings</p>
               </div>
             </div>
@@ -115,12 +115,12 @@ export default function AboutPage() {
         }}
       >
         <div className="container-shell">
-          <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#F0B429]">Why Seoul</p>
+          <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">Why Seoul</p>
           <h2 className="mb-12 font-display text-4xl uppercase text-white md:text-5xl">서울이어야 하는 이유</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {whySeoulPoints.map((point, i) => (
               <div key={i} className="border border-white/10 bg-white/[0.02] p-8">
-                <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#F0B429]">0{i + 1}</p>
+                <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#FABF13]">0{i + 1}</p>
                 <h3 className="mt-3 font-display text-xl uppercase text-white leading-tight">{point.title}</h3>
                 <p className="mt-1 font-outfit text-base text-white/55">{point.ko}</p>
                 <p className="mt-4 font-outfit text-base leading-7 text-white/85">{point.desc}</p>
@@ -134,11 +134,11 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="mb-4 text-sm uppercase tracking-[0.5em] text-[#F0B429]">Vision</p>
+            <p className="mb-4 text-sm uppercase tracking-[0.5em] text-[#FABF13]">Vision</p>
             <p className="font-outfit text-xl leading-10 text-white/80">
               ComplexCon이 미국 스트릿컬처를 세계에 알린 것처럼,<br />
               KATALYZE는 K-컬처의 상업적 파워를 세계에 증명합니다.<br />
-              <span className="text-[#F0B429]">서울에서 시작되는 다음 10년의 문화 지형도.</span>
+              <span className="text-[#FABF13]">서울에서 시작되는 다음 10년의 문화 지형도.</span>
             </p>
           </div>
         </div>

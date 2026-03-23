@@ -12,7 +12,7 @@ const b2bServices = [
     ko: "바이어 매칭",
     desc: "카테고리, 가격대, 지역을 기반으로 큐레이티드 한국 브랜드와 1:1 미팅 주선. AI 기반 매칭 시스템으로 ROI 극대화.",
     stats: "평균 매칭 브랜드 8개 / 참가 바이어당",
-    color: "#F0B429",
+    color: "#FABF13",
   },
   {
     number: "02",
@@ -58,7 +58,7 @@ export default function B2BPage() {
       <AnimatedSection className="section-pad">
         <div className="container-shell grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#F0B429]">KATALYZE CONNECT</p>
+            <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#FABF13]">KATALYZE CONNECT</p>
             <h2 className="font-display text-4xl uppercase text-white md:text-5xl leading-tight">비즈니스가<br />일어나는 공간</h2>
             <p className="mt-6 font-outfit text-base leading-8 text-white/85">
               KATALYZE CONNECT는 K-컬처 브랜드와 글로벌 바이어를 연결하는 B2B 플랫폼입니다.
@@ -68,22 +68,22 @@ export default function B2BPage() {
               AI 기반 매칭부터 프라이빗 라운지까지 — 한국 문화산업의 게이트웨이를 열어드립니다.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-6">
-              <div className="border-l-2 border-[#F0B429] pl-4">
+              <div className="border-l-2 border-[#FABF13] pl-4">
                 <p className="font-display text-3xl text-white">200+</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Participating Brands</p>
               </div>
-              <div className="border-l-2 border-[#F0B429] pl-4">
+              <div className="border-l-2 border-[#FABF13] pl-4">
                 <p className="font-display text-3xl text-white">50+</p>
                 <p className="font-outfit text-sm uppercase tracking-widest text-white/65">Global Buyers</p>
               </div>
             </div>
           </div>
           <div className="border border-white/10 bg-white/[0.02] p-8">
-            <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#F0B429] mb-6">Why CONNECT?</p>
+            <p className="font-outfit text-sm uppercase tracking-[0.3em] text-[#FABF13] mb-6">Why CONNECT?</p>
             <ul className="space-y-5">
               {["단 2일 안에 한국 최고 브랜드와 직접 미팅", "검증된 바이어만 참가 — 퀄리티 보장", "AI 큐레이션으로 적합한 브랜드만 매칭", "팔로우업 지원 및 계약 협상 공간 제공"].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 font-outfit text-base leading-6 text-white/85">
-                  <span className="mt-0.5 text-[#F0B429] text-base">→</span>
+                  <span className="mt-0.5 text-[#FABF13] text-base">→</span>
                   {item}
                 </li>
               ))}
@@ -126,7 +126,7 @@ export default function B2BPage() {
                       type="text"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#F0B429] focus:outline-none"
+                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#FABF13] focus:outline-none"
                       placeholder="Name"
                     />
                   </div>
@@ -136,7 +136,7 @@ export default function B2BPage() {
                       type="text"
                       value={form.company}
                       onChange={(e) => setForm({ ...form, company: e.target.value })}
-                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#F0B429] focus:outline-none"
+                      className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#FABF13] focus:outline-none"
                       placeholder="Company"
                     />
                   </div>
@@ -147,7 +147,7 @@ export default function B2BPage() {
                     type="email"
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#F0B429] focus:outline-none"
+                    className="w-full border border-white/20 bg-white/5 px-4 py-3 font-outfit text-base text-white placeholder-white/30 focus:border-[#FABF13] focus:outline-none"
                     placeholder="email@company.com"
                   />
                 </div>
@@ -156,7 +156,7 @@ export default function B2BPage() {
                   <select
                     value={form.category}
                     onChange={(e) => setForm({ ...form, category: e.target.value })}
-                    className="w-full border border-white/20 bg-[#0D0D10] px-4 py-3 font-outfit text-base text-white focus:border-[#F0B429] focus:outline-none"
+                    className="w-full border border-white/20 bg-[#0D0D10] px-4 py-3 font-outfit text-base text-white focus:border-[#FABF13] focus:outline-none"
                   >
                     <option value="">선택하세요</option>
                     {categories.map((c) => <option key={c} value={c}>{c}</option>)}
@@ -164,13 +164,13 @@ export default function B2BPage() {
                 </div>
                 <button
                   onClick={() => setSubmitted(true)}
-                  className="w-full bg-[#F0B429] py-4 text-base font-bold uppercase tracking-[0.4em] text-black transition hover:bg-[#F0B429]"
+                  className="w-full bg-[#FABF13] py-4 text-base font-bold uppercase tracking-[0.4em] text-black transition hover:bg-[#FABF13]"
                 >
                   신청하기
                 </button>
               </div>
             ) : (
-              <div className="border border-[#F0B429]/30 bg-[#F0B429]/5 p-8 text-center">
+              <div className="border border-[#FABF13]/30 bg-[#FABF13]/5 p-8 text-center">
                 <p className="font-display text-2xl text-white">신청이 접수되었습니다</p>
                 <p className="mt-2 font-outfit text-base text-white/75">검토 후 3영업일 내 이메일로 연락드립니다.</p>
               </div>
