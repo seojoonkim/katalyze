@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Building2, BriefcaseBusiness, MapPin, Ticket } from "lucide-react";
+import { IconArrowRight, IconTicket, IconMapPin, IconBuilding, IconBriefcase, IconDrop, IconStage, IconLab, IconGallery } from "@/components/icons";
 import { PillButton } from "@/components/ui";
 
 const stats = [
@@ -53,7 +53,7 @@ const audiences = [
 
 const zones = [
   {
-    icon: "🛍️",
+    id: "drop",
     title: "THE DROP",
     subtitle: "줄 서는 이유가 있는 공간.",
     description:
@@ -64,7 +64,7 @@ const zones = [
     overlay: "linear-gradient(180deg, rgba(220,30,90,0.20) 0%, rgba(0,0,0,0.70) 100%)",
   },
   {
-    icon: "🎵",
+    id: "stage",
     title: "THE STAGE",
     subtitle: "DDP가 울리는 밤.",
     description:
@@ -75,7 +75,7 @@ const zones = [
     overlay: "linear-gradient(180deg, rgba(130,32,220,0.20) 0%, rgba(0,0,0,0.70) 100%)",
   },
   {
-    icon: "🔬",
+    id: "lab",
     title: "THE LAB",
     subtitle: "다음에 올 것을 먼저 보는 곳.",
     description:
@@ -86,7 +86,7 @@ const zones = [
     overlay: "linear-gradient(180deg, rgba(0,201,167,0.22) 0%, rgba(0,0,0,0.70) 100%)",
   },
   {
-    icon: "🎨",
+    id: "gallery",
     title: "THE GALLERY",
     subtitle: "감각의 밀도가 다른 공간.",
     description:
@@ -97,6 +97,13 @@ const zones = [
     overlay: "linear-gradient(180deg, rgba(245,158,11,0.20) 0%, rgba(0,0,0,0.72) 100%)",
   },
 ];
+
+const zoneIcons: Record<string, React.ReactNode> = {
+  drop: <IconDrop />,
+  stage: <IconStage />,
+  lab: <IconLab />,
+  gallery: <IconGallery />,
+};
 
 const lineup = [
   {
@@ -234,7 +241,7 @@ export default function Home() {
                   <div className="mt-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-white">
                     <span>{card.cta}</span>
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-none border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
-                      <ArrowRight className="h-4 w-4" />
+                      <IconArrowRight />
                     </span>
                   </div>
                 </div>
@@ -291,7 +298,7 @@ export default function Home() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/82 via-black/24 to-transparent" />
                 <div className="relative z-10 flex h-full flex-col justify-end p-7 md:p-8">
-                  <div className="mb-4 text-5xl">{zone.icon}</div>
+                  <div className="mb-4 h-10 w-10 text-[#D4AF37]">{zoneIcons[zone.id]}</div>
                   <h3 className="font-display text-4xl tracking-[0.06em] text-white md:text-5xl">{zone.title}</h3>
                   <p className="mt-2 text-sm font-outfit font-medium text-[#D4AF37]">{zone.subtitle}</p>
                   <p className="mt-3 max-w-md text-sm leading-7 text-white/85 md:text-base">{zone.description}</p>
@@ -374,7 +381,7 @@ export default function Home() {
             )}
           >
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
-              <Building2 className="h-8 w-8 text-[#D4AF37]" />
+              <div className="h-8 w-8 text-[#D4AF37]"><IconBuilding /></div>
               <p className="mt-5 text-xs uppercase tracking-[0.34em] text-[#F0D980]">For Partners & Brands</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Build the most photographed booth in Seoul.</h3>
               <p className="mt-4 max-w-lg text-sm leading-7 text-white/82 md:text-base">
@@ -395,7 +402,7 @@ export default function Home() {
             )}
           >
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
-              <BriefcaseBusiness className="h-8 w-8 text-[#00C9A7]" />
+              <div className="h-8 w-8 text-[#00C9A7]"><IconBriefcase /></div>
               <p className="mt-5 text-xs uppercase tracking-[0.34em] text-[#00C9A7]">For Buyers</p>
               <h3 className="mt-4 font-display text-4xl leading-[0.96] text-white md:text-5xl">Source the next breakout Korean brand before everyone else does.</h3>
               <p className="mt-4 max-w-lg text-sm leading-7 text-white/82 md:text-base">
@@ -422,7 +429,7 @@ export default function Home() {
           >
             <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 md:p-12">
               <div className="inline-flex w-fit items-center gap-2 rounded-none border border-white/20 bg-black/20 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/85 backdrop-blur-sm">
-                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" /> SEOUL · DDP · APRIL 2027
+                <span className="h-3.5 w-3.5 text-[#D4AF37] inline-flex"><IconMapPin /></span> SEOUL · DDP · APRIL 2027
               </div>
               <h2 className="mt-6 max-w-4xl font-display text-5xl leading-[0.9] text-white md:text-7xl">THE CITY. THE ICON. THE MOMENT.</h2>
               <div className="mt-8">
@@ -456,7 +463,7 @@ export default function Home() {
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3 md:gap-4">
                 <PillButton href="/tickets">
-                  <Ticket className="mr-2 h-4 w-4" /> GET TICKETS
+                  <span className="mr-2 h-4 w-4 inline-flex"><IconTicket /></span> GET TICKETS
                 </PillButton>
                 <PillButton href="/partners" variant="secondary">PARTNER WITH US</PillButton>
                 <PillButton href="/b2b" variant="secondary">B2B ACCESS</PillButton>

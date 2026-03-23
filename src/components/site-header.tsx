@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, Ticket, ChevronDown } from "lucide-react";
+import { IconMenu, IconTicket, IconChevronDown } from "@/components/icons";
 import { navItems } from "@/lib/site-data";
 
 const navItemsWithImages = [
@@ -47,7 +47,7 @@ export function SiteHeader() {
               >
                 {item.label}
                 {item.href !== "/tickets" && (
-                  <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
+                  <span className="h-3 w-3 inline-flex transition-transform group-hover:rotate-180"><IconChevronDown /></span>
                 )}
               </Link>
 
@@ -84,13 +84,13 @@ export function SiteHeader() {
             href="/tickets"
             className="inline-flex items-center gap-2 rounded-none bg-[#D4AF37] px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-black transition hover:bg-[#E8C84A]"
           >
-            <Ticket className="h-4 w-4" />
+            <span className="h-4 w-4 inline-flex"><IconTicket /></span>
             GET TICKETS
           </Link>
         </div>
 
         <button className="text-white md:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-          <Menu size={22} />
+          <IconMenu />
         </button>
       </div>
 
