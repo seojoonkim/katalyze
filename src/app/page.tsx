@@ -169,7 +169,7 @@ export default function Home() {
           }}
         />
         <div className="container-shell relative z-10 flex min-h-screen flex-col justify-end pb-10 pt-28 md:pb-16 lg:pt-32">
-          <div className="max-w-5xl">
+          <div className="w-full">
             <p className="text-base font-outfit tracking-[0.5em] uppercase text-[#D4AF37]">
               서울 DDP · 2027. 4 · SEOUL&apos;S CULTURE-COMMERCE CONVERGENCE
             </p>
