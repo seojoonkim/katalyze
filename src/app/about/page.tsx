@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-6 text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] font-bold">Manifesto</p>
-            <p className="mb-8 font-rubik text-[clamp(2.5rem,6vw,5rem)] font-bold leading-none text-white/10 select-none">
+            <p className="mb-8 font-rubik text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-none text-white/[0.05] select-none pointer-events-none">
               SEOUL IS THE CATALYST.
             </p>
             <blockquote className="font-rubik text-4xl uppercase leading-tight text-white md:text-6xl lg:text-7xl" style={{fontWeight:800}}>

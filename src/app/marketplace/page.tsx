@@ -39,7 +39,7 @@ export default function MarketplacePage() {
       {/* 카테고리 그리드 */}
       <AnimatedSection className="section-pad">
         <div className="container-shell">
-          <p className="mb-10 font-rubik text-[clamp(2.5rem,6vw,5rem)] font-bold leading-none text-white/10 select-none">
+          <p className="mb-10 font-rubik text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-none text-white/[0.05] select-none pointer-events-none">
             120+ BRANDS.
           </p>
           <SectionHeading eyebrow="Categories" title="카테고리" description="패션부터 테크까지 — 6개 카테고리, 140개 이상의 브랜드." />

@@ -78,7 +78,7 @@ export default function PartnersPage() {
       {/* 임팩트 수치 */}
       <AnimatedSection className="section-pad bg-muk">
         <div className="container-shell">
-          <p className="mb-10 font-rubik text-[clamp(2.5rem,6vw,5rem)] font-bold leading-none text-white/10 select-none">
+          <p className="mb-10 font-rubik text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-none text-white/[0.05] select-none pointer-events-none">
             JOIN THE MOVEMENT.
           </p>
           <SectionHeading eyebrow="Impact" title="숫자로 보는 KATALYZE" />
