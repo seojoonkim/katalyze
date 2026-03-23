@@ -16,7 +16,7 @@ const audiences = [
     tagClass: "font-noto-kr",
     title: "Come for the drop. Stay for the obsession.",
     description:
-      "50,000명이 서울 한복판에서 동시에 발견하는 순간. 패션 론칭, K-뷰티 첫 공개, 라이브 퍼포먼스, 그리고 서울만의 감각 — 하나의 주말에 전부.",
+      "5만 명이 동시에 발견하는 순간. 한정판 드롭, K-뷰티 월드 프리미어, 라이브 퍼포먼스, 서울만의 감각 — 하나의 주말에 압축.",
     href: "/tickets",
     cta: "Explore visitor passes",
     image: "/images/audience_visitors.jpg",
@@ -28,9 +28,9 @@ const audiences = [
     eyebrow: "FOR BRANDS",
     tag: "브랜드",
     tagClass: "font-noto-kr",
-    title: "50,000 people. 72 hours. Your brand's defining Seoul moment.",
+    title: "50,000 people. 72 hours. Your brand's Seoul chapter.",
     description:
-      "한정판 드롭, 몰입형 부스, 파운더 토크, 그리고 실시간 전환. 대한민국 최대 컬처 커머스 페스티벌에서 브랜드의 다음 챕터를 쓰세요.",
+      "한정판 드롭, 몰입형 부스, 파운더 토크, 실시간 전환 — 대한민국 최대 컬처 커머스 무대에서 브랜드의 다음 챕터를 여세요.",
     href: "/partners",
     cta: "Partner with us",
     image: "/images/audience_brands.jpg",
@@ -44,7 +44,7 @@ const audiences = [
     tagClass: "font-noto-kr",
     title: "The next global brand is Korean. Find it first.",
     description:
-      "프라이빗 네트워킹, 큐레이티드 미팅, VIP 라운지. 뷰티, 패션, 디자인, F&B, 컬처 IP — 전 세계가 주목하기 전에, 먼저 만나세요.",
+      "프라이빗 네트워킹, 큐레이티드 1:1 미팅, VIP 라운지. 뷰티·패션·디자인·F&B·컬처 IP — 세계가 주목하기 전에, 먼저 선점하세요.",
     href: "/b2b",
     cta: "Request B2B access",
     image: "/images/audience_buyers.jpg",
@@ -61,8 +61,8 @@ const zones = [
     title: "THE DROP",
     subtitle: "줄 서는 이유가 있는 공간.",
     description:
-      "한정판 캡슐, 브랜드 첫 공개, 인플루언서 콜라보, 뷰티 디스커버리 — 카메라가 향하는 곳, 전환이 일어나는 곳.",
-    en: "Where the queue forms. Where the camera points. Where the drop lands.",
+      "한정판 캡슐 드롭, 글로벌 브랜드 첫 공개, 인플루언서 콜라보, 뷰티 디스커버리 — 카메라가 향하는 곳에서 전환이 일어난다.",
+    en: "The queue forms. The camera points. The drop lands. Commerce at the speed of culture.",
     image: "/images/zone_drop.jpg",
     fallback: "linear-gradient(135deg, #DC1E5A 0%, #1a0008 100%)",
     color: "#DC1E5A",
@@ -73,8 +73,8 @@ const zones = [
     title: "THE STAGE",
     subtitle: "DDP가 울리는 밤.",
     description:
-      "음악, 댄스, 패션쇼, 헤드라인 퍼포먼스 — 소리가 건물을 타고 서울 전체에 퍼지는 순간.",
-    en: "The night DDP shakes. Performances that own the feed.",
+      "음악, 댄스, 런웨이, 헤드라인 퍼포먼스 — 사운드가 건물을 타고 서울 전체로 퍼지는 밤. 피드를 지배하는 순간.",
+    en: "The night DDP shakes. Sound climbs the walls. Performances that own every feed.",
     image: "/images/zone_stage.jpg",
     fallback: "linear-gradient(135deg, #8220DC 0%, #1a0030 100%)",
     color: "#8220DC",
@@ -83,10 +83,10 @@ const zones = [
     id: "lab",
     number: "03",
     title: "THE LAB",
-    subtitle: "다음에 올 것을 먼저 보는 곳.",
+    subtitle: "트렌드가 되기 전에 만나는 곳.",
     description:
-      "파운더 토크, 크리에이터 워크숍, 핸즈온 실험실 — 문화를 만드는 사람들이 '다음'을 공유하는 공간.",
-    en: "Where culture builders reveal what's next — before it trends.",
+      "파운더 키노트, 크리에이터 워크숍, 핸즈온 실험실 — 문화를 설계하는 사람들이 '다음'을 먼저 꺼내는 공간.",
+    en: "Founders keynote. Creators workshop. Hands build. What's next gets revealed — before it trends.",
     image: "/images/zone_lab.jpg",
     fallback: "linear-gradient(135deg, #00C9A7 0%, #001a10 100%)",
     color: "#00C9A7",
@@ -97,8 +97,8 @@ const zones = [
     title: "THE GALLERY",
     subtitle: "감각의 밀도가 다른 공간.",
     description:
-      "설치 미술, 아트 액티베이션, 프리미엄 호스피탈리티 — 큐레이션된 시선으로 페스티벌을 경험하는 가장 깊은 방법.",
-    en: "The most curated way to experience the festival. Art meets altitude.",
+      "설치 미술, 아트 액티베이션, 프리미엄 호스피탈리티 — 큐레이션된 시선으로 페스티벌을 경험하는 가장 깊은 레이어.",
+    en: "Art installations. Premium hospitality. The deepest layer of KATALYZE — where art meets altitude.",
     image: "/images/zone_gallery.jpg",
     fallback: "linear-gradient(135deg, #F59E0B 0%, #1a1000 100%)",
     color: "#F59E0B",
@@ -107,24 +107,24 @@ const zones = [
 
 const lineup = [
   {
-    name: "HEADLINER",
+    name: "██████████",
     genre: "메인 스테이지 · Main Stage",
-    status: "TBA — Coming Soon",
+    status: "DROPPING SOON",
   },
   {
-    name: "K-CULTURE ICON",
-    genre: "패션 쇼케이스 · Fashion Show",
-    status: "Announcement Q1 2027",
+    name: "██████ ████",
+    genre: "패션 쇼케이스 · Fashion Showcase",
+    status: "Q1 2027 REVEAL",
   },
   {
-    name: "GLOBAL ARTIST",
-    genre: "퍼포먼스 · Live Performance",
-    status: "Announcement Q2 2027",
+    name: "████ ██████",
+    genre: "라이브 퍼포먼스 · Live Performance",
+    status: "Q2 2027 REVEAL",
   },
   {
-    name: "SPECIAL REVEAL",
-    genre: "서프라이즈 · Surprise Act",
-    status: "Stay Tuned",
+    name: "?????????",
+    genre: "서프라이즈 · You're Not Ready",
+    status: "IF WE TOLD YOU…",
   },
 ];
 
@@ -242,7 +242,7 @@ export default function Home() {
                 <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/75">Global attendees</span>
               </div>
               <div className="flex items-baseline gap-4">
-                <span className="font-rubik text-5xl text-[#FABF13]">₩70B+</span>
+                <span className="font-rubik text-5xl text-[#FABF13]">₩1T+</span>
                 <span className="font-outfit text-sm uppercase tracking-[0.3em] text-white/75">Projected economic impact</span>
               </div>
             </div>
@@ -410,7 +410,7 @@ export default function Home() {
                 APRIL 2027 · DDP SEOUL
               </p>
               <div className="flex flex-col items-start gap-3 md:items-end">
-                <p className="font-noto-kr text-base text-white/70 md:text-right md:max-w-xs">공연, 토크, 쇼케이스 —<br/>발표될 때마다 업데이트됩니다.</p>
+                <p className="font-noto-kr text-base text-white/70 md:text-right md:max-w-xs">이름이 공개될 때마다,<br/>이 페이지가 바뀝니다.</p>
                 <PillButton href="/program" variant="secondary">VIEW FULL PROGRAM</PillButton>
               </div>
             </div>
@@ -523,7 +523,8 @@ export default function Home() {
               <div className="inline-flex w-fit items-center gap-2 rounded-none border border-white/20 bg-black/20 px-4 py-2 text-sm uppercase tracking-[0.26em] text-white/85 backdrop-blur-sm">
                 <span className="h-3.5 w-3.5 text-[#FABF13] inline-flex"><IconMapPin /></span> SEOUL · DDP · APRIL 2027
               </div>
-              <h2 className="mt-6 max-w-4xl font-rubik text-5xl leading-[0.9] text-white md:text-7xl">THE CITY. THE ICON. THE MOMENT.</h2>
+              <h2 className="mt-6 max-w-4xl font-rubik text-5xl leading-[0.9] text-white md:text-7xl">THE CITY. THE ICON.<br className="hidden md:block"/> THE MOMENT.</h2>
+              <p className="mt-4 font-noto-kr text-base text-white/70">자하 하디드가 설계한 서울의 아이콘, DDP. 여기서 시작된다.</p>
               <div className="mt-8">
                 <PillButton href="/about">PLAN YOUR VISIT</PillButton>
               </div>
@@ -548,10 +549,10 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.5em] text-white/80">APRIL 2027 · <span className="font-noto-kr">서울 DDP</span></p>
               <h2 className="mt-4 font-rubik text-7xl tracking-[0.08em] text-white md:text-9xl">THE WORLD IS COMING TO SEOUL. ARE YOU?</h2>
               <p className="mx-auto mt-4 max-w-2xl font-noto-kr text-base leading-8 text-white/90 md:text-lg">
-                4만 명의 관객, 200+ 브랜드, 하나의 주말. 당신의 자리를 지금 확보하세요.
+                5만 명의 관객. 200+ 브랜드. 하나의 주말. 당신의 자리는 지금 이 순간 사라지고 있습니다.
               </p>
               <p className="mx-auto mt-2 max-w-2xl font-outfit text-base leading-7 text-white/85">
-                40,000 attendees. 200+ brands. One weekend. Secure your place now.
+                50,000 attendees. 200+ brands. One weekend. Your spot won&apos;t wait.
               </p>
               <div className="mt-8 flex flex-col items-center gap-4">
                 <PillButton href="/tickets">
