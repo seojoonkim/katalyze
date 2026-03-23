@@ -5,7 +5,7 @@ import { partnerLogos } from "@/lib/site-data";
 export default function PartnersPage() {
   return (
     <div>
-      <PageHero title="Partnerships with premium cultural gravity" eyebrow="Partners" description="From headline sponsorships to curated installations, Katalyze offers brand formats built for relevance and results." image="/images/b2b_connect.jpg" />
+      <PageHero title="Partnerships with premium cultural gravity" eyebrow="Partners" description="From headline sponsorships to curated installations, Katalyze offers brand formats built for relevance and results." image="/images/business_meet.jpg" />
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <div className="mb-16">

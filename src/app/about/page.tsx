@@ -9,7 +9,7 @@ export default function AboutPage() {
         title="WHERE CULTURE BECOMES COMMERCE"
         eyebrow="ABOUT · 소개"
         description="서울이 세계에게 자신을 보여주는 방식."
-        image="/images/hero_main.jpg"
+        image="/images/seoul_night.jpg"
       />
       <AnimatedSection className="section-pad">
         <div className="container-shell grid gap-16 lg:grid-cols-2 lg:items-start">

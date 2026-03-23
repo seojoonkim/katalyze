@@ -36,7 +36,7 @@ export default function TicketsPage() {
         title="SECURE YOUR PLACE AT KATALYZE"
         eyebrow="Tickets · 티켓"
         description="April 2027, DDP Seoul. 당신의 KATALYZE 경험을 선택하세요."
-        image="/images/hero_main.jpg"
+        image="/images/festival_entry.jpg"
       />
       <AnimatedSection className="section-pad">
         <div className="container-shell">
