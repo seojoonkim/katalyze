@@ -11,7 +11,7 @@ const formats = [
 export default function MarketplacePage() {
   return (
     <div>
-      <PageHero title="The Drop" eyebrow="Marketplace" description="A retail-first environment for premium launches, K-beauty discovery, and limited-edition sell-through." image="/images/zone_drop.webp" />
+      <PageHero title="The Drop" eyebrow="Marketplace" description="A retail-first environment for premium launches, K-beauty discovery, and limited-edition sell-through." image="/images/zone_drop.jpg" />
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <SectionHeading eyebrow="Formats" title="Retail environments with clear conversion intent" />

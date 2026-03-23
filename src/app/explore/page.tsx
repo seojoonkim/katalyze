@@ -6,7 +6,7 @@ import { zones } from "@/lib/site-data";
 export default function ExplorePage() {
   return (
     <div>
-      <PageHero title="Four zones. One culture engine." eyebrow="Explore" description="Discover how Katalyze turns movement through space into movement through the consumer and business funnel." image="/images/zone_stage.webp" />
+      <PageHero title="Four zones. One culture engine." eyebrow="Explore" description="Discover how Katalyze turns movement through space into movement through the consumer and business funnel." image="/images/zone_stage.jpg" />
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <SectionHeading eyebrow="Zones" title="Curated experiences with distinct business intent" />

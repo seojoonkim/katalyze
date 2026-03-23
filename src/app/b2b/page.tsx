@@ -5,7 +5,7 @@ import { SectionHeading, PillButton } from "@/components/ui";
 export default function B2BPage() {
   return (
     <div>
-      <PageHero title="A buyer-first trade environment inside a festival shell" eyebrow="B2B Trade" description="Katalyze helps buyers source Korean labels while the broader festival creates cultural urgency and discovery." image="/images/b2b_lounge.webp" />
+      <PageHero title="A buyer-first trade environment inside a festival shell" eyebrow="B2B Trade" description="Katalyze helps buyers source Korean labels while the broader festival creates cultural urgency and discovery." image="/images/b2b_connect.jpg" />
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <SectionHeading eyebrow="Services" title="Three ways to activate your buyer program" />

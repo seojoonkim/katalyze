@@ -5,7 +5,7 @@ import { programMoments } from "@/lib/site-data";
 export default function ProgramPage() {
   return (
     <div>
-      <PageHero title="Programming for impact, not filler" eyebrow="Program" description="Each hour is designed to build discovery, energy, and conversion across audiences." image="/images/zone_stage.webp" />
+      <PageHero title="Programming for impact, not filler" eyebrow="Program" description="Each hour is designed to build discovery, energy, and conversion across audiences." image="/images/zone_stage.jpg" />
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           {programMoments.map((item, idx) => (

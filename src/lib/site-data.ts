@@ -40,28 +40,28 @@ export const zones = [
     title: "The Drop",
     subtitle: "Retail + Beauty",
     description: "Limited releases, K-beauty launches, and immersive brand moments in a high-conversion marketplace.",
-    image: "/images/zone_drop.webp",
+    image: "/images/zone_drop.jpg",
   },
   {
     slug: "stage",
     title: "The Stage",
     subtitle: "Music + Performance",
     description: "Headline sets, fashion-inflected performances, and spectacle built for social reach.",
-    image: "/images/zone_stage.webp",
+    image: "/images/zone_stage.jpg",
   },
   {
     slug: "lab",
     title: "The Lab",
     subtitle: "Workshops + Co-Creation",
     description: "Hands-on sessions with creators, product customization, and next-gen culture experiments.",
-    image: "/images/zone_lab.webp",
+    image: "/images/zone_lab.jpg",
   },
   {
     slug: "gallery",
     title: "The Gallery",
     subtitle: "VIP + Art + Hospitality",
     description: "Private viewings, brand dinners, art installations, and premium business hospitality.",
-    image: "/images/zone_gallery.webp",
+    image: "/images/zone_gallery.jpg",
   },
 ];
 
