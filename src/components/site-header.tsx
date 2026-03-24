@@ -28,7 +28,7 @@ export function SiteHeader() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "border-b border-white/10 bg-[rgba(13,13,13,0.95)] backdrop-blur-xl" : "bg-transparent"}`} style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       <div className="container-shell flex h-14 items-center justify-between gap-4 py-1 md:h-[72px] md:py-3">
-        <Link href="/" className="font-rubik text-sm tracking-[0.06em] text-[#FABF13] md:text-base md:tracking-[0.08em] uppercase transition-all duration-300 hover:text-white/90" style={{fontFamily: "var(--font-rubik), sans-serif", fontWeight: 700}}>
+        <Link href="/" className="font-rubik text-sm tracking-[0.06em] text-[#FABF13] md:text-base md:tracking-[0.08em] uppercase transition-all duration-300 hover:text-white/90" style={{fontFamily: "var(--font-nunito), sans-serif", fontWeight: 750, fontStyle: "italic"}}>
           KATALYZE
         </Link>
 

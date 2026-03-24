@@ -24,9 +24,9 @@ export default {
         "cheongja-jade": "#00D4B8",
       },
       fontFamily: {
-        rubik: ["var(--font-rubik)", "sans-serif"],
-        display: ["var(--font-rubik)", "var(--font-barlow)", "sans-serif"],
-        impact: ["var(--font-rubik)", "var(--font-barlow)", "sans-serif"],
+        rubik: ["var(--font-nunito)", "sans-serif"],
+        display: ["var(--font-nunito)", "var(--font-barlow)", "sans-serif"],
+        impact: ["var(--font-nunito)", "var(--font-barlow)", "sans-serif"],
         body: ["var(--font-inter)", "sans-serif"],
         space: ["var(--font-space)", "sans-serif"],
         outfit: ["var(--font-inter)", "sans-serif"],

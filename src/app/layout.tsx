@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, Space_Grotesk, Inter, Noto_Sans_KR, Playfair_Display, Rubik } from "next/font/google";
+import { Barlow_Condensed, Space_Grotesk, Inter, Noto_Sans_KR, Playfair_Display, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -11,10 +11,11 @@ const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow",
 });
 
-const rubik = Rubik({
+const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "700", "800", "900"],
-  variable: "--font-rubik",
+  weight: ["400", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-nunito",
 });
 
 const spaceGrotesk = Space_Grotesk({
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${barlowCondensed.variable} ${rubik.variable} ${spaceGrotesk.variable} ${inter.variable} ${notoSansKR.variable} ${playfair.variable} font-outfit`}>
+      <body className={`${barlowCondensed.variable} ${nunitoSans.variable} ${spaceGrotesk.variable} ${inter.variable} ${notoSansKR.variable} ${playfair.variable} font-outfit`}>
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
