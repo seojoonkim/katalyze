@@ -16,7 +16,7 @@ const audiences = [
     tagClass: "font-noto-kr",
     title: "Come for the drop. Leave as a convert.",
     description:
-      "5만 명이 동시에 발견하는 순간. KATALYZE 한정판 드롭, K-뷰티 월드 프리미어, 라이브 퍼포먼스, 서울만의 감각 — 하나의 주말에 압축.",
+      "단 하나의 주말, 50,000명이 동시에 목격하는 순간. 한정판 드롭, K-뷰티 월드 프리미어, 라이브 퍼포먼스 — 서울만의 감각이 당신을 바꾼다.",
     href: "/tickets",
     cta: "Claim your pass",
     image: "/images/ddp_night.jpg",
@@ -28,9 +28,9 @@ const audiences = [
     eyebrow: "FOR BRANDS",
     tag: "브랜드",
     tagClass: "font-noto-kr",
-    title: "50K people. 72h. Your KATALYZE chapter.",
+    title: "50K people. 72h. Your KATALYZE moment.",
     description:
-      "한정판 드롭, 몰입형 부스, 파운더 토크, 실시간 전환 — 대한민국 최대 컬처 커머스 무대에서 브랜드의 다음 챕터를 여세요.",
+      "한정판 드롭, 몰입형 브랜드 경험, 파운더 토크 — 대한민국 최대 컬처 커머스 무대에서 팬을 만든다.",
     href: "/partners",
     cta: "Partner with KATALYZE",
     image: "/images/audience_brands.jpg",
@@ -42,9 +42,9 @@ const audiences = [
     eyebrow: "FOR BUYERS",
     tag: "바이어",
     tagClass: "font-noto-kr",
-    title: "The next global brand is Korean. Find it at KATALYZE.",
+    title: "The next global brand is Korean. Get there first.",
     description:
-      "프라이빗 네트워킹, 큐레이티드 1:1 미팅, VIP 라운지. 뷰티·패션·디자인·F&B·컬처 IP — 세계가 주목하기 전에, 먼저 선점하세요.",
+      "프라이빗 1:1 미팅, VIP 라운지, 큐레이티드 쇼룸 — 세계가 발견하기 전에, 당신이 먼저.",
     href: "/b2b",
     cta: "Request B2B access",
     image: "/images/audience_buyers.jpg",
@@ -59,10 +59,10 @@ const zones = [
     id: "drop",
     number: "01",
     title: "THE DROP",
-    subtitle: "줄 서는 이유가 있는 공간.",
+    subtitle: "줄이 생기기 전에 시작된다.",
     description:
-      "한정판 캡슐 드롭, 글로벌 브랜드 첫 공개, 인플루언서 콜라보, 뷰티 디스커버리 — KATALYZE가 카메라를 모으는 곳에서 전환이 일어난다.",
-    en: "The queue forms before doors open. The camera locks. The drop lands — and KATALYZE makes it viral.",
+      "한정판 캡슐 드롭, 글로벌 브랜드 첫 공개, 인플루언서 콜라보, 뷰티 디스커버리 — 카메라가 몰리는 곳에서 전환이 일어난다.",
+    en: "Doors open. Queues form. The drop lands — and KATALYZE makes it the moment everyone talks about.",
     image: "/images/imagen_market_drop.jpg",
     fallback: "linear-gradient(135deg, #DC1E5A 0%, #1a0008 100%)",
     color: "#DC1E5A",
@@ -71,10 +71,10 @@ const zones = [
     id: "stage",
     number: "02",
     title: "THE STAGE",
-    subtitle: "DDP가 울리는 밤.",
+    subtitle: "DDP가 울린다. 서울이 듣는다.",
     description:
-      "음악, 댄스, 런웨이, 헤드라인 퍼포먼스 — KATALYZE의 사운드가 DDP를 타고 서울 전체로 퍼지는 밤. 피드를 지배하는 순간.",
-    en: "The night DDP shakes. Sound climbs walls and crosses feeds. KATALYZE owns the Seoul night.",
+      "K-팝, 댄스, 런웨이, 헤드라인 퍼포먼스 — KATALYZE의 사운드가 DDP를 타고 피드를 장악하는 밤.",
+    en: "The night DDP shakes. Sound climbs walls, crosses feeds. KATALYZE owns the Seoul night.",
     image: "/images/imagen_stage_show.jpg",
     fallback: "linear-gradient(135deg, #8220DC 0%, #1a0030 100%)",
     color: "#8220DC",
@@ -83,10 +83,10 @@ const zones = [
     id: "lab",
     number: "03",
     title: "THE LAB",
-    subtitle: "트렌드가 되기 전에 만나는 곳.",
+    subtitle: "세상이 알기 전에, 여기서 먼저.",
     description:
-      "파운더 키노트, 크리에이터 워크숍, 핸즈온 실험실 — KATALYZE에서 문화를 설계하는 사람들이 '다음'을 먼저 꺼내는 공간.",
-    en: "Founders keynote. Creators experiment. What's next gets built here — before the world catches on.",
+      "파운더 키노트, 크리에이터 워크숍, 핸즈온 실험 — 문화를 설계하는 사람들이 '다음'을 꺼내는 유일한 공간.",
+    en: "Founders keynote. Creators experiment. What's next gets invented here — before the world catches on.",
     image: "/images/imagen_lab_workshop.jpg",
     fallback: "linear-gradient(135deg, #00C9A7 0%, #001a10 100%)",
     color: "#00C9A7",
@@ -95,10 +95,10 @@ const zones = [
     id: "gallery",
     number: "04",
     title: "THE GALLERY",
-    subtitle: "감각의 밀도가 다른 공간.",
+    subtitle: "밀도가 다른 감각의 공간.",
     description:
-      "설치 미술, 아트 액티베이션, 프리미엄 호스피탈리티 — KATALYZE의 가장 깊은 레이어. 감각의 밀도가 다른 공간.",
-    en: "Art installations. Private dinners. The deepest layer of KATALYZE — where altitude becomes art.",
+      "몰입형 설치 미술, 아트 액티베이션, 프라이빗 다이닝 — KATALYZE의 가장 깊은 레이어. 고도가 예술이 되는 곳.",
+    en: "Immersive installations. Private dinners. The deepest layer of KATALYZE — where altitude becomes art.",
     image: "/images/imagen_gallery_installation.jpg",
     fallback: "linear-gradient(135deg, #F59E0B 0%, #1a1000 100%)",
     color: "#F59E0B",
@@ -257,26 +257,26 @@ export default function Home() {
           <p className="mb-6 font-rubik text-[clamp(1.5rem,3vw,2.8rem)] tracking-tight text-white" style={{fontWeight:900}}>
             THE NUMBERS <span className="text-[#FABF13]">DON&apos;T LIE.</span>
           </p>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-            <div>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4 md:gap-x-8">
+            <div className="border-l-2 border-[#DC1E5A] pl-4">
               <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>50K</p>
-              <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Attendees</p>
-              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">참석자</p>
+              <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Attendees</p>
+              <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">참석자</p>
             </div>
-            <div>
+            <div className="border-l-2 border-[#8220DC] pl-4">
               <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>72h</p>
-              <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Duration</p>
-              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">페스티벌 시간</p>
+              <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Duration</p>
+              <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">페스티벌 시간</p>
             </div>
-            <div>
+            <div className="border-l-2 border-[#00C9A7] pl-4">
               <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>200+</p>
-              <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Brands</p>
-              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">참가 브랜드</p>
+              <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Brands</p>
+              <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">참가 브랜드</p>
             </div>
-            <div>
+            <div className="border-l-2 border-[#FABF13] pl-4">
               <p className="font-rubik text-5xl text-[#FABF13] md:text-7xl" style={{fontWeight:900}}>₩1조</p>
-              <p className="mt-2 font-rubik text-sm uppercase tracking-[0.3em] text-white/88 font-semibold">Est. Value</p>
-              <p className="mt-1 font-noto-kr text-base text-[#00D4B8]">경제 효과</p>
+              <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Est. Value</p>
+              <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">경제 효과</p>
             </div>
           </div>
         </div>
@@ -285,8 +285,8 @@ export default function Home() {
       {/* ═══════ PARTNER TRUST BADGE ═══════ */}
       <section className="bg-muk border-t border-white/10 py-10 md:py-12">
         <div className="container-shell text-center">
-          <p className="text-sm font-rubik uppercase tracking-[0.35em] text-white/90 mb-2 font-bold">POWERED BY</p>
-          <p className="text-xs font-rubik tracking-[0.2em] text-[#FABF13]/70 mb-5">Partners who believe in <span className="text-[#FABF13]">KATALYZE</span></p>
+          <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] mb-2 font-bold">TRUSTED BY</p>
+          <p className="text-xs font-rubik tracking-[0.2em] text-white/50 mb-5">World-class partners powering <span className="text-[#FABF13]">KATALYZE</span></p>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-2xl tracking-[0.14em] text-white/90 md:text-3xl font-bold">
             <span>HASHED</span>
             <span>SAMSUNG</span>
@@ -307,48 +307,49 @@ export default function Home() {
             <h2 className="mt-4 font-rubik text-xl tracking-[-0.01em] text-white md:text-3xl lg:text-[2.4rem] md:whitespace-nowrap" style={{fontWeight:800}}>HOW WILL YOU SHOW UP AT <span className="text-[#FABF13]">KATALYZE</span>?</h2>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr]">
-            {/* 첫 번째 카드: 크게 */}
+            {/* 첫 번째 카드: 크게 (모바일도 풀사이즈) */}
             <a
               href={audiences[0].href}
-              className={`group relative min-h-[380px] md:min-h-[560px] overflow-hidden rounded-none ${audiences[0].ring}`}
+              className={`group relative min-h-[420px] md:min-h-[560px] overflow-hidden rounded-none ${audiences[0].ring}`}
               style={backgroundStyle(audiences[0].image, audiences[0].fallback, audiences[0].overlay)}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
               <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-10">
                 <div className="flex items-center gap-3">
-                  <p className="text-sm uppercase tracking-[0.34em] text-white/90">{audiences[0].eyebrow}</p>
-                  <span className="border border-white/20 px-2.5 py-0.5 text-base text-white/88">{audiences[0].tag}</span>
+                  <p className="text-xs uppercase tracking-[0.34em] text-white/80 md:text-sm">{audiences[0].eyebrow}</p>
+                  <span className="border border-white/20 px-2.5 py-0.5 text-sm text-white/80 md:text-base">{audiences[0].tag}</span>
                 </div>
-                <h3 className="mt-4 max-w-lg font-rubik text-5xl leading-[0.96] text-white md:text-6xl" style={{textShadow:"0 2px 20px rgba(0,0,0,0.9)", fontWeight:800}}>{audiences[0].title}</h3>
-                <p className="mt-4 max-w-lg text-base leading-7 text-white/90">{audiences[0].description}</p>
-                <div className="mt-6 flex items-center gap-3 text-base font-semibold uppercase tracking-[0.24em] text-white">
+                <h3 className="mt-4 max-w-lg font-rubik text-4xl leading-[0.96] text-white md:text-5xl lg:text-6xl" style={{textShadow:"0 2px 20px rgba(0,0,0,0.9)", fontWeight:800}}>{audiences[0].title}</h3>
+                <p className="mt-4 max-w-lg text-sm leading-6 text-white/85 md:text-base md:leading-7">{audiences[0].description}</p>
+                <div className="mt-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-white md:text-base">
                   <span>{audiences[0].cta}</span>
-                  <span className="inline-flex h-11 w-11 items-center justify-center border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
+                  <span className="inline-flex h-10 w-10 items-center justify-center border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black md:h-11 md:w-11">
                     <IconArrowRight />
                   </span>
                 </div>
               </div>
             </a>
-            {/* 나머지 2개: 세로 스택 */}
-            <div className="grid grid-rows-2 gap-4">
+            {/* 나머지 2개: 모바일에서 가로 2열, 데스크탑에서 세로 스택 */}
+            <div className="grid grid-cols-2 gap-3 lg:grid-cols-1 lg:grid-rows-2 lg:gap-4">
               {audiences.slice(1).map((card) => (
                 <a
                   key={card.title}
                   href={card.href}
-                  className={`group relative min-h-[220px] md:min-h-[270px] overflow-hidden rounded-none ${card.ring}`}
+                  className={`group relative min-h-[200px] overflow-hidden rounded-none lg:min-h-[270px] ${card.ring}`}
                   style={backgroundStyle(card.image, card.fallback, card.overlay)}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-                  <div className="relative z-10 flex h-full flex-col justify-end p-7">
-                    <div className="flex items-center gap-3">
-                      <p className="text-sm uppercase tracking-[0.34em] text-white/90">{card.eyebrow}</p>
-                      <span className="border border-white/20 px-2 py-0.5 text-base text-white/88">{card.tag}</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+                  <div className="relative z-10 flex h-full flex-col justify-end p-4 md:p-5 lg:p-7">
+                    <div className="flex items-center gap-2">
+                      <p className="text-[10px] uppercase tracking-[0.28em] text-white/75 md:text-xs">{card.eyebrow}</p>
+                      <span className="border border-white/20 px-1.5 py-0.5 text-[10px] text-white/70 md:text-xs">{card.tag}</span>
                     </div>
-                    <h3 className="mt-3 max-w-sm font-rubik text-3xl leading-[0.96] text-white md:text-4xl" style={{fontWeight:800}}>{card.title}</h3>
-                    <p className="mt-3 max-w-sm text-base leading-6 text-white/88 line-clamp-2">{card.description}</p>
-                    <div className="mt-4 flex items-center gap-3 text-base font-semibold uppercase tracking-[0.24em] text-white">
-                      <span>{card.cta}</span>
-                      <span className="inline-flex h-9 w-9 items-center justify-center border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black">
+                    <h3 className="mt-2 max-w-sm font-rubik text-lg leading-[1.05] text-white md:text-2xl lg:text-3xl lg:leading-[0.96]" style={{fontWeight:800}}>{card.title}</h3>
+                    <p className="mt-2 hidden text-xs leading-5 text-white/80 line-clamp-2 md:block lg:text-sm lg:leading-6">{card.description}</p>
+                    <div className="mt-3 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-white md:text-xs md:gap-3">
+                      <span className="hidden sm:inline">{card.cta}</span>
+                      <span className="sm:hidden text-base">→</span>
+                      <span className="hidden sm:inline-flex h-8 w-8 items-center justify-center border border-white/30 bg-white/10 transition group-hover:bg-white group-hover:text-black lg:h-9 lg:w-9">
                         <IconArrowRight />
                       </span>
                     </div>
@@ -435,16 +436,16 @@ export default function Home() {
           {/* 라인업 아이템: 구분선 스타일 */}
           <div className="divide-y divide-white/10 border-t border-white/10">
             {lineup.map((artist, idx) => (
-              <div key={artist.name} className="group flex flex-col gap-4 py-8 transition-colors hover:bg-white/[0.02] sm:flex-row sm:items-center sm:justify-between">
-                <div className="flex items-center gap-6 sm:gap-8">
-                  <span className="font-rubik text-2xl text-white/88 min-w-[2.5rem]">{String(idx + 1).padStart(2, '0')}</span>
+              <div key={artist.name} className="group flex flex-col gap-3 py-6 transition-colors hover:bg-white/[0.02] sm:flex-row sm:items-center sm:justify-between sm:py-8">
+                <div className="flex items-center gap-4 sm:gap-8">
+                  <span className="font-rubik text-xl text-white/50 min-w-[2rem] sm:text-2xl sm:min-w-[2.5rem]">{String(idx + 1).padStart(2, '0')}</span>
                   <div>
-                    <h3 className="font-rubik text-4xl tracking-[0.04em] text-white md:text-6xl" style={{fontWeight:700}}>{artist.name}</h3>
-                    <p className="mt-1 font-outfit text-base text-white/88">{artist.genre}</p>
+                    <h3 className="font-rubik text-3xl tracking-[0.04em] text-white md:text-5xl lg:text-6xl" style={{fontWeight:700}}>{artist.name}</h3>
+                    <p className="mt-0.5 font-outfit text-sm text-white/70 sm:text-base">{artist.genre}</p>
                   </div>
                 </div>
-                <div className="pl-[calc(2.5rem+1.5rem)] sm:pl-0 sm:text-right">
-                  <span className="inline-block border border-white/20 px-4 py-2 font-outfit text-sm uppercase tracking-[0.3em] text-[#FABF13]">{artist.status}</span>
+                <div className="pl-[calc(2rem+1rem)] sm:pl-0 sm:text-right">
+                  <span className="inline-block border border-white/20 px-3 py-1.5 font-outfit text-xs uppercase tracking-[0.3em] text-[#FABF13] sm:px-4 sm:py-2 sm:text-sm">{artist.status}</span>
                 </div>
               </div>
             ))}
