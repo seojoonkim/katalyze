@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-white/10 bg-black/75 py-12">
       <div className="container-shell grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <p className="text-2xl tracking-[0.04em] text-[#FABF13]" style={{fontFamily:"var(--font-nunito),sans-serif", fontWeight:800, fontStyle:"italic"}}>KATALYZE</p>
+          <p className="text-2xl tracking-[0.04em] text-[#FABF13]" style={{fontFamily:"var(--font-nunito),sans-serif", fontWeight:900, fontStyle:"italic"}}>KATALYZE</p>
           <p className="mt-4 max-w-md text-base leading-7 text-white/92">
             Where culture drops, deals close, and the world shows up. A Seoul-born festival platform for fans, brands, buyers, and builders.
           </p>
