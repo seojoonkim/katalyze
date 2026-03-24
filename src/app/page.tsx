@@ -176,8 +176,8 @@ export default function Home() {
             <p className="text-sm font-rubik tracking-[0.2em] uppercase text-[#FABF13] font-bold break-words">
               SEOUL DDP · APRIL 2027 · CULTURE×COMMERCE
             </p>
-            <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.01em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.65)]" style={{fontFamily: "var(--font-nunito), sans-serif", fontWeight: 750, fontStyle: "italic"}}>
-              <span className="text-[#FABF13]">K</span>ATALYZ<span className="text-[#FF0A73]">E</span>
+            <h1 className="mt-4 font-rubik text-[clamp(2rem,10.5vw,8.4rem)] leading-[0.85] tracking-[0.01em] text-white drop-shadow-[0_12px_40px_rgba(0,0,0,0.65)]" style={{fontFamily: "var(--font-nunito), sans-serif", fontWeight: 800, fontStyle: "italic"}}>
+              KATALYZE
             </h1>
             <p className="mt-5 max-w-2xl text-lg font-outfit font-light leading-relaxed text-white/92 md:text-2xl">
               Global brands. Seoul&apos;s energy.<br/>72 hours that <em>katalyze</em> everything.
