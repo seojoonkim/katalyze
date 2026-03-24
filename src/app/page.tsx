@@ -285,7 +285,7 @@ export default function Home() {
       {/* ═══════ PARTNER TRUST BADGE ═══════ */}
       <section className="bg-muk border-t border-white/10 py-10 md:py-12">
         <div className="container-shell text-center">
-          <p className="text-sm font-rubik uppercase tracking-[0.35em] text-white/90 mb-2 font-bold">Backed by</p>
+          <p className="text-sm font-rubik uppercase tracking-[0.35em] text-white/90 mb-2 font-bold">POWERED BY</p>
           <p className="text-xs font-rubik tracking-[0.2em] text-[#FABF13]/70 mb-5">Partners who believe in <span className="text-[#FABF13]">KATALYZE</span></p>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-2xl tracking-[0.14em] text-white/90 md:text-3xl font-bold">
             <span>HASHED</span>
@@ -335,7 +335,7 @@ export default function Home() {
                 <a
                   key={card.title}
                   href={card.href}
-                  className={`group relative min-h-[270px] overflow-hidden rounded-none ${card.ring}`}
+                  className={`group relative min-h-[220px] md:min-h-[270px] overflow-hidden rounded-none ${card.ring}`}
                   style={backgroundStyle(card.image, card.fallback, card.overlay)}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
