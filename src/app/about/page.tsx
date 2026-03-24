@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div
             className="h-[400px] w-full"
             style={{
-              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%), url('/images/about_seoul_bg.jpg')`,
+              backgroundImage: `linear-gradient(135deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%), url('/images/ddp_night.jpg')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -151,9 +151,9 @@ export default function AboutPage() {
       <AnimatedSection className="section-pad">
         <div className="container-shell">
           <div className="flex flex-col items-center gap-6 text-center">
-            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">함께 <span className="text-[#FABF13]">KATALYZE</span>를 만들어가요</h2>
+            <h2 className="font-rubik text-4xl uppercase text-white md:text-5xl">YOUR NEXT MOVE STARTS AT <span className="text-[#FABF13]">KATALYZE</span></h2>
             <p className="max-w-xl font-outfit text-base text-white/88">
-              관람객으로, 브랜드로, 파트너로 — KATALYZE와 함께할 방법을 선택하세요.
+              관람객으로, 브랜드로, 파트너로 — 당신의 역할을 선택하세요. 서울이 기다립니다.
             </p>
             <div className="mt-4 flex flex-col gap-4 sm:flex-row">
               <PillButton href="/tickets" variant="primary">티켓 구매하기</PillButton>

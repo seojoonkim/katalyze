@@ -107,24 +107,28 @@ const zones = [
 
 const lineup = [
   {
-    name: "██████████",
+    name: "████████████████",
     genre: "메인 스테이지 · Main Stage",
     status: "DROPPING SOON",
+    statusColor: "#FF0A73",
   },
   {
-    name: "██████ ████",
+    name: "██████████ ████████",
     genre: "패션 쇼케이스 · Fashion Showcase",
     status: "Q1 2027 REVEAL",
+    statusColor: "#8220DC",
   },
   {
-    name: "████ ██████",
+    name: "████████ ██████████",
     genre: "라이브 퍼포먼스 · Live Performance",
     status: "Q2 2027 REVEAL",
+    statusColor: "#00C9A7",
   },
   {
-    name: "?????????",
+    name: "? ? ? ? ? ? ? ? ?",
     genre: "서프라이즈 · You're Not Ready",
     status: "IF WE TOLD YOU…",
+    statusColor: "#FABF13",
   },
 ];
 
@@ -225,8 +229,8 @@ export default function Home() {
           <p className="mt-6 font-noto-kr text-lg font-light text-[#00D4B8] max-w-xl">
             서울은 트렌드를 따르지 않는다. 점화한다.
           </p>
-          <p className="hidden">
-            CULTURE.<br/>COMMERCE.<br/>CONVERGENCE.
+          <p className="mt-8 font-rubik text-[clamp(1.2rem,2vw,1.6rem)] uppercase tracking-[0.5em] text-white/[0.08] select-none pointer-events-none">
+            CULTURE · COMMERCE · CONVERGENCE
           </p>
           <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/15 pt-16">
             <p className="font-outfit text-xl font-normal leading-relaxed text-white md:text-2xl max-w-xl">
@@ -257,24 +261,24 @@ export default function Home() {
           <p className="mb-6 font-rubik text-[clamp(1.5rem,3vw,2.8rem)] tracking-tight text-white" style={{fontWeight:900}}>
             THE NUMBERS <span className="text-[#FABF13]">DON&apos;T LIE.</span>
           </p>
-          <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4 md:gap-x-8">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-4 md:gap-x-8">
             <div className="border-l-2 border-[#DC1E5A] pl-4">
-              <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>50K</p>
+              <p className="font-rubik text-4xl text-white md:text-7xl" style={{fontWeight:900}}>50K</p>
               <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Attendees</p>
               <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">참석자</p>
             </div>
             <div className="border-l-2 border-[#8220DC] pl-4">
-              <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>72h</p>
+              <p className="font-rubik text-4xl text-white md:text-7xl" style={{fontWeight:900}}>72h</p>
               <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Duration</p>
               <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">페스티벌 시간</p>
             </div>
             <div className="border-l-2 border-[#00C9A7] pl-4">
-              <p className="font-rubik text-5xl text-white md:text-7xl" style={{fontWeight:900}}>200+</p>
+              <p className="font-rubik text-4xl text-white md:text-7xl" style={{fontWeight:900}}>200+</p>
               <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Brands</p>
               <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">참가 브랜드</p>
             </div>
             <div className="border-l-2 border-[#FABF13] pl-4">
-              <p className="font-rubik text-5xl text-[#FABF13] md:text-7xl" style={{fontWeight:900}}>₩1조</p>
+              <p className="font-rubik text-4xl text-[#FABF13] md:text-7xl" style={{fontWeight:900}}>₩1조</p>
               <p className="mt-2 font-rubik text-xs uppercase tracking-[0.3em] text-white/70 font-semibold">Est. Value</p>
               <p className="mt-1 font-noto-kr text-sm text-[#00D4B8]">경제 효과</p>
             </div>
@@ -282,22 +286,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════ PARTNER TRUST BADGE ═══════ */}
-      <section className="bg-muk border-t border-white/10 py-10 md:py-12">
-        <div className="container-shell text-center">
-          <p className="text-sm font-rubik uppercase tracking-[0.35em] text-[#FABF13] mb-2 font-bold">TRUSTED BY</p>
-          <p className="text-xs font-rubik tracking-[0.2em] text-white/50 mb-5">World-class partners powering <span className="text-[#FABF13]">KATALYZE</span></p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-rubik text-2xl tracking-[0.14em] text-white/90 md:text-3xl font-bold">
-            <span>HASHED</span>
-            <span>SAMSUNG</span>
-            <span>CJ</span>
-            <span>MUSINSA</span>
-            <span>HYBE</span>
-            <span>KOREAN AIR</span>
-            <span>KLOOK</span>
-          </div>
-        </div>
-      </section>
+      {/* ═══════ SECTION DIVIDER ═══════ */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[#FABF13]/20 to-transparent" />
 
       {/* ═══════ AUDIENCE SELECTOR — 비대칭 그리드 ═══════ */}
       <section className="bg-muk py-20 md:py-28">
@@ -361,6 +351,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══════ SECTION DIVIDER ═══════ */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[#FABF13]/20 to-transparent" />
+
       {/* ═══════ THE 4 ZONES — Alternating Full-Width ═══════ */}
       <section className="bg-muk">
         <div className="container-shell py-20 md:py-28">
@@ -402,9 +395,10 @@ export default function Home() {
                   <p className="font-rubik text-[clamp(3rem,5vw,5.5rem)] font-black leading-none text-white/[0.03] pointer-events-none absolute bottom-0 right-2 select-none" style={{transform: 'translate(15%, 15%)'}}>
                     {zone.title.split(' ')[0]}
                   </p>
-                  <span className={`font-rubik text-7xl md:text-8xl relative z-10 ${!isEven ? 'max-md:hidden' : ''}`} style={{ color: zone.color, fontWeight: 900 }}>{zone.number}</span>
+                  <span className={`font-rubik text-7xl md:text-8xl relative z-10 ${!isEven ? 'max-md:hidden' : ''}`} style={{ color: isEven ? zone.color : '#FFFFFF', fontWeight: 900, textShadow: !isEven ? `0 0 40px ${zone.color}44` : 'none' }}>{zone.number}</span>
                   <h3 className="mt-4 font-rubik text-4xl tracking-[0.05em] text-white md:text-5xl" style={{textShadow:"0 2px 16px rgba(0,0,0,0.9)", fontWeight:800}}>{zone.title}</h3>
                   <p className="mt-3 font-noto-kr text-sm uppercase tracking-[0.3em]" style={{ color: zone.color }}>{zone.subtitle}</p>
+                  <div className="mt-2 h-0.5 w-12" style={{ backgroundColor: zone.color }} />
                   <p className="mt-6 font-noto-kr text-base font-light leading-relaxed text-white/90">{zone.description}</p>
                   <p className="mt-4 font-outfit text-base italic text-white/92">{zone.en}</p>
                 </div>
@@ -413,6 +407,9 @@ export default function Home() {
           })}
         </div>
       </section>
+
+      {/* ═══════ SECTION DIVIDER ═══════ */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[#8220DC]/20 to-transparent" />
 
       {/* ═══════ LINEUP — 에디토리얼 텍스트 리스트 ═══════ */}
       <section className="py-20 md:py-28 bg-muk">
@@ -445,7 +442,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="pl-[calc(2rem+1rem)] sm:pl-0 sm:text-right">
-                  <span className="inline-block border border-white/20 px-3 py-1.5 font-outfit text-xs uppercase tracking-[0.3em] text-[#FABF13] sm:px-4 sm:py-2 sm:text-sm">{artist.status}</span>
+                  <span className="inline-block border px-3 py-1.5 font-outfit text-xs uppercase tracking-[0.3em] sm:px-4 sm:py-2 sm:text-sm" style={{ borderColor: artist.statusColor + '44', color: artist.statusColor, backgroundColor: artist.statusColor + '0D' }}>{artist.status}</span>
                 </div>
               </div>
             ))}
